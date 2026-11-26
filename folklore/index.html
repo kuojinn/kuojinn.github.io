@@ -1,0 +1,930 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Folklore · brand, production and events</title>
+<meta name="description" content="Folklore builds brands worth retelling. Identity, visuals, production and events, from the first idea to opening night.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/folklore-f-icon-black.png">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Doto:wght@600;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&display=swap">
+<style>
+.flow li:not(:last-child)::after{content:"";position:absolute;top:24px;left:calc(50% + 24px);right:calc(-50% + 24px);height:1.5px;background:#111}
+.pulse{animation:pulse 1.6s ease-in-out infinite}@keyframes pulse{50%{opacity:.25}}@media (prefers-reduced-motion:reduce){.pulse{animation:none}}
+.meter.hot{background-image:repeating-linear-gradient(-45deg,rgba(255,255,255,.35) 0 8px,transparent 8px 16px)!important;background-size:23px 23px;animation:hot .35s linear infinite}@keyframes hot{to{background-position:23px 0}}@media (prefers-reduced-motion:reduce){.meter.hot{animation:none}}
+@media (min-width:900px){.ctr{max-width:1080px;margin-inline:auto}.ctr>*{grid-column:1/-1!important}.ctr>p.s3{margin-bottom:8px!important}
+.ctr.prof>.cell{grid-column:1/span 4!important}.ctr.prof>.s6{grid-column:5/-1!important}
+.ctr .rail{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.burger{position:relative;display:block;width:18px;height:12px}.burger i{position:absolute;left:0;width:18px;height:1.5px;background:#111;transition:transform .25s,opacity .2s}.burger i:nth-child(1){top:0}.burger i:nth-child(2){top:5px}.burger i:nth-child(3){top:10px}
+.burger.x i:nth-child(1){transform:translateY(5px) rotate(45deg)}.burger.x i:nth-child(2){opacity:0}.burger.x i:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+.wob{animation:wob 5s steps(1) infinite;transform-origin:50% 50%}@keyframes wob{0%,86%,100%{transform:none}88%{transform:rotate(-15deg)}90%{transform:rotate(12deg)}92%{transform:rotate(-8deg)}94%{transform:rotate(4deg)}}
+@media (prefers-reduced-motion:reduce){.wob{animation:none}.burger i{transition:none}}
+body{margin:0;background:#F4F4F2}a{color:#111}a:hover{color:#E8371B}button{font:inherit;cursor:pointer}
+.wrap{max-width:1320px;margin:0 auto;padding-inline:20px}.sec{padding-block:96px}
+.g{display:grid;gap:20px;grid-template-columns:minmax(0,1fr)}.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:84%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.rail>*{scroll-snap-align:start}
+.d{display:none}.m{display:block}.sticky{position:sticky;bottom:0;z-index:5}
+.tick{display:flex;width:max-content;white-space:nowrap;animation:run 16s linear infinite}.tick span{padding-right:56px}@keyframes run{to{transform:translateX(-50%)}}
+.knob{transition:transform .45s cubic-bezier(.34,1.8,.5,1)}.meter{transition:width .7s cubic-bezier(.34,1.56,.64,1),background-color .4s}.dev{transition:transform .6s cubic-bezier(.34,1.56,.64,1),background-color .35s}
+input[type=range]{width:100%;accent-color:#E8371B;height:52px;margin:0}
+@media (min-width:900px){.wrap{padding-inline:24px}.sec{padding-block:160px}.g{grid-template-columns:repeat(12,minmax(0,1fr));gap:24px}.s3{grid-column:span 3}.s4{grid-column:span 4}.s5{grid-column:span 5}.s6{grid-column:span 6}.s7{grid-column:span 7}.s8{grid-column:span 8}.s9{grid-column:span 9}.g2.d4{grid-template-columns:repeat(4,minmax(0,1fr))}.g2.d5{grid-template-columns:repeat(5,minmax(0,1fr))}.rail{grid-auto-flow:row;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;gap:1px}.d{display:block}.m{display:none}.sticky{display:none}}
+@media (prefers-reduced-motion:reduce){.tick{animation:none}.knob,.meter,.dev{transition:none}.ch *,.ch>*{animation:none!important}.ovl{animation:none}}
+.shA{animation:shakeA .5s}.shB{animation:shakeB .5s}@keyframes shakeA{20%{transform:translate(-6px,2px) rotate(-2deg)}40%{transform:translate(6px,-2px) rotate(2deg)}60%{transform:translate(-4px,1px) rotate(-1deg)}80%{transform:translate(3px,0) rotate(1deg)}}@keyframes shakeB{20%{transform:translate(-6px,2px) rotate(-2deg)}40%{transform:translate(6px,-2px) rotate(2deg)}60%{transform:translate(-4px,1px) rotate(-1deg)}80%{transform:translate(3px,0) rotate(1deg)}}
+.ch :is(h1,h2,h3,p,a,button,li,input,label,svg,dt,dd,summary,span.big,.cell,.dev):not(.ovl *){animation:brk 1.5s cubic-bezier(.55,0,1,.45) forwards}.ch :is(h1,h2,h3,p,a,button,li,input,svg,.cell,.dev):nth-child(2n):not(.ovl *){--r:-34deg;animation-delay:.12s}.ch :is(h1,h2,h3,p,a,button,li,input,svg,.cell,.dev):nth-child(3n):not(.ovl *){--r:70deg;animation-delay:.28s}
+.ch>:is(header,section,div):not(.ovl){animation:brk 1.7s .7s cubic-bezier(.55,0,1,.45) forwards}@keyframes brk{0%{transform:none}10%{transform:translate(4px,-3px) rotate(3deg)}20%{transform:translate(-4px,2px) rotate(-5deg) skewX(-6deg)}100%{transform:translateY(140vh) rotate(var(--r,24deg))}}
+.ovl{animation:ovl .4s 1.9s both}@keyframes ovl{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
+.plaque{background:#3A2F55;box-shadow:0 0 0 4px #120E1C,6px 6px 0 4px #000;padding:10px 12px;display:flex;align-items:center;justify-content:center;gap:12px;grid-column:1/-1;margin-bottom:12px}.flame{animation:flk .5s steps(2) infinite;transform-origin:50% 100%}@keyframes flk{50%{transform:scaleY(.8)}}.bob{animation:bob 1.2s steps(2) infinite}@keyframes bob{50%{transform:translateY(-6px)}}.blink{animation:blk 1s steps(1) infinite}@keyframes blk{50%{opacity:0}}
+.q{font-family:'Pixelify Sans',system-ui,sans-serif;color:#e9d8a6;background-color:#141210;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='24' shape-rendering='crispEdges'%3E%3Crect width='48' height='24' fill='%23110f0d'/%3E%3Crect x='0' y='0' width='45' height='9' fill='%23292420'/%3E%3Crect x='0' y='0' width='45' height='3' fill='%23332d28'/%3E%3Crect x='-24' y='12' width='45' height='9' fill='%23262220'/%3E%3Crect x='24' y='12' width='45' height='9' fill='%232b2622'/%3E%3Crect x='24' y='12' width='45' height='3' fill='%2335302a'/%3E%3Crect x='-24' y='12' width='45' height='3' fill='%23302b26'/%3E%3Crect x='12' y='6' width='3' height='3' fill='%231c1916'/%3E%3Crect x='33' y='18' width='3' height='3' fill='%231c1916'/%3E%3C/svg%3E");background-size:48px 24px;font-size:17px;line-height:1.45;min-height:100vh;overflow-x:clip}
+.vt{font-family:'VT323',monospace}
+.qwrap{max-width:720px;margin:0 auto;padding:0 12px 150px}
+.frame{background:#6e6660;padding:6px;border:3px solid #0a0908;box-shadow:inset 3px 3px 0 #a39a92,inset -3px -3px 0 #3a3430}
+.parch{background:#e9d8a6;color:#2b1d0e;padding:16px;border:3px solid #0a0908;box-shadow:inset 0 0 0 3px #d6bf84}
+.slate{background:#0d0c0b;color:#e9d8a6;padding:16px;border:3px solid #0a0908}
+.cap{margin:0 0 2px;font-size:13px;font-weight:600;letter-spacing:.12em;color:#a39a92;text-transform:uppercase}
+.h2{margin:0;font-size:30px;line-height:1.05;font-weight:700;color:#e8b84a;text-shadow:3px 3px 0 #0a0908}
+.lede{margin:6px 0 14px;font-size:17px;color:#e9d8a6}
+.qch{padding:40px 0 8px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;box-sizing:border-box;min-height:52px;padding:10px 16px;font:700 18px 'Pixelify Sans',system-ui,sans-serif;color:#2b1d0e;background:#e8b84a;border:3px solid #0a0908;box-shadow:inset 3px 3px 0 #fbe39a,inset -3px -3px 0 #a5741c;text-decoration:none;cursor:pointer;text-align:center}
+.btn:active{box-shadow:inset -3px -3px 0 #fbe39a,inset 3px 3px 0 #a5741c;transform:translateY(2px)}
+.btn.red{background:#a81c1c;color:#fff4dc;box-shadow:inset 3px 3px 0 #dc5a4c,inset -3px -3px 0 #5c0c0c}
+.btn.red:active{box-shadow:inset -3px -3px 0 #dc5a4c,inset 3px 3px 0 #5c0c0c}
+.btn.stone{background:#4a4440;color:#e9d8a6;box-shadow:inset 3px 3px 0 #7a726a,inset -3px -3px 0 #24201c}
+.btn.stone:active{box-shadow:inset -3px -3px 0 #7a726a,inset 3px 3px 0 #24201c}
+.btn.sm{min-height:44px;font-size:15px;padding:8px 10px}
+.btn.on{background:#2b1d0e;color:#e8b84a;box-shadow:inset 3px 3px 0 #000,inset -3px -3px 0 #4a3a22}
+.btn:focus-visible{outline:3px solid #6cb4f0;outline-offset:2px}
+.tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:#2b1d0e;color:#e8b84a;padding:2px 8px}
+.notice{background:#e9d8a6;color:#2b1d0e;padding:18px 16px 16px;border:3px solid #0a0908;box-shadow:inset 0 0 0 3px #d6bf84,4px 4px 0 #0a0908;position:relative;transform:rotate(-.6deg)}
+.notice::before,.notice::after{content:'';position:absolute;top:6px;width:9px;height:9px;background:#6e6660;border:3px solid #0a0908}.notice::before{left:8px}.notice::after{right:8px}
+.board{background:#5a3a1c;padding:16px 12px;border:3px solid #0a0908;box-shadow:inset 3px 3px 0 #8a5a2c,inset -3px -3px 0 #3a2410;background-image:repeating-linear-gradient(#5a3a1c 0 21px,#3a2410 21px 24px)}
+.seg{display:flex;gap:3px}.seg span{flex:1;height:15px;border:2px solid #0a0908}
+.fa{animation:fa .5s steps(1) infinite}.fb{animation:fb .5s steps(1) infinite}@keyframes fa{50%{opacity:0}}@keyframes fb{0%{opacity:0}50%{opacity:1}}
+.fly{animation:fly 7s steps(28) infinite alternate}@keyframes fly{from{transform:translateX(0)}to{transform:translateX(min(190px,45vw))}}
+.tw{animation:tw 2.4s steps(2) infinite}@keyframes tw{50%{opacity:.3}}
+.shk{animation:shk .4s steps(4)}.shk2{animation:shk2 .4s steps(4)}@keyframes shk{25%{transform:translate(-5px,0) rotate(-1.5deg)}50%{transform:translate(5px,2px) rotate(1deg)}75%{transform:translate(-3px,-2px)}}@keyframes shk2{25%{transform:translate(-5px,0) rotate(-1.5deg)}50%{transform:translate(5px,2px) rotate(1deg)}75%{transform:translate(-3px,-2px)}}
+.roll{animation:roll .6s steps(6)}.roll2{animation:roll2 .6s steps(6)}@keyframes roll{50%{transform:rotate(180deg) scale(.8)}100%{transform:rotate(360deg)}}@keyframes roll2{50%{transform:rotate(180deg) scale(.8)}100%{transform:rotate(360deg)}}
+.q .flogo,.q.dk .flogo{font-family:'Doto',monospace!important;font-weight:900!important;letter-spacing:1px;text-transform:none!important;color:#F4F4F2!important;text-shadow:none!important;animation:none!important}
+.q,.q *{font-variant-ligatures:none;font-feature-settings:"liga" 0,"clig" 0}
+.q details summary{list-style:none;cursor:pointer;min-height:44px;display:flex;align-items:center;gap:10px;font-weight:600}.q details summary::-webkit-details-marker{display:none}.q details summary::before{content:'+';display:inline-grid;place-items:center;flex:none;width:24px;height:24px;background:#2b1d0e;color:#e8b84a;font-weight:700}.q details[open] summary::before{content:'–'}
+#faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:16px}#faq summary::-webkit-details-marker{display:none}#faq summary::before{content:'+';flex:none;display:grid;place-items:center;width:32px;height:32px;border-radius:8px;background:#111;color:#F4F4F2;font-family:'JetBrains Mono',monospace;font-size:19px;line-height:1}#faq details[open] summary::before{content:'–'}
+.dead :is(h1,h2,p,li,a,button,.frame,.notice,.board,svg,.btn):not(.qovl *){animation:dn 1.4s cubic-bezier(.55,0,1,.45) forwards}.dead :is(p,li,a,.btn,.frame):nth-child(2n):not(.qovl *){--r:-40deg;animation-delay:.12s}@keyframes dn{0%{transform:none}15%{transform:translate(3px,-3px) rotate(4deg)}100%{transform:translateY(130vh) rotate(var(--r,30deg))}}.qovl{animation:ov .3s 1.5s both}@keyframes ov{from{opacity:0}}
+@media (prefers-reduced-motion:reduce){.fa,.fb,.fly,.tw,.shk,.shk2,.roll,.roll2{animation:none}.fb{opacity:0}.dead *{animation:none!important}.qovl{animation:none}}
+@media (min-width:900px){.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+
+
+/* ---------- 3D d12 ---------- */
+.d12-stage{position:relative;width:150px;height:170px;margin:0 auto 4px;perspective:600px}
+.d12-shadow{position:absolute;left:50%;bottom:6px;width:84px;height:14px;margin-left:-42px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.65),transparent)}
+.d12-toss{position:absolute;left:50%;top:92px;width:0;height:0;transform-style:preserve-3d}
+.d12-idle{position:absolute;left:0;top:0;width:0;height:0;transform-style:preserve-3d;animation:d12idle 6s ease-in-out infinite}
+.d12{position:absolute;left:0;top:0;width:0;height:0;transform-style:preserve-3d;transition:transform 1.9s cubic-bezier(.2,.55,.3,1)}
+.d12 .dface{position:absolute;left:0;top:0;transform-origin:0 0;backface-visibility:hidden}
+.d12 .dface svg{display:block;overflow:visible}
+.d12 .dnum{position:absolute;transform:translate(-50%,-50%);font-family:'Pixelify Sans',sans-serif;font-weight:700;line-height:1;pointer-events:none}
+@keyframes d12idle{0%,100%{transform:rotateX(-14deg) rotateY(-16deg)}50%{transform:rotateX(-6deg) rotateY(16deg)}}
+.d12-toss.t1{animation:toss1 1.9s cubic-bezier(.3,0,.4,1)}.d12-toss.t2{animation:toss2 1.9s cubic-bezier(.3,0,.4,1)}
+@keyframes toss1{0%{transform:translateY(0) scale(1)}8%{transform:translateY(6px) scale(1.08,.9)}35%{transform:translateY(-70px) scale(.92)}62%{transform:translateY(0) scale(1.06,.92)}74%{transform:translateY(-16px)}86%{transform:translateY(0) scale(1.03,.97)}93%{transform:translateY(-4px)}100%{transform:translateY(0) scale(1)}}
+@keyframes toss2{0%{transform:translateY(0) scale(1)}8%{transform:translateY(6px) scale(1.08,.9)}35%{transform:translateY(-70px) scale(.92)}62%{transform:translateY(0) scale(1.06,.92)}74%{transform:translateY(-16px)}86%{transform:translateY(0) scale(1.03,.97)}93%{transform:translateY(-4px)}100%{transform:translateY(0) scale(1)}}
+.d12-shadow.t1{animation:shad1 1.9s cubic-bezier(.3,0,.4,1)}.d12-shadow.t2{animation:shad2 1.9s cubic-bezier(.3,0,.4,1)}
+@keyframes shad1{35%{transform:scale(.45);opacity:.35}62%{transform:scale(1.1);opacity:1}74%{transform:scale(.8)}}
+@keyframes shad2{35%{transform:scale(.45);opacity:.35}62%{transform:scale(1.1);opacity:1}74%{transform:scale(.8)}}
+.d12-num.t1{animation:num1 2.3s steps(1)}.d12-num.t2{animation:num2 2.3s steps(1)}
+@keyframes num1{0%,82%{opacity:0}83%{opacity:1;transform:scale(1.6)}90%{transform:scale(1)}}
+@keyframes num2{0%,82%{opacity:0}83%{opacity:1;transform:scale(1.6)}90%{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.d12,.d12-idle,.d12-toss,.d12-shadow,.d12-num{animation:none!important;transition:none!important}}
+/* ---------- dark scene motion ---------- */
+.q .qmap{display:grid;justify-items:center;gap:4px;margin:6px 0 14px;text-align:center}
+.q .qnode{display:inline-block;padding:4px 14px;border:2px solid currentColor;font-weight:700;text-transform:lowercase}
+.q .qnode.ember{background:#b23a10;border-color:#f07a2a;color:#050b0a!important}
+.q .qarrow{font-size:12px;opacity:.7}
+.q .qlanes{display:flex;flex-wrap:wrap;justify-content:center;gap:4px}.q .qlanes span{padding:3px 8px;border:1px dashed currentColor;font-size:13px;text-transform:lowercase}
+.q.dk .famlogo.fk{display:none!important}.q.dk .famlogo.fw{display:block!important}
+.q.dk .lid{position:absolute;left:50%;top:38%;width:12%;height:8.5%;transform:translate(-50%,-50%) scaleY(0);background:#020504;border-radius:50%;animation:blink 6s steps(1) infinite}
+@keyframes blink{0%,91%,100%{transform:translate(-50%,-50%) scaleY(0)}92%{transform:translate(-50%,-50%) scaleY(.5)}93%,94%{transform:translate(-50%,-50%) scaleY(1)}95%{transform:translate(-50%,-50%) scaleY(.5)}}
+.q.dk .walker{position:absolute;left:50%;top:50%;width:54px;height:90px;margin:-45px 0 0 -27px;opacity:0;transform-origin:50% 100%;animation:walk 12s linear infinite 1.5s}
+.q.dk .walker img{position:absolute;inset:0;image-rendering:pixelated}
+.q.dk .walker .fa{animation:fa .6s steps(1) infinite}.q.dk .walker .fb{animation:fb .6s steps(1) infinite}
+@keyframes walk{0%{opacity:0;transform:translate(0,-6px) scale(.22)}8%{opacity:1}55%{opacity:1;transform:translate(6px,40px) scale(.95)}62%{opacity:1;transform:translate(6px,42px) scale(1)}72%{opacity:0;transform:translate(6px,42px) scale(1)}100%{opacity:0;transform:translate(0,-6px) scale(.22)}}
+.q.dk .peek{position:absolute;left:0;top:44%;width:57px;height:42px;transform:translateX(-100%);animation:peek 9s steps(12) infinite 4s}
+.q.dk .peek img,.q.dk .peekhand img{display:block;image-rendering:pixelated}
+.q.dk .peekhand{position:absolute;left:0;top:57%;transform:translateX(-100%);animation:peek 9s steps(12) infinite 4s}
+@keyframes peek{0%,10%{transform:translateX(-100%)}18%,55%{transform:translateX(-35%)}60%{transform:translateX(-30%)}68%,100%{transform:translateX(-100%)}}
+.q.dk .bat,.q.dk .floater,.q.dk .ghost{position:absolute;pointer-events:none}
+.q.dk .bat img,.q.dk .floater img,.q.dk .ghost img{position:absolute;left:0;top:0;image-rendering:pixelated}
+.q.dk .bat{left:0;top:0;width:54px;height:24px;opacity:0;animation:bat 7s linear infinite 3s}
+.q.dk .bat .fa{animation:fa .16s steps(1) infinite}.q.dk .bat .fb{animation:fb .16s steps(1) infinite}
+@keyframes bat{0%{opacity:0;transform:translate(-60px,40px) scale(.7)}5%{opacity:1}20%{transform:translate(70px,8px) scale(.9)}35%{transform:translate(150px,46px) scale(1)}50%{transform:translate(230px,14px) scale(1.15)}62%{opacity:1;transform:translate(340px,30px) scale(1.3)}66%,100%{opacity:0;transform:translate(400px,20px) scale(1.3)}}
+.q.dk .floater{right:12%;top:60%;width:48px;height:48px;opacity:0;animation:floater 13s ease-in-out infinite 6s}
+.q.dk .floater .fa{animation:fa .7s steps(1) infinite}.q.dk .floater .fb{animation:fb .7s steps(1) infinite}
+@keyframes floater{0%{opacity:0;transform:translateY(40px)}12%{opacity:1;transform:translateY(0)}24%{transform:translateY(-10px)}36%{transform:translateY(2px)}48%{transform:translateY(-8px)}58%{opacity:1;transform:translateY(0)}68%,100%{opacity:0;transform:translateY(40px)}}
+.q.dk .ghost{left:14%;top:30%;width:48px;height:48px;opacity:0;mix-blend-mode:screen;animation:ghost 17s ease-in-out infinite 9s}
+@keyframes ghost{0%{opacity:0;transform:translate(0,10px)}10%{opacity:.75}30%{opacity:.5;transform:translate(26px,-8px)}45%{opacity:.8;transform:translate(52px,4px)}55%{opacity:0;transform:translate(70px,-6px)}100%{opacity:0;transform:translate(70px,-6px)}}
+.q.dk .swoop{position:absolute;left:50%;top:38%;width:144px;height:92px;margin:-46px 0 0 -72px;opacity:0;animation:swoop 11s cubic-bezier(.55,0,.9,.5) infinite 2s}
+.q.dk .swoop img{position:absolute;inset:0;image-rendering:pixelated}
+@keyframes swoop{0%{transform:translate(0,0) scale(.06);opacity:0}6%{opacity:1}30%{transform:translate(-40px,-30px) scale(.9);opacity:1}38%{transform:translate(-160px,-120px) scale(2.6);opacity:0}100%{opacity:0;transform:translate(-160px,-120px) scale(2.6)}}
+.q.dk .mote{position:absolute;width:2px;height:2px;background:#a8f0d0;opacity:0;animation:mote 9s linear infinite}
+@keyframes mote{0%{opacity:0;transform:translate(0,0)}20%{opacity:.7}80%{opacity:.5}100%{opacity:0;transform:translate(14px,-46px)}}
+.q.dk .mist{position:absolute;left:-30%;right:-30%;bottom:-6%;height:30%;pointer-events:none;background:radial-gradient(ellipse 30% 60% at 30% 70%,rgba(168,240,208,.13),transparent 70%),radial-gradient(ellipse 25% 50% at 70% 80%,rgba(168,240,208,.1),transparent 70%);animation:mist 14s ease-in-out infinite alternate}
+.q.dk .mist.m2{animation-duration:19s;animation-direction:alternate-reverse;opacity:.7}
+@keyframes mist{from{transform:translateX(-8%)}to{transform:translateX(8%)}}
+.q.dk .idle{animation:idle 1.8s steps(1) infinite}@keyframes idle{50%{transform:translateY(-2px)}}
+.q.dk .twitch{animation:twitch 7s steps(1) infinite;transform-origin:50% 100%}
+@keyframes twitch{0%,88%,100%{transform:none}89%{transform:translate(-2px,0) rotate(-3deg)}90%{transform:translate(2px,-2px) rotate(2deg)}91%{transform:translate(-1px,0)}92%{transform:none}93%{transform:translateY(-3px) scaleY(1.04)}94%{transform:none}}
+.q.dk .notice{animation:sway 5s ease-in-out infinite;transform-origin:50% 0}@keyframes sway{0%,100%{transform:rotate(-.5deg)}50%{transform:rotate(.5deg)}}
+.q.dk .h2{animation:candle 3.2s steps(4) infinite}@keyframes candle{0%,100%{text-shadow:0 0 10px rgba(79,174,140,.35)}50%{text-shadow:0 0 14px rgba(79,174,140,.55)}75%{text-shadow:0 0 6px rgba(79,174,140,.25)}}
+@media (prefers-reduced-motion:reduce){.die3d-tilt,.die3d-tilt.roll,.die3d-tilt.roll2,.q.dk .lid,.q.dk .swoop,.q.dk .mote,.q.dk .mist,.q.dk .idle,.q.dk .twitch,.q.dk .notice,.q.dk .h2{animation:none!important}.q.dk .swoop,.q.dk .mote,.q.dk .walker,.q.dk .peek,.q.dk .peekhand,.q.dk .bat,.q.dk .floater,.q.dk .ghost{display:none}.die3d-tilt{transform:rotateX(-16deg) rotateY(-20deg)}}
+/* ---------- D&D mode: dark art direction ---------- */
+.q.dk{background-color:#050b0a;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAIAAAAzn+mLAAAAhElEQVR42u2VsQqAMAxE20AR2snB//9AB2c3h0KHrHmSE8wQbjwel1xtoxelsSI23tB27Lnaplr7Pq9cXUUz5Dglbk9o0kvUf4Y+n6F8QjpstDOkZYiijXSirR8Q38g/q210yhN2ZaAb5sreIBTqMrkMsb2NfepgV/MZYtkAGYpzQjL0AOdayrG/aShxAAAAAElFTkSuQmCC");background-size:48px 24px;color:#c9d1c3}
+.q.dk::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:9;background:radial-gradient(ellipse at 50% 42%,transparent 40%,rgba(0,0,0,.8) 100%)}
+.q.dk .frame{background:#050b0a;box-shadow:none;border:16px solid transparent;border-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAB30lEQVR42u1ZsY3DMAyUjN/ny69+DgOZIUD6DJA+QGYwoDlcufRE+ooBn6BMinIUOZCqIAnto3SkSJ5zzLpcz3FZ57isc3RvXhKOAYO+XM/ROefut4d3jS3AlnQAQFOPqWHqQaVAuN8xjtM4umWdY9KeGmJH8INSx6l1TGMPnykOzn7AHqbWz/evSClsbzkl+n4KNOX4YN3JHDAWe27TABvG6Jd1jlMI4kunEHYBJ70j9/m+hVS5W4rCQZsKYomT2sDV2qfuAfhuwCkUeIf5BxQrpYZlU03sgAttM+dWuA+4E+BSrfkKr11KpAB77BGXATR3wKsd4CgpljuHK+asR/iqrFi8gR9zAq2vz3KgpU6sOBZ7DLwrBsw1SIWTyErlnUI9je7kQO0yYrdY7DFQaX1J/UBLabT3A70f6EHc+4GD9AOHlJjwtKs1iWlrNPnPgfvt4bU1SI3RIvwHy0ucRpA1k7RMp7X29H9bvH9Op7FX3MOXdY6ncSza8ZwSBTMAxprYnjp+eIGjuXsAAjZbU8CqDCdvStzXSLGSvaQUbcqsUwhPzmHvLRSzKjqQBcFeM9of6C5QpVCrD2DQlnsE7FO2UlZU98K1pCUOB5cxvZarqi5ox36Apt5spegotdAfBDm4qg8yoyMAAAAASUVORK5CYII=") 16 round;padding:0}
+.q.dk .parch,.q.dk .slate{background:#08120f;color:#c9d1c3;border:1px dashed #2a6b58;box-shadow:none}
+.q.dk .parch *,.q.dk .slate *{color:#c9d1c3!important}
+.q.dk .parch [style*="#8a1414"],.q.dk .slate [style*="#a81c1c"],.q.dk .parch [style*="#a81c1c"]{color:#f07a2a!important}
+.q.dk .parch [style*="#6a4a22"],.q.dk .slate [style*="#a39a92"],.q.dk [style*="color:#2d6a1e"]{color:#7fa898!important}
+.q.dk .slate [style*="#e8b84a"]{color:#f07a2a!important;text-shadow:0 0 10px rgba(240,122,42,.45)!important}
+.q.dk .h2,.q.dk h1{color:#c9d1c3!important;text-transform:lowercase;letter-spacing:.01em;text-shadow:0 0 10px rgba(79,174,140,.35)!important}
+.q.dk h1{text-shadow:0 0 14px rgba(240,122,42,.4)!important}
+.q.dk .cap{color:#f07a2a;text-transform:lowercase;letter-spacing:.06em}
+.q.dk .lede{color:#8fb3a3}
+.q.dk .narr{margin:6px auto 14px;max-width:320px;font-size:17px;line-height:1.4;color:#a8f0d0!important;text-transform:lowercase}
+.q.dk .tag{background:#163d33;color:#a8f0d0!important}
+.q.dk .btn{background:#08120f;color:#c9d1c3;border:2px solid #c9d1c3;box-shadow:none;text-transform:lowercase}
+.q.dk .btn:hover{color:#c9d1c3}
+.q.dk .btn.red{background:#b23a10;color:#050b0a;border-color:#f07a2a}.q.dk .btn.red:hover{color:#050b0a}
+.q.dk .btn.stone{background:transparent;color:#8fb3a3;border-color:#2a6b58}.q.dk .btn.stone:hover{color:#8fb3a3}
+.q.dk .btn.on{background:#c9d1c3;color:#050b0a;border-color:#c9d1c3}.q.dk .btn.on:hover{color:#050b0a}
+.q.dk .board{background:transparent;background-image:none;box-shadow:none;border:0;padding:0}
+.q.dk .notice{background:#08120f;color:#c9d1c3;transform:none;border:1px dashed #f07a2a;box-shadow:none}
+.q.dk .notice::before,.q.dk .notice::after{display:none}
+.q.dk .notice [style*="color"]{color:#7fa898!important}
+.q.dk header{background:#050b0a!important;border-bottom:1px dashed #2a6b58!important}
+.q.dk header a{color:#c9d1c3!important;text-shadow:none!important;text-transform:lowercase}
+.q.dk > div[style*="bottom:0"]{background:#050b0a!important;border-top:1px dashed #2a6b58!important}
+.q.dk details summary::before{background:#163d33;color:#a8f0d0}
+.q.dk input[type=email]{background:#050b0a!important;color:#c9d1c3!important;border:1px solid #2a6b58!important}
+.q.dk .seg span{border-color:#050b0a}
+.q.dk .tflick{position:absolute;inset:0;pointer-events:none;mix-blend-mode:screen;background:radial-gradient(circle at 34% 37%,rgba(240,122,42,.28),transparent 16%),radial-gradient(circle at 66% 37%,rgba(240,122,42,.28),transparent 16%);animation:tfl 1.3s steps(3) infinite}
+.q.dk .eyeglow{position:absolute;inset:0;pointer-events:none;mix-blend-mode:screen;background:radial-gradient(ellipse 14% 9% at 50% 38%,rgba(255,120,40,.5),transparent 70%);animation:eyep 4s ease-in-out infinite}
+@keyframes tfl{0%{opacity:.55}33%{opacity:1}66%{opacity:.75}}@keyframes eyep{0%,100%{opacity:.35}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.q.dk .tflick,.q.dk .eyeglow{animation:none}}
+.q .btn:hover{color:#2b1d0e}.q .btn.red:hover{color:#fff4dc}.q .btn.stone:hover,.q .btn.on:hover{color:#e9d8a6}
+</style>
+
+</head>
+<body>
+<div id="app"></div>
+<script type="text/x-template" id="tpl">
+
+<div class="{{chaosClass}}" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-weight:300;font-size:16px;line-height:1.6;color:#111;background:#F4F4F2;overflow-x:clip">
+<sc-if value="{{notDungeon}}" hint-placeholder-val="{{true}}">
+
+
+
+<header class="wrap" style="display:flex;gap:10px;align-items:center;justify-content:space-between;padding-block:14px;border-bottom:1px solid #CBCBC6">
+<a href="#top" aria-label="Folklore, home" style="display:block;line-height:0"><img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%22-1.772 -0.800 40.779 7.600%22%3E%3Ccircle cx=%220.007%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%221.007%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%222.008%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%223.008%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%223.972%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2210.235%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2211.238%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2214.247%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%220.006%22 cy=%221.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2211.238%22 cy=%221.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2214.246%22 cy=%221.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%220.006%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2211.239%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2214.246%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2217.780%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%221.028%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%222.027%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%222.997%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2211.236%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2214.246%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2216.602%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%220.006%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2211.239%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2214.246%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2215.424%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%220.006%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2211.238%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2214.246%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2216.601%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%220.007%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2210.235%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2211.238%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2212.234%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2214.247%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2217.780%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%228.805%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%228.537%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%227.805%22 cy=%225.732%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%226.805%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%225.805%22 cy=%225.732%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%225.073%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%224.805%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%225.073%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%225.805%22 cy=%222.268%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%226.805%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%227.805%22 cy=%222.268%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%228.537%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2219.355%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2220.355%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2220.355%22 cy=%221.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2220.355%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2220.355%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2220.355%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2220.355%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2220.355%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2219.355%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2221.355%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2228.592%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2230.591%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2231.589%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2228.591%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2229.592%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2232.589%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2228.592%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2228.591%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2228.576%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2226.817%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2226.549%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2225.817%22 cy=%225.732%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2224.817%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2223.817%22 cy=%225.732%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2223.085%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2222.817%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2223.085%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2223.817%22 cy=%222.268%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2224.817%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2225.817%22 cy=%222.268%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2226.549%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2238.207%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2237.207%22 cy=%225.732%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2236.207%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2235.207%22 cy=%225.732%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2234.475%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2234.207%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2234.475%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2235.207%22 cy=%222.268%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2236.207%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2237.207%22 cy=%222.268%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2237.939%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2235.207%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2236.207%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2237.207%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%22-0.972%22 cy=%223.000%22 r=%220.42%22 fill=%22%23E8371B%22/%3E%3C/svg%3E" alt="Folklore" width="140" height="26" style="display:block;width:clamp(120px,32vw,160px);height:auto"></a>
+<nav class="d"><a href="#services" style="text-decoration:none;margin-right:28px">services</a><a href="#production-detail" style="text-decoration:none;margin-right:28px">production</a><a href="#offers" style="text-decoration:none;margin-right:28px">pricing</a><a href="#faq" style="text-decoration:none">faq</a></nav>
+<span style="display:flex;gap:8px">
+<button type="button" onClick="{{toggleDungeon}}" aria-label="Secret door: play this site as a game" style="display:inline-flex;align-items:center;gap:8px;white-space:nowrap;min-height:44px;padding:0 14px;border-radius:22px;border:1px dashed #111;background:transparent;font-size:13px"><sc-if value="{{doorShut}}" hint-placeholder-val="{{true}}"><svg class="wob" viewBox="0 0 9 11" width="16" height="20" shape-rendering="crispEdges" aria-hidden="true"><path d="M0 0h9v11h-9z" fill="#111"/><path d="M1 1h7v10h-7z" fill="#E8371B"/><path d="M2 2h2v4h-2zM5 2h2v4h-2z" fill="#B82A12"/><path d="M6 7h1v1h-1z" fill="#F4F4F2"/></svg></sc-if><sc-if value="{{doorOpen}}" hint-placeholder-val="{{false}}"><svg viewBox="0 0 9 11" width="16" height="20" shape-rendering="crispEdges" aria-hidden="true"><path d="M0 0h9v11h-9z" fill="#111"/><path d="M1 1h7v10h-7z" fill="#FFD23F"/><path d="M3 4h3v7h-3z" fill="#FFF3B0"/><path d="M1 1h2v10h-2z" fill="#E8371B"/></svg></sc-if>{{dungeonLabel}}</button>
+<button type="button" class="m" onClick="{{toggleMenu}}" aria-expanded="{{menuOpen}}" aria-label="{{menuLabel}}" style="width:44px;height:44px;border-radius:22px;border:1px solid #111;background:transparent;display:grid;place-items:center;padding:0"><span class="burger {{burgerClass}}" aria-hidden="true"><i></i><i></i><i></i></span></button>
+<a href="#book" class="d" style="min-height:44px;line-height:44px;padding:0 18px;border-radius:22px;background:#111;color:#F4F4F2;text-decoration:none">book a call</a>
+</span>
+</header>
+<sc-if value="{{menuIsOpen}}" hint-placeholder-val="{{false}}">
+<nav class="wrap" style="display:grid;padding-block:8px 24px;border-bottom:1px solid #CBCBC6;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(56px,16vw,96px);letter-spacing:-.03em;line-height:1.3">
+<a href="#services" style="text-decoration:none">services</a><a href="#production-detail" style="text-decoration:none">production</a><a href="#offers" style="text-decoration:none">pricing</a><a href="#faq" style="text-decoration:none">faq</a><button type="button" onClick="{{toggleDungeon}}" style="text-align:left;border:0;background:none;padding:0;color:#E8371B;font:inherit">secret door</button>
+</nav>
+</sc-if>
+
+<section id="top">
+<div class="wrap" style="padding-top:28px">
+
+<h1 style="font-family:'Inter Tight',system-ui,sans-serif;font-weight:300;font-size:clamp(56px,15vw,180px);line-height:.88;letter-spacing:-.055em;margin:20px 0 28px">{{headline}}</h1>
+
+</div>
+<div class="wrap g" style="padding-bottom:28px">
+<div class="s6 dev panel {{shake}}" style="background:{{deviceBg}};border:1px solid #CBCBC6;border-radius:20px;padding:12px;">
+<div class="panel" style="background:#111;color:#F4F4F2;border-radius:12px;padding:16px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;gap:14px">
+<div style="display:flex;justify-content:space-between;gap:12px;font-size:13px;color:#A3A39D"><span>random thought #{{ideaNo}}</span><span>for {{ideaFor}}</span></div>
+<p style="margin:0;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,6vw,32px);line-height:1.12;letter-spacing:-.015em;color:#F4F4F2">{{idea}}</p>
+<p style="margin:0;font-size:11px;line-height:1.5;color:#A3A39D">{{ideaFooter}}</p>
+
+</div>
+<div style="display:flex;align-items:center;justify-content:flex-end;gap:12px;padding:12px 4px 2px">
+<span style="display:flex;align-items:center;gap:12px"><span style="font-size:13px;color:#111;white-space:nowrap">another one</span>
+<button type="button" onClick="{{nextIdea}}" aria-label="Next idea" style="width:60px;height:60px;border-radius:50%;border:0;background:#E8371B;box-shadow:0 5px 0 #9E2410,inset 0 2px 0 #ff8a70;color:#111;font-size:19px">→</button></span>
+</div>
+</div>
+<div class="s6" style="display:flex;flex-direction:column;justify-content:flex-end;gap:16px">
+<p style="margin:0;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,6vw,32px);line-height:1.2">Folklore builds brands worth retelling. Identity, visuals, production and events, from the first idea to opening night.</p>
+<a href="#book" class="d" style="min-height:52px;line-height:52px;text-align:center;border-radius:26px;background:#111;color:#F4F4F2;text-decoration:none">book a 20-minute call</a>
+<a href="#offers" style="display:flex;align-items:center;justify-content:center;min-height:52px;border-radius:26px;border:1px solid #111;text-decoration:none">see services and pricing</a>
+
+</div>
+</div>
+</section>
+
+<div class="panel" style="background:#111;color:#F4F4F2;overflow:hidden;padding:20px 0;margin-top:72px;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(26px,7vw,44px);letter-spacing:-.02em" aria-label="Four lines from Folklore">
+<div class="tick"><span>polite brands die quietly.</span><span>nobody retells a mission statement.</span><span>legends aren't approved by committee.</span><span>say it first.</span><span>polite brands die quietly.</span><span>nobody retells a mission statement.</span><span>legends aren't approved by committee.</span><span>say it first.</span><span aria-hidden="true">polite brands die quietly.</span><span aria-hidden="true">nobody retells a mission statement.</span><span aria-hidden="true">legends aren't approved by committee.</span><span aria-hidden="true">say it first.</span><span aria-hidden="true">polite brands die quietly.</span><span aria-hidden="true">nobody retells a mission statement.</span><span aria-hidden="true">legends aren't approved by committee.</span><span aria-hidden="true">say it first.</span></div>
+</div>
+
+<section id="services" class="wrap sec g">
+<p class="s3" style="margin:0;color:#6B6B66;font-size:13px">what we do</p>
+<div class="s9">
+<h2 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(36px,9vw,72px);line-height:.95;letter-spacing:-.04em;margin:0 0 32px">One idea in. A whole brand out.</h2>
+<div class="g2 d4" style="gap:32px 16px">
+<div id="identity"><div style="border-top:1px solid #111;padding-top:16px"><svg viewBox="0 0 56 56" width="56" height="56" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="28" cy="28" r="20"/><path d="M22 18v20M22 18h12M22 27h9"/><circle cx="41" cy="15" r="4" fill="#E8371B" stroke="none"/></svg><h3 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,5.6vw,28px);letter-spacing:-.02em;margin:14px 0 4px">Identity</h3><p style="margin:0;font-size:13px;color:#4A4A46">Name, mark and the rules.</p></div></div>
+<div id="visuals"><div style="border-top:1px solid #111;padding-top:16px"><svg viewBox="0 0 56 56" width="56" height="56" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="12" width="40" height="32" rx="2"/><path d="M8 38l12-12 10 10 6-6 12 12"/><circle cx="38" cy="22" r="4" fill="#E8371B" stroke="none"/></svg><h3 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,5.6vw,28px);letter-spacing:-.02em;margin:14px 0 4px">Visuals</h3><p style="margin:0;font-size:13px;color:#4A4A46">The look people remember.</p></div></div>
+<div id="production"><div style="border-top:1px solid #111;padding-top:16px"><svg viewBox="0 0 56 56" width="56" height="56" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="18" width="32" height="24" rx="2"/><path d="M38 26l12-7v22l-12-7"/><circle cx="14" cy="26" r="3" fill="#E8371B" stroke="none"/></svg><h3 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,5.6vw,28px);letter-spacing:-.02em;margin:14px 0 4px">Production</h3><p style="margin:0;font-size:13px;color:#4A4A46">Shoots, films and content.</p></div></div>
+<div id="events"><div style="border-top:1px solid #111;padding-top:16px"><svg viewBox="0 0 56 56" width="56" height="56" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 16h40v8a4 4 0 0 0 0 8v8H8v-8a4 4 0 0 0 0-8z"/><path d="M30 16v24" stroke-dasharray="2 4"/><path d="M17 25l2 4 4 .6-3 3 .7 4-3.7-2-3.7 2 .7-4-3-3 4-.6z" fill="#E8371B" stroke="none"/></svg><h3 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,5.6vw,28px);letter-spacing:-.02em;margin:14px 0 4px">Events</h3><p style="margin:0;font-size:13px;color:#4A4A46">Launches people show up for.</p></div></div>
+</div>
+<p style="margin:0;color:#6B6B66;font-size:13px;margin-top:64px">how a project runs</p>
+<ol class="flow" style="list-style:none;padding:0;margin:20px 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px"><li style="position:relative;text-align:center"><span style="position:relative;z-index:1;display:grid;place-items:center;width:48px;height:48px;margin:0 auto;border-radius:50%;background:#F4F4F2;border:1.5px solid #111;font-family:'Doto',monospace;font-weight:900;font-size:19px;color:#111">01</span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;margin-top:10px">Brief</span><span style="display:block;font-size:11px;color:#6B6B66">20-min call</span></li><li style="position:relative;text-align:center"><span style="position:relative;z-index:1;display:grid;place-items:center;width:48px;height:48px;margin:0 auto;border-radius:50%;background:#F4F4F2;border:1.5px solid #111;font-family:'Doto',monospace;font-weight:900;font-size:19px;color:#111">02</span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;margin-top:10px">Idea</span><span style="display:block;font-size:11px;color:#6B6B66">one thing to say</span></li><li style="position:relative;text-align:center"><span style="position:relative;z-index:1;display:grid;place-items:center;width:48px;height:48px;margin:0 auto;border-radius:50%;background:#F4F4F2;border:1.5px solid #111;font-family:'Doto',monospace;font-weight:900;font-size:19px;color:#111">03</span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;margin-top:10px">Make</span><span style="display:block;font-size:11px;color:#6B6B66">the right hands</span></li><li style="position:relative;text-align:center"><span style="position:relative;z-index:1;display:grid;place-items:center;width:48px;height:48px;margin:0 auto;border-radius:50%;background:#E8371B;border:1.5px solid #E8371B;font-family:'Doto',monospace;font-weight:900;font-size:19px;color:#111">04</span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;margin-top:10px">Release</span><span style="display:block;font-size:11px;color:#6B6B66">your keys</span></li></ol>
+</div>
+</section>
+
+<section id="production-detail" class="wrap g" style="padding-bottom:96px">
+<p class="s3" style="margin:0;color:#6B6B66;font-size:13px">production</p>
+<div class="s9">
+<h2 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(36px,9vw,72px);line-height:.95;letter-spacing:-.04em;margin:0 0 12px">First sketch to final cut.</h2>
+<p style="margin:0;max-width:520px">Five workstreams run at once, then meet in one proof before anything goes out. One crew, matched to the brief.</p>
+<svg viewBox="0 0 372 176" width="100%" role="img" aria-label="A brief runs through research, exploration, strategy, creative and production at once. They converge in a proof, then the work is released." style="display:block;max-width:560px;margin:8px 0 28px"><path d="M30 76 C 70 76, 70 20, 104 20" stroke="#111" stroke-width="1.2" fill="none"/><circle cx="110" cy="20" r="5" fill="#F4F4F2" stroke="#111" stroke-width="1.5"/><text x="122" y="24" font-family="JetBrains Mono,monospace" font-size="11" fill="#111">research</text><path d="M206 20 C 240 20, 240 76, 266 76" stroke="#E8371B" stroke-width="1.2" fill="none"/><path d="M30 76 C 70 76, 70 48, 104 48" stroke="#111" stroke-width="1.2" fill="none"/><circle cx="110" cy="48" r="5" fill="#F4F4F2" stroke="#111" stroke-width="1.5"/><text x="122" y="52" font-family="JetBrains Mono,monospace" font-size="11" fill="#111">exploration</text><path d="M206 48 C 240 48, 240 76, 266 76" stroke="#E8371B" stroke-width="1.2" fill="none"/><path d="M30 76 C 70 76, 70 76, 104 76" stroke="#111" stroke-width="1.2" fill="none"/><circle cx="110" cy="76" r="5" fill="#F4F4F2" stroke="#111" stroke-width="1.5"/><text x="122" y="80" font-family="JetBrains Mono,monospace" font-size="11" fill="#111">strategy</text><path d="M206 76 C 240 76, 240 76, 266 76" stroke="#E8371B" stroke-width="1.2" fill="none"/><path d="M30 76 C 70 76, 70 104, 104 104" stroke="#111" stroke-width="1.2" fill="none"/><circle cx="110" cy="104" r="5" fill="#F4F4F2" stroke="#111" stroke-width="1.5"/><text x="122" y="108" font-family="JetBrains Mono,monospace" font-size="11" fill="#111">creative</text><path d="M206 104 C 240 104, 240 76, 266 76" stroke="#E8371B" stroke-width="1.2" fill="none"/><path d="M30 76 C 70 76, 70 132, 104 132" stroke="#111" stroke-width="1.2" fill="none"/><circle cx="110" cy="132" r="5" fill="#F4F4F2" stroke="#111" stroke-width="1.5"/><text x="122" y="136" font-family="JetBrains Mono,monospace" font-size="11" fill="#111">production</text><path d="M206 132 C 240 132, 240 76, 266 76" stroke="#E8371B" stroke-width="1.2" fill="none"/><circle cx="22" cy="76" r="10" fill="#111"/><circle cx="276" cy="76" r="11" fill="#E8371B"/><path d="M292 76h22" stroke="#111" stroke-width="2"/><path d="M309 70l7 6-7 6" stroke="#111" stroke-width="2" fill="none"/><rect x="322" y="63" width="26" height="26" fill="#111"/><text x="22" y="168" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#6B6B66">brief</text><text x="276" y="168" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#6B6B66">proof</text><text x="335" y="168" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#6B6B66">release</text></svg>
+<div class="g2" style="gap:0 16px">
+<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="18" width="32" height="24" rx="2"/><path d="M38 26l12-7v22l-12-7"/><circle cx="14" cy="26" r="3" fill="#E8371B" stroke="none"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">Film and photo</span><span style="display:block;font-size:11px;color:#6B6B66">campaigns · product · portraits</span></span></div>
+<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16l18 12-18 12z" fill="#E8371B" stroke="none"/><path d="M6 20h10M4 28h12M6 36h10"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">Motion</span><span style="display:block;font-size:11px;color:#6B6B66">animation · explainers · cuts</span></span></div>
+<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="11" height="11"/><rect x="22.5" y="8" width="11" height="11"/><rect x="37" y="8" width="11" height="11"/><rect x="8" y="22.5" width="11" height="11"/><rect x="22.5" y="22.5" width="11" height="11" fill="#E8371B" stroke="#E8371B"/><rect x="37" y="22.5" width="11" height="11"/><rect x="8" y="37" width="11" height="11"/><rect x="22.5" y="37" width="11" height="11"/><rect x="37" y="37" width="11" height="11"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">Content systems</span><span style="display:block;font-size:11px;color:#6B6B66">one shoot, weeks of posts</span></span></div>
+<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M28 6c2 12 6 16 18 18-12 2-16 6-18 18-2-12-6-16-18-18 12-2 16-6 18-18z" fill="#E8371B" stroke="none"/><path d="M45 38c.8 4 2.2 5.2 6 6-3.8.8-5.2 2-6 6-.8-4-2.2-5.2-6-6 3.8-.8 5.2-2 6-6z"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">AI pre-production</span><span style="display:block;font-size:11px;color:#6B6B66">moodboards · storyboards</span></span></div>
+<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14h36M10 28h36M10 42h36"/><circle cx="20" cy="14" r="4" fill="#F4F4F2"/><circle cx="36" cy="28" r="4" fill="#E8371B" stroke="#E8371B"/><circle cx="26" cy="42" r="4" fill="#F4F4F2"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">Post</span><span style="display:block;font-size:11px;color:#6B6B66">edit · colour · sound</span></span></div>
+<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 46h44M10 46V22l18-12 18 12v24"/><path d="M22 46V32h12v14" fill="#E8371B" stroke="#E8371B"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">Events and builds</span><span style="display:block;font-size:11px;color:#6B6B66">launches · pop-ups · sets</span></span></div>
+</div>
+<div style="margin-top:32px;padding:20px 0;border-top:1px solid #111;border-bottom:1px solid #111;display:flex;gap:16px;align-items:baseline;flex-wrap:wrap"><span class="big redbit" style="font-family:'Doto',monospace;font-weight:900;font-size:clamp(56px,16vw,96px);line-height:1;color:#E8371B">71%</span><span style="flex:1 1 200px">of consumers say physical experiences deepen their connection to a brand.<br><span style="font-size:13px;color:#6B6B66">The Harris Poll, Cannes Lions 2026</span></span></div>
+<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:28px"><a href="#book" style="display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:26px;background:#111;color:#F4F4F2;text-decoration:none">get a quote</a></div>
+</div>
+</section>
+
+<section class="panel" style="background:#111;color:#F4F4F2">
+<div class="wrap sec g" style="align-items:start">
+<div class="s7">
+<h2 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(36px,9vw,72px);line-height:.95;letter-spacing:-.04em;margin:0 0 12px;color:#F4F4F2">What is AI really doing to marketing?</h2>
+<p style="margin:0 0 24px;color:#C9C9C4">Turn a knob to pick a subject: creative, trust, search or production. Each turn reveals a real number from this year's research.</p>
+<div class="panel" style="background:#1E1E1C;border:1px solid #2E2E2B;border-radius:14px;padding:22px;min-height:230px;margin-bottom:12px">
+<p class="big redbit" style="font-family:'Doto',monospace;font-weight:900;font-size:clamp(80px,24vw,160px);line-height:1;margin:14px 0 10px;color:#E8371B">{{readBig}}</p>
+<p style="margin:0;font-family:'Inter Tight',sans-serif;font-size:19px;line-height:1.35;color:#F4F4F2">{{readLine}}</p>
+<p style="margin:12px 0 0;font-size:13px;color:#A3A39D">Source: {{readSource}}</p>
+</div>
+<div class="g2 d4" style="gap:1px;background:#2E2E2B;border:1px solid #2E2E2B">
+<sc-for list="{{knobs}}" as="k" hint-placeholder-count="4">
+<button type="button" class="cell" onClick="{{k.turnIt}}" aria-label="Turn the {{k.name}} knob" style="background:#111;color:#F4F4F2;padding:24px 8px;text-align:center;border:0"><span style="display:block;width:88px;height:88px;margin:14px auto 12px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#2A2A27,#141413);border:1px solid #4A4A46;box-shadow:0 6px 0 #000;position:relative"><sc-for list="{{k.ticks}}" as="d" hint-placeholder-count="3"><span style="position:absolute;left:41px;top:41px;width:6px;height:6px;border-radius:50%;background:{{d.c}};transform:rotate({{d.a}}deg) translateY(-52px)"></span></sc-for><span class="knob" style="position:absolute;inset:0;display:block;transform:{{k.turn}}"><span style="position:absolute;left:43px;top:8px;width:2px;height:26px;background:#E8371B;display:block"></span></span></span><span style="display:block;color:#A3A39D;font-size:13px">fact {{k.pos}}</span><span style="display:block">{{k.name}}</span></button>
+</sc-for>
+</div>
+<p style="margin:14px 0 0;font-size:13px;color:#A3A39D">The dots show how many facts each knob holds. Every number is sourced and dated.</p>
+</div>
+<div class="s5">
+<div class="panel" style="border:1px solid #2E2E2B;border-radius:14px;padding:22px;display:grid;gap:14px">
+<p style="margin:0;font-size:13px;color:#A3A39D">a newsletter by Folklore · coming soon</p>
+<h3 style="margin:4px 0 6px;line-height:0"><img src="assets/familiar-lockup-white.png" alt="Familiar, by Folklore" width="1470" height="500" style="display:block;width:100%;max-width:340px;height:auto"></h3>
+<p style="margin:0;font-family:'Inter Tight',sans-serif;font-size:19px;color:#F4F4F2">Every brand needs a creative technologist now. This is where to find one.</p>
+<p style="margin:0;color:#C9C9C4">A newsletter where creative technologists show their work and share what they know, and brands find the ones to hire. Every issue tests new AI tools on real brand work, so you only hear about the ones worth your time.</p>
+<sc-if value="{{notJoined}}" hint-placeholder-val="{{true}}">
+<div style="display:flex;flex-wrap:wrap;gap:8px"><label for="ln" style="position:absolute;left:-9999px">Email to subscribe to Familiar</label><input id="ln" type="email" placeholder="your email" style="flex:1 1 180px;min-height:48px;padding:0 16px;border-radius:24px;border:1px solid #4A4A46;background:#111;color:#F4F4F2;font:inherit;font-size:16px"><button type="button" onClick="{{join}}" style="min-height:48px;padding:0 20px;border-radius:24px;border:0;background:#E8371B;color:#111">subscribe</button></div>
+</sc-if>
+<sc-if value="{{joined}}" hint-placeholder-val="{{false}}"><p style="margin:0;color:#F4F4F2">You're subscribed. The first issue of Familiar lands soon.</p></sc-if>
+</div>
+</div>
+</div>
+</section>
+
+<section class="wrap sec g ctr">
+
+<span class="s3 d"></span>
+<div class="s9 panel" style="background:#E7E7E4;padding:28px 20px;border-radius:16px">
+<h2 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(36px,9vw,72px);line-height:1;letter-spacing:-.03em;margin:0 0 12px">{{dialTitle}}</h2>
+<p style="margin:0">Drag it to see what changes. AI makes work faster and cheaper. What keeps it original is the idea behind it, and what keeps it trusted is being upfront: 73% of consumers trust an ad less when they suspect AI made it (The Harris Poll, 2026).</p>
+<p class="big" style="font-family:'Doto',monospace;font-weight:900;font-size:clamp(80px,24vw,160px);line-height:1;margin:24px 0 0;color:{{aiColor}}">{{ai}}%</p>
+<label for="dial" style="display:flex;justify-content:space-between;color:#6B6B66;font-size:13px;margin-top:8px"><span>hand</span><span>machine</span></label>
+<input id="dial" type="range" min="0" max="100" step="5" value="{{ai}}" onChange="{{onDial}}">
+<sc-for list="{{bars}}" as="b" hint-placeholder-count="4">
+<div style="margin-top:18px"><div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:13px">{{b.label}}</span><span style="font-family:'Doto',monospace;font-weight:900;font-size:clamp(22px,5.6vw,28px);line-height:1;color:{{b.color}}">{{b.v}}</span></div><span style="height:22px;background:#CBCBC6;display:block;margin-top:6px;border-radius:3px;overflow:hidden"><span class="{{b.cls}}" style="display:block;height:22px;background:{{b.color}};{{b.w}}"></span></span></div>
+</sc-for>
+<p style="margin:14px 0 0;font-size:13px;color:#6B6B66">* Uniqueness depends on the idea: a great creative makes AI work harder. Trust holds better when you say it's AI-made, though hand-made still leads.</p>
+<p style="margin:28px 0 0;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,6vw,32px);line-height:1.05;letter-spacing:-.02em;color:{{aiColor}}">{{verdict}}</p>
+</div>
+</section>
+
+<section class="wrap g ctr" style="padding-bottom:96px">
+
+<p class="s3" style="margin:0;color:#6B6B66;font-size:13px">brands we've worked on · logos coming</p>
+<div class="s9 g2 d5" style="border-top:1px solid #CBCBC6;border-left:1px solid #CBCBC6">
+<sc-for list="{{brands}}" as="b" hint-placeholder-count="10">
+<div class="cell" style="border-right:1px solid #CBCBC6;border-bottom:1px solid #CBCBC6;padding:40px 8px;text-align:center;font-size:13px;color:#A3A39D">[logo {{b}}]</div>
+</sc-for>
+</div>
+</section>
+
+
+<section id="offers" class="wrap g ctr" style="padding-bottom:96px">
+
+<p class="s3" style="margin:0;color:#6B6B66;font-size:13px">services and pricing <span class="m">· swipe →</span></p>
+<div class="s9">
+<div class="g2" style="grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:28px;border-top:1px solid #111;padding-top:16px">
+<div><span class="big" style="font-family:'Doto',monospace;font-weight:900;font-size:clamp(56px,16vw,96px);line-height:1">1</span><p style="margin:6px 0 0;font-size:13px;line-height:1.45">senior creative on every project, from brief to release.</p></div>
+<div><span class="big" style="font-family:'Doto',monospace;font-weight:900;font-size:clamp(56px,16vw,96px);line-height:1">0</span><p style="margin:6px 0 0;font-size:13px;line-height:1.45">account managers between you and the work.</p></div>
+<div><span class="big redbit" style="font-family:'Doto',monospace;font-weight:900;font-size:clamp(56px,16vw,96px);line-height:1;color:#E8371B">100</span><p style="margin:6px 0 0;font-size:13px;line-height:1.45">hands on deck: people, tools and AI agents, scaled to the brief.</p></div>
+</div>
+<p style="margin:0 0 16px;font-family:'Inter Tight',sans-serif;font-size:19px">From tiny jobs to full brand launches.</p>
+<div class="rail" style="background:#CBCBC6">
+<sc-for list="{{offerList}}" as="of" hint-placeholder-count="10"><div class="cell" style="background:{{of.bg}};color:{{of.fg}};padding:28px;border:1px solid #CBCBC6"><p style="margin:0;color:{{of.mute}};font-size:13px">{{of.size}}{{of.note}}</p><p class="big" style="font-family:'Doto',monospace;font-weight:900;font-size:clamp(36px,9vw,72px);white-space:nowrap;line-height:1;margin:40px 0 12px"><span style="display:block;font-family:'JetBrains Mono',monospace;font-weight:300;font-size:13px;margin-bottom:6px">from{{of.unit}}</span>{{of.price}}</p><p style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,5.6vw,28px);margin:0 0 6px">{{of.name}}</p><p style="margin:0">{{of.desc}}</p></div></sc-for>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:20px"><a href="#book" style="display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:26px;background:#111;color:#F4F4F2;text-decoration:none">get a quote</a><span style="font-size:13px;color:#6B6B66">Every quote is scoped to the brief.</span></div>
+</div>
+</section>
+
+<section class="wrap g ctr prof" style="padding-bottom:96px;align-items:end">
+
+<p class="s3" style="margin:0;color:#6B6B66;font-size:13px">who's behind it</p>
+<div class="s3 cell" style="aspect-ratio:4/5;background:#E7E7E4;display:flex;align-items:center;justify-content:center;color:#6B6B66;font-size:13px"><img src="assets/folklore-stacked-black.png" alt="Folklore" width="862" height="611" style="display:block;width:60%;max-width:220px;height:auto"></div>
+<div class="s6"><h2 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(36px,9vw,72px);line-height:.98;letter-spacing:-.04em;margin:0 0 16px">Made by creatives.</h2><p style="margin:0">Folklore was built on ten years inside creative agencies, and one belief: the safe idea is what kills brands. It exists to make brands worth retelling, and to help build Singapore's culture capital along the way. A core team, trusted specialists and AI agents, scaled to every brief.</p></div>
+</section>
+
+<section id="faq" class="wrap g ctr" style="padding-bottom:96px">
+
+<p class="s3" style="margin:0;color:#6B6B66;font-size:13px">faq</p>
+<div class="s9" style="border-top:1px solid #111">
+<details style="border-bottom:1px solid #CBCBC6;padding:22px 0"><summary style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,6vw,32px);letter-spacing:-.02em">What does it cost?</summary><p style="margin:12px 0 0">From a single retouched image to a full brand launch. Identities start from S$3,000 for the first three founding clients, and from S$5,500 after that. Every quote is scoped to the brief and agreed before anything starts.</p></details>
+<details style="border-bottom:1px solid #CBCBC6;padding:22px 0"><summary style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,6vw,32px);letter-spacing:-.02em">How long does it take?</summary><p style="margin:12px 0 0">Small jobs like retouching or a refresh: days to two weeks. Shoots and campaigns: about 2 to 6 weeks. A full identity: about 6 to 10 weeks. Exact dates are set on the first call.</p></details>
+<details style="border-bottom:1px solid #CBCBC6;padding:22px 0"><summary style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,6vw,32px);letter-spacing:-.02em">Where do you use AI?</summary><p style="margin:12px 0 0">It depends on the brief. Folklore decides with you, based on the timeline, scope and budget, and every proposal says where AI is used. Logos are still drawn by hand.</p></details>
+<details style="border-bottom:1px solid #CBCBC6;padding:22px 0"><summary style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,6vw,32px);letter-spacing:-.02em">Do you do production and events?</summary><p style="margin:12px 0 0">Yes. Shoots, films, motion, launches and pop-ups, with a crew matched to the brief. Quoted per project after a call.</p></details>
+</div>
+</section>
+
+<section class="wrap g ctr" style="padding-bottom:96px"><span class="s3 d"></span><div class="s9"><div class="panel" style="border:1px solid #CBCBC6;border-radius:16px;padding:16px;display:grid;gap:10px;background:#FBFBF9">
+<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><span style="display:inline-flex;align-items:center;gap:8px;font-size:13px"><span class="pulse" style="width:8px;height:8px;border-radius:50%;background:#E8371B"></span>studio status</span></div>
+<div style="display:grid;gap:12px"><span style="display:flex;flex-wrap:wrap;gap:6px" aria-hidden="true"><sc-for list="{{slotDots}}" as="sd" hint-placeholder-count="4"><span style="width:22px;height:22px;border-radius:50%;border:1.5px solid #111;background:{{sd}}"></span></sc-for></span><span style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,5.6vw,28px);letter-spacing:-.01em">{{slotsOpen}} project slots left open</span></div>
+<p style="margin:0;font-size:13px;color:#6B6B66">Folklore limits how many projects run at once, so every one gets full attention.</p>
+<a href="#book" style="display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:24px;background:#E8371B;color:#111;text-decoration:none">claim a slot</a>
+</div></div></section>
+
+<section id="book" class="panel" style="background:#111;color:#F4F4F2">
+<div class="wrap" style="padding-block:120px 64px">
+<img src="assets/folklore-stacked-white.png" alt="Folklore" width="862" height="611" style="display:block;width:clamp(96px,22vw,160px);height:auto;margin:0 0 48px">
+
+<h2 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(84px,24vw,300px);line-height:.82;letter-spacing:-.06em;margin:0;white-space:pre-line">{{closing}}</h2>
+<div style="display:grid;gap:16px;margin-top:48px;border-top:1px solid #2E2E2B;padding-top:20px">
+<span style="color:#A3A39D">twenty minutes. free. no pitch deck.</span>
+<div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center"><a href="#book" style="display:flex;align-items:center;justify-content:center;min-height:56px;padding:0 32px;border-radius:28px;background:#E8371B;color:#111;text-decoration:none">{{cta}}</a><button type="button" onClick="{{press}}" style="min-height:56px;padding:0 24px;border-radius:28px;border:1px solid #6B6B66;background:transparent;color:#F4F4F2">{{pressLabel}}</button></div>
+</div>
+</div>
+<footer class="wrap" style="padding-block:20px;display:grid;gap:8px;color:#A3A39D;font-size:13px;border-top:1px solid #2E2E2B">
+<img src="assets/folklore-f-icon-white.png" alt="" width="566" height="668" style="display:block;width:22px;height:auto;margin-bottom:4px"><span>Folklore (working name) is run by [your full legal name], Singapore.</span><span>[email] · @[handle]</span>
+</footer>
+</section>
+
+<div class="sticky" style="padding:10px 12px;background:rgba(244,244,242,.92);border-top:1px solid #CBCBC6">
+<a href="#book" style="display:flex;align-items:center;justify-content:center;min-height:52px;border-radius:26px;background:#111;color:#F4F4F2;text-decoration:none">{{stickyCta}}</a>
+</div>
+<sc-if value="{{broken}}" hint-placeholder-val="{{false}}">
+<div class="ovl" role="dialog" aria-label="You broke it" style="position:fixed;inset:0;z-index:50;background:#E8371B;color:#111;display:flex;flex-direction:column;justify-content:center;gap:20px;padding:24px">
+<p style="margin:0;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(56px,15vw,180px);line-height:.9;letter-spacing:-.05em">You broke it.<br>Good.</p>
+<p style="margin:0;max-width:420px">That's the attitude we're after. Now let's break something for your brand.</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px"><button type="button" onClick="{{reset}}" style="min-height:52px;padding:0 24px;border-radius:26px;border:1px solid #111;background:#F4F4F2">put it back</button><a href="#book" onClick="{{reset}}" style="display:inline-flex;align-items:center;min-height:52px;padding:0 24px;border-radius:26px;background:#111;color:#F4F4F2;text-decoration:none">book a call</a></div>
+</div>
+</sc-if>
+</sc-if>
+<sc-if value="{{dungeon}}" hint-placeholder-val="{{false}}">
+<div class="q {{qv.deadClass}} {{qv.theme}}">
+
+<header style="position:sticky;top:0;z-index:10;background:#0d0c0b;border-bottom:3px solid #4a4440;padding:8px 12px;display:flex;justify-content:space-between;align-items:center;gap:10px">
+<a href="#top" aria-label="Folklore, home" style="display:block;line-height:0"><img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%22-1.772 -0.800 40.779 7.600%22%3E%3Ccircle cx=%220.007%22 cy=%220.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%221.007%22 cy=%220.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%222.008%22 cy=%220.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%223.008%22 cy=%220.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%223.972%22 cy=%220.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2210.235%22 cy=%220.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2211.238%22 cy=%220.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2214.247%22 cy=%220.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%220.006%22 cy=%221.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2211.238%22 cy=%221.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2214.246%22 cy=%221.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%220.006%22 cy=%222.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2211.239%22 cy=%222.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2214.246%22 cy=%222.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2217.780%22 cy=%222.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%221.028%22 cy=%223.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%222.027%22 cy=%223.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%222.997%22 cy=%223.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2211.236%22 cy=%223.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2214.246%22 cy=%223.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2216.602%22 cy=%223.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%220.006%22 cy=%224.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2211.239%22 cy=%224.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2214.246%22 cy=%224.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2215.424%22 cy=%224.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%220.006%22 cy=%225.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2211.238%22 cy=%225.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2214.246%22 cy=%225.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2216.601%22 cy=%225.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%220.007%22 cy=%226.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2210.235%22 cy=%226.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2211.238%22 cy=%226.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2212.234%22 cy=%226.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2214.247%22 cy=%226.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2217.780%22 cy=%226.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%228.805%22 cy=%224.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%228.537%22 cy=%225.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%227.805%22 cy=%225.732%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%226.805%22 cy=%226.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%225.805%22 cy=%225.732%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%225.073%22 cy=%225.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%224.805%22 cy=%224.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%225.073%22 cy=%223.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%225.805%22 cy=%222.268%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%226.805%22 cy=%222.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%227.805%22 cy=%222.268%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%228.537%22 cy=%223.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2219.355%22 cy=%220.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2220.355%22 cy=%220.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2220.355%22 cy=%221.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2220.355%22 cy=%222.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2220.355%22 cy=%223.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2220.355%22 cy=%224.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2220.355%22 cy=%225.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2220.355%22 cy=%226.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2219.355%22 cy=%226.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2221.355%22 cy=%226.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2228.592%22 cy=%222.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2230.591%22 cy=%222.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2231.589%22 cy=%222.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2228.591%22 cy=%223.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2229.592%22 cy=%223.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2232.589%22 cy=%223.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2228.592%22 cy=%224.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2228.591%22 cy=%225.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2228.576%22 cy=%226.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2226.817%22 cy=%224.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2226.549%22 cy=%225.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2225.817%22 cy=%225.732%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2224.817%22 cy=%226.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2223.817%22 cy=%225.732%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2223.085%22 cy=%225.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2222.817%22 cy=%224.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2223.085%22 cy=%223.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2223.817%22 cy=%222.268%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2224.817%22 cy=%222.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2225.817%22 cy=%222.268%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2226.549%22 cy=%223.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2238.207%22 cy=%224.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2237.207%22 cy=%225.732%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2236.207%22 cy=%226.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2235.207%22 cy=%225.732%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2234.475%22 cy=%225.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2234.207%22 cy=%224.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2234.475%22 cy=%223.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2235.207%22 cy=%222.268%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2236.207%22 cy=%222.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2237.207%22 cy=%222.268%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2237.939%22 cy=%223.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2235.207%22 cy=%224.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2236.207%22 cy=%224.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%2237.207%22 cy=%224.000%22 r=%220.42%22 fill=%22%23F4F4F2%22/%3E%3Ccircle cx=%22-0.972%22 cy=%223.000%22 r=%220.42%22 fill=%22%23E8371B%22/%3E%3C/svg%3E" alt="Folklore" width="120" height="22" style="display:block;width:120px;height:auto"></a>
+<span style="display:flex;gap:10px;align-items:center;font-size:14px;font-weight:600"><span>LV {{qv.lvl}}</span><span style="display:flex;align-items:center;gap:6px">XP<span style="display:inline-block;width:48px;height:12px;background:#24201c;border:2px solid #4a4440"><span style="display:block;height:100%;width:{{qv.xpPct}}%;background:#4caa3a"></span></span></span><button type="button" class="btn sm stone" onClick="{{qv.exit}}" style="width:auto;min-height:40px;font-size:14px;padding:4px 10px">✕ Exit</button></span>
+</header>
+
+<main class="qwrap" id="top">
+
+<section aria-label="Title" style="padding-top:14px">
+<div class="frame">
+<sc-if value="{{qv.classic}}" hint-placeholder-val="{{true}}">
+<div style="position:relative;height:200px;overflow:hidden;background:linear-gradient(#0a0a1e 0 55%,#1c1430);border:3px solid #0a0908">
+<sc-for list="{{qv.stars}}" as="s" hint-placeholder-count="14"><span class="{{s.tw}}" style="position:absolute;left:{{s.x}}%;top:{{s.y}}px;width:3px;height:3px;background:#e9d8a6"></span></sc-for>
+<svg viewBox="0 0 8 8" shape-rendering="crispEdges" aria-hidden="true" style="position:absolute;right:26px;top:18px;width:24px;height:24px"><sc-for list="{{qv.moon}}" as="r" hint-placeholder-count="40"><rect x="{{r.x}}" y="{{r.y}}" width="1" height="1" fill="{{r.c}}"></rect></sc-for></svg>
+<div class="fly" style="position:absolute;left:8px;top:30px;width:144px;height:92px">
+<img class="fa" src="{{qv.spr.dragonA}}" alt="" width="144" height="92" style="image-rendering:pixelated;display:block;position:absolute">
+<img class="fb" src="{{qv.spr.dragonB}}" alt="" width="144" height="92" style="image-rendering:pixelated;display:block;position:absolute">
+</div>
+<svg viewBox="0 0 120 30" preserveAspectRatio="none" shape-rendering="crispEdges" aria-hidden="true" style="position:absolute;left:0;right:0;bottom:0;width:100%;height:90px"><sc-for list="{{qv.castle}}" as="r" hint-placeholder-count="20"><rect x="{{r.x}}" y="{{r.y}}" width="{{r.w}}" height="{{r.h}}" fill="{{r.c}}"></rect></sc-for></svg>
+</div>
+</sc-if>
+<sc-if value="{{qv.dark}}" hint-placeholder-val="{{false}}"><div class="scenebox" style="position:relative;overflow:hidden"><img src="{{qv.spr.scene}}" alt="A torchlit stone corridor. At the far end, an eye opens in the dark." width="192" height="144" style="display:block;width:100%;height:auto;image-rendering:pixelated"><span class="tflick" aria-hidden="true"></span><span class="eyeglow" aria-hidden="true"></span><span class="lid" aria-hidden="true"></span><span class="walker" aria-hidden="true"><img class="fa" src="{{qv.spr.skelA}}" alt="" width="54" height="90"><img class="fb" src="{{qv.spr.skelB}}" alt="" width="54" height="90"></span><span class="peek" aria-hidden="true"><img src="{{qv.spr.gob}}" alt="" width="57" height="42"></span><span class="peekhand" aria-hidden="true"><img src="{{qv.spr.gobHand}}" alt="" width="9" height="15"></span><sc-for list="{{qv.motes}}" as="mo" hint-placeholder-count="12"><span class="mote" style="left:{{mo.x}}%;top:{{mo.y}}%;animation-delay:{{mo.d}}s;animation-duration:{{mo.t}}s"></span></sc-for><span class="bat" aria-hidden="true"><img class="fa" src="{{qv.spr.batA}}" alt="" width="51" height="24"><img class="fb" src="{{qv.spr.batB}}" alt="" width="54" height="24"></span><span class="floater" aria-hidden="true"><img class="fa" src="{{qv.spr.eyeA}}" alt="" width="48" height="48"><img class="fb" src="{{qv.spr.eyeB}}" alt="" width="48" height="48"></span><span class="ghost" aria-hidden="true"><img src="{{qv.spr.ghost}}" alt="" width="48" height="48"></span><span class="mist" aria-hidden="true"></span><span class="mist m2" aria-hidden="true"></span></div></sc-if>
+<div class="slate" style="margin-top:6px;text-align:center;padding:22px 16px">
+<p class="cap" style="color:#a39a92">A brand adventure</p>
+<sc-if value="{{qv.dark}}" hint-placeholder-val="{{false}}"><p class="narr">you wake on cold stone. two torches flicker. something shuffles toward you from the dark.</p></sc-if>
+<h1 style="margin:8px auto 14px;line-height:0;width:max-content"><img src="assets/folklore-stacked-white.png" alt="Folklore" width="862" height="611" style="display:block;width:clamp(120px,40vw,180px);height:auto"></h1>
+<p style="margin:0 0 18px;font-size:18px">Folklore builds brands worth retelling. Identity, visuals, production and events, from the first idea to opening night.</p>
+<div style="display:grid;gap:10px">
+<a class="btn" href="#tavern">Begin the quest ▼</a>
+<a class="btn stone" href="#merchant">Skip to prices</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="qch" id="tavern">
+<p class="cap">Chapter I</p>
+<h2 class="h2">The Tavern Board</h2>
+<p class="lede">Nothing here is free. You pay in attention, the currency every brand is fighting for.</p>
+<div class="board">
+<div class="notice {{qv.shake}}">
+<p style="margin:0 0 8px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap"><span class="tag">Wanted</span><span style="font-size:13px;font-weight:600">Notice #{{qv.ideaNo}} · for {{qv.ideaFor}}</span></p>
+<p class="vt" style="margin:0;font-size:25px;line-height:1.15">{{qv.idea}}</p>
+<p style="margin:12px 0 0;font-size:15px;font-style:italic;color:#6a4a22">{{qv.ideaFooter}}</p>
+</div>
+</div>
+<div style="margin-top:12px"><button type="button" class="btn" onClick="{{qv.nextIdea}}">Pull another notice <span style="font-size:14px;color:#2d6a1e">+10 XP</span></button></div>
+</section>
+
+<section class="qch" id="party">
+<p class="cap">Chapter II</p>
+<h2 class="h2">Assemble Your Party</h2>
+<p class="lede">Four specialists. Hire one, or the whole party.</p>
+<div class="two" style="display:grid;gap:10px">
+<sc-for list="{{qv.party}}" as="m" hint-placeholder-count="4">
+<div class="frame"><div class="parch" style="display:flex;gap:14px;align-items:flex-start;padding:12px">
+<img class="idle" src="{{m.img}}" alt="" width="64" height="80" style="image-rendering:pixelated;display:block;flex:none;border:3px solid #0a0908;animation-delay:{{m.delay}}s">
+<div style="min-width:0">
+<p style="margin:0;font-size:20px;font-weight:700;line-height:1.1">{{m.name}}</p>
+<p style="margin:4px 0 6px"><span class="tag">{{m.cls}}</span></p>
+<p style="margin:0;font-size:16px">{{m.desc}}</p>
+</div>
+</div></div>
+</sc-for>
+</div>
+<p class="cap" style="margin-top:22px">how a quest runs</p>
+<div class="frame"><div class="parch">
+<ol style="list-style:none;margin:0;padding:0;display:grid;gap:12px">
+<sc-for list="{{qv.steps}}" as="s" hint-placeholder-count="4"><li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;display:grid;place-items:center;width:32px;height:32px;background:#2b1d0e;color:#e8b84a;font-weight:700">{{s.n}}</span><span><strong style="font-size:18px">{{s.t}}</strong><br><span style="font-size:16px">{{s.d}}</span></span></li></sc-for>
+</ol>
+</div></div>
+</section>
+
+<section class="qch" id="workshop">
+<p class="cap">Chapter III</p>
+<h2 class="h2">The Workshop</h2>
+<p class="lede">First sketch to final cut.</p>
+<div class="frame"><div class="parch">
+<p style="margin:0 0 12px;font-size:16px">Five workstreams run at once, then meet in one proof before anything goes out. One crew, matched to the brief.</p>
+<div class="qmap">
+<span class="qnode">brief</span><span class="qarrow">▼</span>
+<div class="qlanes"><span>research</span><span>exploration</span><span>strategy</span><span>creative</span><span>production</span></div>
+<span class="qarrow">▼</span><span class="qnode ember">proof</span><span class="qarrow">▼</span><span class="qnode">release</span>
+</div>
+<sc-for list="{{qv.production}}" as="pr" hint-placeholder-count="6"><p style="margin:0;padding:8px 0;border-top:3px dotted #b89a5c"><strong style="font-size:17px">{{pr.t}}</strong><br><span style="font-size:15px">{{pr.x}}</span></p></sc-for>
+<p style="margin:12px 0 0;padding:10px 0 0;border-top:3px dotted #b89a5c;font-size:15px"><strong style="font-size:26px;color:#8a1414">71%</strong> of consumers say physical experiences deepen their connection to a brand. <span style="font-size:12px">The Harris Poll, Cannes Lions 2026</span></p>
+</div></div>
+<div style="margin-top:10px"><a class="btn red" href="#finale">Summon the Dungeon Master (get a quote)</a></div>
+</section>
+
+<section class="qch" id="oracle">
+<p class="cap">Chapter IV</p>
+<h2 class="h2">Consult the Oracle</h2>
+<p class="lede">What is AI really doing to marketing? Pick a subject, and the Oracle answers with a real number from this year's research.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px">
+<sc-for list="{{qv.topics}}" as="t" hint-placeholder-count="4"><button type="button" class="btn sm {{t.cls}}" aria-pressed="{{t.on}}" onClick="{{t.pick}}">{{t.name}}</button></sc-for>
+</div>
+<div class="frame"><div class="slate {{qv.factAnim}}" style="text-align:center;padding:20px 16px">
+<p style="margin:10px 0 6px;font-size:clamp(56px,18vw,88px);line-height:1;font-weight:700;color:#e8b84a;text-shadow:4px 4px 0 #a81c1c">{{qv.factBig}}</p>
+<p style="margin:0;font-size:18px">{{qv.factLine}}</p>
+<p style="margin:10px 0 0;font-size:13px;color:#a39a92">Source: {{qv.factSource}}</p>
+</div></div>
+<div style="margin-top:10px"><button type="button" class="btn" onClick="{{qv.nextFact}}">Ask the Oracle again <span style="font-size:14px;color:#2d6a1e">+5 XP</span></button></div>
+<div class="frame" style="margin-top:14px"><div class="parch">
+<p style="margin:0 0 2px;font-size:13px">a newsletter by Folklore · coming soon</p>
+<p style="margin:4px 0 8px;line-height:0"><img src="assets/familiar-lockup-black.png" alt="Familiar, by Folklore" width="1470" height="500" class="famlogo fk" style="display:block;width:100%;max-width:280px;height:auto"><img src="assets/familiar-lockup-white.png" alt="" width="1470" height="500" class="famlogo fw" style="display:none;width:100%;max-width:280px;height:auto"></p>
+<p style="margin:0 0 8px;font-size:17px">Every brand needs a creative technologist now. A familiar is a wizard's helper. This is where to find yours.</p>
+<p style="margin:0 0 12px;font-size:15px">A newsletter where creative technologists show their work and share what they know, and brands find the ones to hire. Every issue tests new AI tools on real brand work.</p>
+<label for="em" style="display:block;font-size:13px;font-weight:600;margin-bottom:4px">Your email</label>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px"><input id="em" type="email" placeholder="you@brand.com" style="min-height:44px;box-sizing:border-box;border:3px solid #0a0908;background:#fff8e4;font:16px 'Pixelify Sans',sans-serif;padding:0 10px;min-width:0"><button type="button" class="btn sm red" style="width:auto">Subscribe</button></div>
+</div></div>
+</section>
+
+<section class="qch" id="forge">
+<p class="cap">Chapter V</p>
+<h2 class="h2">The Forge</h2>
+<p class="lede">How much magic should go into your brand? Drag the slider. A great idea makes magic work harder, and saying it's AI-made keeps trust.</p>
+<div class="frame"><div class="parch">
+<p style="margin:0 0 4px;display:flex;justify-content:space-between;font-size:14px;font-weight:600"><span>Hand-forged</span><span style="font-size:18px;font-weight:700;color:#a81c1c">{{qv.ai}}% AI</span><span>Conjured</span></p>
+<input type="range" min="0" max="100" step="10" value="{{qv.ai}}" onChange="{{qv.onDial}}" aria-label="Percentage of AI" style="width:100%;height:44px;accent-color:#a81c1c;margin:0 0 8px">
+<sc-for list="{{qv.bars}}" as="b" hint-placeholder-count="4">
+<div style="display:grid;grid-template-columns:84px minmax(0,1fr);gap:10px;align-items:center;margin-top:8px"><span style="font-size:14px;font-weight:700">{{b.label}}</span><span class="seg"><sc-for list="{{b.segs}}" as="g" hint-placeholder-count="10"><span style="background:{{g}}"></span></sc-for></span></div>
+</sc-for>
+<div style="margin-top:16px;padding:10px 12px;background:#2b1d0e;color:#e9d8a6;border:3px solid #0a0908">
+<p style="margin:0;font-size:13px;font-weight:700;letter-spacing:.1em;color:{{qv.verdictColor}}">{{qv.rarity}}</p>
+<p style="margin:2px 0 0;font-size:17px">{{qv.verdict}}</p>
+</div>
+<p style="margin:10px 0 0;font-size:14px">The trust drop is research: 73% of consumers trust an ad less when they suspect AI made it (The Harris Poll). The 30% is Folklore's call. Logos are always by hand.</p>
+</div></div>
+</section>
+
+<section class="qch" id="legends">
+<p class="cap">Chapter VI</p>
+<h2 class="h2">Hall of Legends</h2>
+<p class="lede">Brands worked on. Logos coming soon.</p>
+<div class="frame"><div class="slate" style="padding:8px 16px">
+<sc-for list="{{qv.brands}}" as="b" hint-placeholder-count="10"><p style="margin:0;padding:8px 0;display:flex;gap:12px;align-items:center;border-bottom:2px solid #24201c;font-size:18px;font-weight:600"><span style="color:#e8b84a;font-size:14px;width:22px">{{b.n}}</span>{{b.name}}</p></sc-for>
+</div></div>
+</section>
+
+<section class="qch" id="merchant">
+<p class="cap">Chapter VII</p>
+<h2 class="h2">The Merchant</h2>
+<p class="lede">"Fair prices, scoped to your quest."</p>
+<div class="frame"><div class="slate" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;text-align:center;padding:12px 8px;margin-bottom:8px"><span><strong style="font-size:30px;display:block">1</strong><span style="font-size:12px">senior creative on every quest</span></span><span><strong style="font-size:30px;display:block">0</strong><span style="font-size:12px">account managers</span></span><span><strong style="font-size:30px;display:block;color:#f07a2a">100</strong><span style="font-size:12px">hands on deck</span></span></div><div class="parch" style="padding:6px 16px">
+<sc-for list="{{qv.offers}}" as="o" hint-placeholder-count="10">
+<div style="padding:12px 0;border-bottom:3px dotted #b89a5c">
+<p style="margin:0;display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap"><span style="font-size:19px;font-weight:700">{{o.name}}</span><span style="font-size:12px;color:#6a4a22">{{o.gold}}</span></p>
+<p style="margin:2px 0 4px;font-size:15px">{{o.desc}}</p>
+<p style="margin:0;font-weight:700;font-size:17px;color:#8a1414">{{o.price}}</p>
+</div>
+</sc-for>
+<p style="margin:10px 0 8px;font-size:15px">From tiny jobs to full launches. Every quote is scoped to your quest.</p>
+</div></div>
+<div style="margin-top:10px"><a class="btn red" href="#finale">Summon the Dungeon Master (book a call)</a></div>
+</section>
+
+<section class="qch" id="dm">
+<p class="cap">Chapter VIII</p>
+<h2 class="h2">The Dungeon Master</h2>
+<p class="lede">The studio behind it.</p>
+<div class="frame"><div class="parch">
+<div style="display:flex;gap:14px;align-items:flex-start">
+<img src="{{qv.spr.cage}}" alt="Pixel portrait of the Dungeon Master (placeholder)" width="80" height="96" style="image-rendering:pixelated;display:block;flex:none;background:#26221e;border:3px solid #0a0908">
+<div style="font-size:15px;display:grid;grid-template-columns:auto 1fr;gap:2px 10px">
+<span style="font-weight:700">Studio</span><span>Folklore</span>
+<span style="font-weight:700">Level</span><span>10 years in creative agencies</span>
+<span style="font-weight:700">Party</span><span>Core team, specialists, AI agents</span>
+<span style="font-weight:700">Alignment</span><span>Chaotic good</span>
+<span style="font-weight:700">Base</span><span>Singapore</span>
+</div>
+</div>
+<p style="margin:14px 0 0;font-size:17px">Built on one belief: the safe idea is what kills brands. Folklore exists to make brands worth retelling, and to help build Singapore's culture capital along the way.</p>
+</div></div>
+</section>
+
+<section class="qch" id="scrolls">
+<p class="cap">Chapter IX</p>
+<h2 class="h2">Scrolls of Wisdom</h2>
+<p class="lede">Questions people ask.</p>
+<div class="frame"><div class="parch" style="padding:8px 16px">
+<details><summary>What does it cost?</summary><p style="margin:0 0 12px;font-size:16px">From a single retouched image to a full brand launch. Identities start from S$3,000 for the first three founding clients, from S$5,500 after.</p></details>
+<details><summary>Where do you use AI?</summary><p style="margin:0 0 12px;font-size:16px">It depends on the brief. Folklore decides with you, based on timeline, scope and budget. Logos are still drawn by hand.</p></details>
+<details><summary>Who owns the work?</summary><p style="margin:0 0 12px;font-size:16px">You do, once it's paid. Your brand, your keys.</p></details>
+<details><summary>How long does it take?</summary><p style="margin:0 0 12px;font-size:16px">Small jobs: days to two weeks. Shoots and campaigns: about 2 to 6 weeks. A full identity: about 6 to 10 weeks.</p></details>
+</div></div>
+</section>
+
+<section class="qch" id="finale">
+<p class="cap">Final chapter</p>
+<h2 class="h2">Roll for Initiative</h2>
+<p class="lede">A 20-minute call. Free. No pitch deck.</p>
+<div class="frame" style="margin-bottom:12px"><div class="slate" style="text-align:center;padding:14px"><p style="margin:0 0 8px;display:flex;gap:5px;justify-content:center;flex-wrap:wrap"><sc-for list="{{qv.slotDots}}" as="sd" hint-placeholder-count="10"><span style="width:16px;height:16px;border:2px solid #c9d1c3;background:{{sd}}"></span></sc-for></p><p style="margin:0;font-size:18px">{{qv.slotsOpen}} quest slots left open</p></div></div>
+<div class="frame"><div class="slate" style="text-align:center">
+<div class="d12-stage" aria-hidden="true">
+<span class="d12-shadow {{qv.tossCls}}"></span>
+<div class="d12-toss {{qv.tossCls}}">
+<div class="d12-idle">
+<div class="d12" style="transform:{{qv.dieRot}}">
+<sc-for list="{{qv.dieFaces}}" as="fc" hint-placeholder-count="12"><div class="dface" style="width:{{fc.w}}px;height:{{fc.h}}px;transform:{{fc.m}}"><svg viewBox="0 0 {{fc.w}} {{fc.h}}" width="{{fc.w}}" height="{{fc.h}}"><polygon points="{{fc.pts}}" fill="{{fc.c}}" stroke="#050b0a" stroke-width="1.8" stroke-linejoin="round"></polygon><polygon points="{{fc.pts}}" fill="url(#dith)" opacity=".35"></polygon></svg><span class="dnum" style="left:{{fc.tx}}px;top:{{fc.ty}}px;font-size:{{fc.fs}}px;color:{{fc.tc}}">{{fc.n}}</span></div></sc-for>
+</div>
+</div>
+</div>
+<svg width="0" height="0" style="position:absolute"><defs><pattern id="dith" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="1" height="1" fill="#000"></rect></pattern></defs></svg>
+</div>
+<p class="vt d12-num {{qv.tossCls}}" style="margin:0 0 4px;font-size:30px;line-height:1;color:#ffd88a">{{qv.rollShown}}</p>
+<p class="d12-num {{qv.tossCls}}" style="margin:0 0 14px;font-size:18px;min-height:2.9em">{{qv.rollMsg}}</p>
+<div style="display:grid;gap:10px">
+<button type="button" class="btn stone" onClick="{{qv.rollDie}}">Roll the d12</button>
+<a class="btn red" href="mailto:[email]">Book a call</a>
+</div>
+</div></div>
+
+<div style="margin-top:34px;display:flex;gap:14px;align-items:center">
+<img class="twitch" src="{{qv.spr.chest}}" alt="" width="80" height="68" style="image-rendering:pixelated;display:block;flex:none">
+<div style="flex:1"><p style="margin:0 0 8px;font-size:16px">A chest sits in the corner. It's probably fine.</p><button type="button" class="btn sm stone" onClick="{{qv.die}}">Open the chest</button></div>
+</div>
+<img src="assets/folklore-f-icon-white.png" alt="" width="566" height="668" style="display:block;width:22px;height:auto;margin:40px auto 10px"><p style="margin:0;font-size:13px;color:#a39a92;text-align:center">Folklore (working name) is run by [your full legal name], Singapore. [email] · @[handle]</p>
+</section>
+</main>
+
+<div style="position:sticky;bottom:0;z-index:10;background:#0d0c0b;border-top:3px solid #4a4440;padding:8px 12px 10px">
+<p aria-live="polite" class="vt" style="margin:0 auto 6px;max-width:720px;font-size:19px;line-height:1.1;color:#8fd47a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">&gt; {{qv.log}}</p>
+<div style="max-width:720px;margin:0 auto"><a class="btn red" href="#finale" style="min-height:48px">Book a call · 20 min, free</a></div>
+</div>
+
+<sc-if value="{{qv.dead}}" hint-placeholder-val="{{false}}">
+<div class="qovl" role="dialog" aria-label="It was a mimic" style="position:fixed;inset:0;z-index:30;background:#0d0c0b;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center;padding:24px">
+<img src="{{qv.spr.mimic}}" alt="" width="120" height="120" style="image-rendering:pixelated;display:block">
+<p style="margin:0;font-size:clamp(34px,10vw,52px);font-weight:700;line-height:1;color:#e8b84a;text-shadow:4px 4px 0 #a81c1c">It was a mimic.</p>
+<p style="margin:0;font-size:19px;max-width:320px">You broke everything. Good. Now let's break something for your brand.</p>
+<div style="display:grid;gap:10px;width:100%;max-width:320px">
+<button type="button" class="btn" onClick="{{qv.revive}}">Rest at the inn (put it back)</button>
+<a class="btn red" href="#finale" onClick="{{qv.revive}}">Book a call</a>
+</div>
+</div>
+</sc-if>
+</div>
+</sc-if>
+</div>
+</script>
+<script src="runtime.js"></script>
+<script>
+
+const SPR = {"dragonA": "data:image/png;base64,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", "dragonB": "data:image/png;base64,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", "scribe": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAoCAYAAACfKfiZAAAFEklEQVR4nJ2YX2hbVRzHP41hZDRKlBI6sNul1BJCMGH0oRSR0oe6hw4CbnsQERzDhzL2UMYQ54PK9uSoOsIeJEgfZMjYSsAqVVgtkpUwS7nKiKGEcLf5JxSZQZuRh876cHtOzj333CTdD8K9554/3+/v+/udf+mLxkZ26dEi0Ti0mkyfvcX3udc9da2dJpFonNb2Vq/DARDuBNba3vI/w/3cXVrgQv6ObFu4vsrmykVze+2pWyiIgGjsG2SnScP5GtuuA2Dbdaxkgph1nMjOX/sCNxKIROM9PYVlMoM45QqN+gZEjnja6SRM/X0ETJ7r31U7N5YDYHRiltGpy9Aom5UL6N+nJ2EQ8zbDpif+4IbBKVfYXLsGrd8h0u9zKigcRgW6MRfx19+nz1x1VWg1g3MoSIGuniven2KGGywZSQCuGt++CbFkV+dCaqXeSPcc4BQzDI4d4xQzweBr1yBypKdxe1dAib2qgErAKVc8XUwq6GRCpo++WGmJZwIHWJm/1wZXVOikRMg0b0V5v3Y6fwIrmQDchIxZx+W0lOMqixVAOChbaTXlwKr3wmtdbt3E4pQ+BD//vTdW6z6OU8Kyxmltu5/kXqCu9UJy267zxZmbQK498th+NHmV+vpj3rPzAJ4NTOBJAgJceKvGt76+vB9Uj5VWqzh/VLCSCZZufsj0bFXiAYR12QvXV9mqlYgPj2MlE9TXlymtVp+aALgJOT/7DqlUgs21OaCtgGcpjkTjbtJEjhCzjrsbzJ6NTsyyVSvtC1jt79jzWNa4W4gl2wqo4K3tLSJ787ZRUeK+N53UAWODRzuWAYaebPDw35ZMPLEmqAnvU0CfDUNPavx0+1MAqv8l5OAjIXcWPLrnzv1HyROyrn79IwDWNqrMFx+4oOEB4zrTcR0Q4AJkJFRhLptlLpv1yf1C+aanbm2jSrH6D0PPRiCWNJ4TAEJBK5QOLp43Sss0Drhl8U1Y44BbL8ABPnl7AhrlwJUwcC946eA23312pu1hKuUDVK1sl6XnwgSJu/WGZ0/oaS/QrRdw1QS4Or6OA9A38OLErgl86EmNk+k4E0dHWNuoMnF0hGSm7cVzM+c9AE7NYfH8W0ZwoYBpw/MdyQBPGE6m48wt/ujz0Kk5WMMWTs2R30TZGrZkm1fGJ33gqskQmLL04TPDrDyOe0CcmkNhcVm+q1ZYXMa2K7Iul1sAzOGVu6HoHLgrap6Jn1NzJBhAsVjiyvwHPnDdKf1E5LsZ+RtbFBaXyWQSHnmtYcuzHiz+YktFVGKdSIDhWG7qNP6yRe7aFQmump4LArxYLPHVlwueFdBkgVczUxjAjbMAMyVit3F0C7ycemPlB1FJgFl20f+pFVCfAiCTSQR1kVYstrftbgp0vR2nD5bZ/XOd/Od5T32QxwL819sLpA8hz5ZBCgT/PxDuJ/38fb754V0Arq6fxbaXjAqoiSdM9JuaS7G5ctElsdP09TUqIM6Gr338m/x2bizHg+hMT6E4fOySfLeSCS7k7zA6ddk98HYiEAn3ew6m4Hquk1BND8XhY5fkld0lOij/xBAkVCLt7VgDbgO4p2P3eO5aYdWSCth2xSP9lfcH5fvpfPuUpBKSf+nsNF0FTOC2XfdcQqbmUrIuO+kYk1AFn5pLycuLeonR1egbGEjvikuI2rjTCfheISqVgL19YA88ld0O7BcfHveUs29MugSmz97CKVf2dexWSWQnna7gJjJWMsH/fjDjMjNvaeMAAAAASUVORK5CYII=", "illusionist": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAoCAYAAACfKfiZAAAEFklEQVR4nLWYQWgbRxSGP0siDVJjL8WQUgTWQRXGLcEUI4KjQ9Ah5FR8CsaHNpRQ0tCDKEGU9tJDC8WHxik5FROSHozxSYRgTGmCA8IYIYwIbRCyCDospqUmCBkHV8RKD/JMZndndtfC/S8749HM9+afNzO7Hnr71OhrQmr41Lt0un8FPo+jiB/M/XTDgv6ue7o1FMaBsDMfxBlPAKYZDaIwwfg6YOqciCWM0P1X+/+fA4e9PQBu33gCQL3aYnwqJZ8PSiUe7dwCIBo54+uErwO6IA57exKsU73aomHXyCQnadg1Hu3cIho5E+iE3AW6rBb1ILhQJjkpy2PxCxz29nzHdQQgInNHGhbuVtrKyiB044qnrwODwnVBmM4FhwMnBVeXIsiJyEnMvF5thQqii+3JhZhu7ROxhNxaJn22MOmoF3Ml42+b7Qr2y6dEGaHzyumA3IYq3G/2brBbaiANuyYDSFtZmu0Kzw9WOejGJM+TA6C3NAwcYL4844ADEm6/fArgnwMmhYG7gxBS4dHeiGOyjpPQZP9x4KpmUt/RbFdk3b0MADHRKLI/KPmOq7SVlWXpROSN4zIA9ZYTOXBSgQgXxDIIHrhyQJWAD2o/QKnlXAJV2nNAvefVnbBazDMxOUFq7k5o+MWUBcBuu19XZy94oLkLhIQDq8U8G1tNntWesVrMYy3ew1q8p4WKNgFXlYyfc9SlA2pEOgc2tpqOjr99epkf/25zrZj3tH981Pbi+ze/H7U22G1Pmx0IygG3dr+dY+LqJW1wxffHeZE7r+1ndCBMDuhg7nq52dGChQbKgYp9le7Bz5SbHSNg+qN0IBzMDnjeiITq1RafzKzLei49bBzcr223PQ2YHYh5ehxJzYH1VtsI3dhqGh0QcOg74A4CDJ9m4lVblIu5kicIATXBLQqOY1hVtDciy/IyCnoPqFdbzJdn5B53264GYlFwtPldSI4AvsjeDzz/H948LbehbvYWBSLlWXq5ZW1/cSF1IzYH3Zg3B/xuw3q1RXoWyrZ/1vdyy/IDRQWDNxm1Sai7DR/ePE0v1x/QokCbBea36wD90891AKmvY34y/n9AhderLXq5ZTnYN9vXJRzg67MW89t13ilvSmikPAs43wd0u0DrgPuDU51Fv3ydD3gLgD/5F+i78Hhtk+TRbxsffuUZV7cVtQ6Y4AB3/7krywIulL98nswfP+mGBI7hAMCDUon1nUXjYOrMhR6vbdJZWWFYAwKnA/2zYL/vgDgDxqdSjE+laNg1Bzz//HdZvnR/TUJVuNDwlSvaftB3IBk/x8X3rjEWv0AilmDobHzs9e0bT2Tm/1L50jhrgKVChtEfluSae9obvzK30PAdQ+jz7J2+A8eBi8F18M7KCnMLDZYKmVABAPwHtfz0RiPvxv0AAAAASUVORK5CYII=", "artificer": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAoCAYAAACfKfiZAAAFWklEQVR4nLWWb2iTVxTGf23TrAtvaixVQjtLN0pXSqilDCelK2UMqVOGE60MSqkiIiIi3Zhj+EFCPpXhHEgnwxU/yJA6ShE7XGElhBBcJ6GGEGIJElJ04kqMacxcbe0+xHv7/k1Txw6E+96c957nOc+957y3rFaxr1KiuRx2MvmldceNWHkxMP2oB1vvf7OxZAIik/UyLUWRYsqU6bfAKqPXsVLIGBQwy0z/v9n7xdabxRH2vyqgJrUhBdZjvry0avkrVQmDAqVkLgAmhnebZvrz+B2u3v4LAJu9rCQlDFtgRkaxVRYFBohHk/I5OrcgieSWX/w3BZaXVpkY3s32vgNy0e9XzlHl8GgCmfmFIno11DjlZn+K0Qz8aeImLV3v8TwflZlb+T3NtbTVvUEmb7OsrrKmrcqq1d47q1YJR36U80kOAXBp9h5XFR/x4B3eHzxX1H/ElyS/XKFRwfIMqEmI7Bs7qtjUtJdJDrFnE0w+RYK8PNXOT6MHivo76tyFeTCDy7FsVMDsDBRY2mh22/jlWi8A/bmzHG9/l0uz9wAIT93idNInswocCxr87Te/IpNXAJh7tIzLsbwxBepq32TfDjg21Es8eIf9j4+T9U9R3bOL00kf/miOHo9S1C8IPFz4G5u9rLQzIOQXpZVaSNK9o7aQ6cwCAP5ojoEeT0l+YSdHE4ZtMFVAsVXSv3MLAJFUlraGaqprcvijORlM7K0wM38klQWgraGaSCpLKPUSyJd+BoQpthf079wiA5Zq80/szC8+l3OzMyBRjKVYYOqsUPjjt0uWIOloVD7HZmMaXyic4HwwJWUHY0e0FbvRFMAvkI5GqfF4aOselMEjgSsasJ4T38jnkWMfEwonCCaybHNWsbiSs7xBlVt1KDW4yDQSuEKjy02jy006GtVk7x/5QvoEOMC3hzuLdkLZis0+GGqAGo+HdDTK2O1bZEyuCLHZGBk7jN2+BUBXUzUAw2NhGV+PA1j3AWeFwq/fHTUimZh674fHwnQ1VUsFAGYeZVCffo0CVswALo/eIDYbk+N64KFwwgBulpwax2Z253M57Mwvprl+t7A4mMhy9EirAbC1vVUCC9ODzzxa+wZse6eN+fsRDZ7mDOiZLq7kOB9M8eez51IFNZhelWAiK/feDPz7Hy4DDg2e5j6gVmDt5pJncSXH9buPNeChcEIqoCdhBR4IBOV7sg/oA1jtVYEEHNy+lVA4wdEjn3B59IYh+2AiK8EBVea8mjfJ5/n7EfM7YTEyojqE/EIVs8xdDjtOdwuf9Q8C0N3dJWMHAkGGvWetCVgp4axQOLh9K50dTbLG1WZWcoKEIOD1epkJTAN54xYI01aHg0w+r6kOs1LTkxfrnK+yDwSC+P3TEhxMzoA+SKVTYfOLPE8qFZ4B25xrDcpsGyqd5TzDTqXTLtdpFFKBFyUgwA+f6WXCN87hM73SN/j1Vb7s65DgajXU7034xvng0xaGBkZk9nqzJKC46vlnpXDD3Hd2v8bXfrKT4YshTc23n+w0xPD0dZCaS8u5PntLAoqrnhOnPgcgQ8ic4K46glMPJXhiLklTc6P0J+aSAFzwXQPA759GcW0mlylCQHHVA6yB27XgAkSOoJ2rRoChgRGgcOrd7jqWlpZIxAuxcpkHgOprqM5amJqACLoRGxoYwev1kl6K0drwEQAtLS3E43GmpybJZR4UWrEZuD7z1wEX9jC5YPB/uGsPiquessa33l4V4PF4nFRqDWzH3moJrj5MDc01RecXfNdk3x+fugiAwloLbmhoBApqyI+RFXhqLq0JridjNgdt221orqGmee0dgROPx/kX+0dqsAGpoFkAAAAASUVORK5CYII=", "herald": "data:image/png;base64,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", "chest": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAiCAYAAAAtZZsLAAAEIklEQVR4nO2YT2gjVRzHv5VKQ1qGIN1swRyKyWFcwyqLhDoI9SBLENlDTyUHqXsQ2RURQVjKEkrBIAilBFmWnoKHErQsIi6U0EPiYQihxCWEZVhmpJYIbcxhGGJJ16XxUH8v782fzKSt4mG/EB7v937vzef93u+9NxPguc6nsfMOMBuZ7Pv57Jl/nvk546N2sANt3X1rqP+Dko7NGoQ+owAHdiQwPyC7dKONRDzK6qfAf6A3HsFB53ff5wcCnI1M9kcF8xIBh9L38e47876QQxtnpl/uA8BOuYLe9scXAkiqSzcBANnlLxB6Znou+wvD4HbKFeyUK1hby58JQjfanm2KkgIArOa+RiZ1yXOzuW6S2chkf+vOqwAAVa35QiTiUU8Yvp33s/4Zt1Ao4NPXJQDAZg19eyQdEQySb7rRZj+q+/nb/SiCsiwDAK7GJWRSlzA9FREiGfiY8YMYVfaVaRgWmi0LU+N/ocPZBUC/6DUM68IAM7dTDJLGzczHkDQsbKgv9jtdc8wByEs32kgGgPvyYdkT4reHS9i4t+faRnCapmFmavCMH+oHAELMjwHy0XtQ0tFsWcjdHgzYbI0WvePDIpZXqug+Dbu2Z5TTCMqyjGZ1l9kT0TDa+ydOwN54BKH0/dPOaeeAue/cd/PxYRETlxeFOgAc7G4P7cfnIO+jqjWon99yArp1pJ1mt/N67cNFBnbtjRUAQP3Rim8/RRnkIO9TrVYFPwFwbS0PTdMgyzI0TRMAC4UCs/PlB+/tCxG0y6sfSdM0VlI7L3YOhp6ZuD5RxtLSEm5deYz8wgmbKQDkF06Y/fpEGfmFE1R/3MDE5UW2rBQ5Wl7qx/tTXVFSUJQUZFlm9rm5OZhPfnYHJEm/fCUcwun0ICHdDmd7DgLAzJtiH74kqWrNMfZP65/YcZyA/KsRAGSzq45OvHi4g91t1B+tCBH0kqKkfMd2BaSZblZavp2B0wgeHxZRzK0DACvLJc27E8RzcJg8D+rMfCwQYDG3jpJqAgBKalUoh0nhzsGqLe8CAfID2bc+r+QrSYT6Yn6tfv8E3955e+j9rao1NnYiGvZcMd8c5BP5IqUoKTa23j7yXDHPHCRRIpO9YVjYrLTYjHk7X/rZVbWGbHbVNwc936jtSsSjaBgWrsYlJGMSmzFvp9LN3mxZSETDzG5/Hzw34FkjRfVkTILePhIiGES+Ochfd82WNfJbjZfoJvGTA7Au3WR5Bgw2ScOwkIxJAizZ+XpQO90klIMNw8L7n33jD7i3tSxEiT/t7Q87j51uEj4H+auOvk3GqNLpmrhx5SXo7SPmNHfjIzbDaXNXaCMlouEz2Wns/f1fIfVagv/jTo8gBdr/3W96KtJn36AU0k7XdMz6vxZFrtM1xxx/N9i/S0n/BjhbQuezGNffk9SugXIbGyYAAAAASUVORK5CYII=", "mimic": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAEvklEQVR4nMVYX2hbVRj/xQ4b0lhCibE4HwKJgqWMUqWkYUgYo1TwYexJO9lDpSBVhsQ5Sgk+DBmhjD6IlBK1xOHGrGUUEdQRZ1YkXIKWEEoWxr0QRhbTEEp6ibEr1etDek7vOfdPbrK1+8HlnO/c73znd757znfOd204RHhdPYrZ+5XIKN6K3gMAlKsPbXo6uo1PisRKZNSwn318kdZTqTSuXJqicqH2N+XVkmC/+zhDwL5Xs0zCDOu9k7QuCALGupPw+zy4dVtELFVDtV6zAcCxVuQSybtUTqXSGJaXOiLEIxgcQSqVprLf54EoVbC6XgZgp+2GBL2uHmVl5lXGiCAIGB54PGKiVIHf52HskvYbd4safQ1BsqbIp+Nn+tr0u4z+nwvfmhLi9cWP5yFKFQQ/YO1mJVm3/zM8uZXIKLOu1Ea+/mKY1p/vex8A4A/tNQeWKppHTY7oj7/Xp7FrBkqQkOMRDI60NCJKFUuDtWsX4DyoN5B6ptu5OPNuOxfH6lKeaVN/KiP9rCS370EjqGcaXjiB7Vwc31ycgfh7AABgVzzISjJ9CMmsJGNutqDRvy/asVGULXvQcBcTb8rcTOdmCwDs+6UWG0UZgy/10pLonz+fZfR4D24U9TeJaRzMSjImuN1mBjIIX/IQKw0IgkDlfD6PWqUBAFhObiAUeN2YIPEc+VxWZypWGvB7HBD3BzLCcnKD2iUhLBy+QOX5+c8ZfQ3BrCQzJCZUcVA9UyOShIARUqk09Z5RaUqwedQcgMwon88jFltgZq5X8h7Qww/L10zfk3MYUF0W+HNXD+rZG6Hrkfa4ahdfXr+lvcT0u48rsdgNZXLygqLs1uhTLvxx5LLb6aI3KCYOCoLAeGCzJCKZSDw1mSFYrj60kbWxWRKxWRIBAL/+lj5S+cOPoswa1MDb7VSmzp1VlN2acvOrqPI0ZF0PEnLTz7nx8i/r2CyJeDCziGCX/Uhlx7//wXANAkCmUUemUQcAfFLKYMjhPFKZh5bgbjMQhwfGKeEhh/NQZQA45X9DQ05DsPCobmt0sZzncz9TI4clq3FHXGNk08sCAM22tyIvfXoVZSHdcX9TeLudyoTDzQTOduSdaJw+hTPTlvoPHHMw8tS5s3STMPHG6+pR8I8NwS47rteacYnEpxde9FuSv3vlDAJDB6mfkMkhlLxquT+RBwdPo1qv2egn5nMSPqqHTsOaHBkHfnzAfJVkImG9PwfqQa+rR4m+4wNwkEST8vL393Ft5iQAWGrHT30aL+LNrZZ2SL2yY6eniW5OQi6tfBJltf1yXUB/YAT9gWbesbZVNNUnyEoy/B4H09YyaeoUZSGN8JXPLOsbpa6HRpB4DwAunRpD4K+THdk5NIIAMD8bofW5O7d1dfhfHnxOY0qQ76zOe620EwiZnKH+CV8v887yGuQH5bO9Vu3kJAGam8QV2DPVN4IuwVadrEC9Bq1CnU2SK5eNCNV6DbNjXk1WR2CU8+q1r188+L27uhjH2lYRyWeLlu3kqjuEJEvwSWAnGqf1spCGkMlhbauIBVls2xYluC8oAPC4RG96QwgMDdCN0Qk5t9OFfS4HZzE5WtTXbTWsEn+7kERh/5hrRY4Q0RmLOu5/aIXnyhGw3CsAAAAASUVORK5CYII=", "cage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAwCAYAAABjezibAAAEYElEQVR4nO2YT0gcVxzHv5NKu9rZZVkGmS2YQ1ls2G7p7jYkIDmEnrz0UqhQyCEte/DgxSAeK72UIqE2RTCHoM3BHswtXkyhYMrWQ6rjBpbBw5CDgjvYYRjGbbUgmR7sm7w3f9/MhPbiF8R5837u77Pf3/vNcx5woQtdKFLC6/iQ/KDohM0dn/Qz5RhI+4c01AeNscAYw9CBgxduXBrYVN8uPyg6YVC0DEOHJMnude/gRWLIxIC8cEHSNBUnx1YiyEQlzgJnGDqKxRIZOryQ3IBZ4GglheQCzApnGDozJpBvvTHgGH0rEvJS2iS8cd6xJMmwLBO2bXJ9HneJSTeGAUmS7HZt2JeRJBmapnLDAZxdnB8UnfLIuwwkr6OWFQxj2ybEgTcRV+JEDnqhSHJq4UeCEecKBX98mLjXoKapTHIagFyT+/QcgaLLuq9MYW/8Nj75KN4fLsDjk75wcmwxSekfGpJWENzn14egb29AXryMuekaJLEYuo9zAxKRDgySFzqoEb66WcH6zhm+XuhC394AgFgXE/+zYNsm+soyc09sfhkav3FnHACwpWhoazZG8jmsPNUFoOssrc5gaXUc61e+DX0eJgJUlLYPDgBzz+x2mTm182rtzk40saVoAOAAZ4yLK0+Dc3I9Zhpl2fn9l+9hdrso1WoAgHduzjAxh5t3Gbja1I/M/Frrmuvi7EQT0ytbqI+eYWl1Bvr2Bq7e6gQ+cmIdpOEAuJCHm3eZOK9z3cXbAF45SOAAoFqvYuEL4OFvv8al52sSOjlxEABOh+u4fGPSB0dUn1zE1TvfkLK6Ujsq5tcUAIhtlsRNwsJ00bk/FRindlT8NPkxfrg1EfpZ6ztnwEIXS6szmJsG1nc6vmbhcvDB8mNmsUdJ7ahMWYlIeaMU5GKsg7s9XQDgkIRjzQqq9SoXbBjc/JqCZ7r1b1NI7oN6brrmc5HLwd2eLnzX3sej50eo1qs+N2nXqvWqb83ReqZbFNy5yDrc/HnPF5/onaRRlp3PPhzGWLPiwtCw9JhAet3zwgGAJBad4dwpjk5zvrlEW91uTxcePT9iYILcSgIHAEbfEoLggJTvxQSAhttStMjSxilsq0v1Xtwoy0757RyA8+2LNI3XUdrBMPfilMrB3Z4uHIhFZySfc8EAdreglRYOSLgGaZGExLH5NYXrWZdUmQ+P6HIHKYt7QIbDI1qzE01mHFbqNEpd4v9KF4BZlQmwUZYj38gAYCSf44oLU+ImISerlaKIJ/daANj3Du9u8uReCw+WH0Oz+qlOWrmPPsj1e++zHfupZKGt2bhRKbj3vB2893IIpZIEADBNA3/09t25ONjISQLmhfKKhoyCI4BBsGGgoYD5QdGJA6OTtkYHEsHRYwIaBBkIGAVnmkYoaGv0fEm3NRt7L4dC4wgU+Q2cHwj8/WffB+kDDIKLgvLqyqW/IuGiFATJANJwpmkkOmh8HSoUSj5IF5DA/R9gXkgAsI8OYfQt4R9DTbqE5HyvEAAAAABJRU5ErkJggg=="};
+// D&D mode art direction: 'dark' (new) or 'classic' (the previous look). Change this one word to switch back.
+const QUEST_STYLE = 'dark';
+const SPRD = {"dragonA": "data:image/png;base64,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", "dragonB": "data:image/png;base64,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", "scribe": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAoCAYAAACfKfiZAAADg0lEQVR42rVYTUgbQRT+XJXSjRSkKktDigqBUlAC9mLBi/EWrPTWUHoyh0KpkJ6EUJGAkIIY2ksvKRQ8xFIQ2rK3KLSCXqQsuRQMPdQgBBJIDiWYWtkeygyzk5nZWW0fhGGzmXlvvve9v6A/ZLoDo2E3yLrVctyL7BOtPQOjYbdTb+LK8CB0VwAoODZYScUSCHpOp96EcZFNMgl6zpXhQRi6N+ZXlRFBjDF0b8yvRIq7JeqSgmN7fqdjhBYHeOH9z/JAJP8VAd4wYpwuEkZQ32+e7FPYVYaI9gdGQHTzbCaH5Oyc0ggSkjpIKDkg831xt4Tk7Bz85FH4rvAcVk9Pf8h0dQgoI56u8kAc0Il3P9k82dfKD4aO74PeXhaKABDfSHsQkUbB5sk+Co4tZL3uc8GxEd9I03MAUO5IOcDflhxW2TlENH6Hfq/7fJAv4tWnNx7ysoXLEwXE6lQs4WF8ZefwUvAf23uIb6S7lCujgGdvwbGxNL+IdrVG35kRS/nM7xeVbENHOSFQUOXE10S5KAq08kDBsan/RCsR8kxc1ihX0Pz6LXg15LMfq+wgX0S7WqPfs7LzLA8zYmFoMopGuSJEhEfWUHU8rBJixHQ6KQw9ItPppEf5zcQMOvWmtCYoawFJGiy8MmFhJ0KMUHHL0C1EOspZYeHnM6w2B8yIhel0Egf5IoYmo55EI6qGS/OLGJqM4tjeo1FhRiwlEX2jwIxYNJPxiMiigjWOVMULd0Qi+NmmRBaSBBG/di9wHpDVCDbns+6ovP2oNKLXDI+sqiy8dmsMLStEbzgxNg4AmBgbx8v7T3F2+gtH70t4/eUdfV/cLeG03UGjXIH7+xwA0Be6Kjy/1z07X1VZ+PN7FY0fNWoEK/ceP0TLCiHz4jlFKJvJ4fr4DRx9+Ix2tYZOvSlVHmguYKsjmxdEHCBh6Qe/9lxgRizP4SLl2UzOw4lGufLvJiOSD3RuTgipQ8BOvQn4ze/sZ6vluAvb6+5Wy3FvP3nQ9bywve6OzEy5IzNTdM+l/h9QlWI2I2YzOc/NG+WKJyRVyUiaB/ghhPX1ytqylHhEuWh4EXVEXT2hzhAiy3x8MvKboLsQ4IcJP6UEEVKCScES1QTZ5EQRUCn3K83E9ytry4Fmx1Qs8RcBkXIWKr7hZDsl4nty81QsIW1YRa7tY33PblatnrmB6Q389rPvyf4/DVxI4iO3RAoAAAAASUVORK5CYII=", "illusionist": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAoCAYAAACfKfiZAAADDUlEQVR42q2YMWjbQBSGn01LQO0iSEBQJLpo8BKKyZJBUzYLe89QMLizIZ0CAQ+GQLZAZxcMHrK7qFPdxZAuIQgvHrTZBAw1eDN0SofyxLvTu9OdmgfhuJx07953/717Vu31G+cZDO3gyIU/v3elrY3VD47cfPKy1sS5zXwAADUTAjbObclUImDb15HREnipyCsTUE0WxBG0JkNwfA/Cbgcc38v7ttpgCagmCbsdpU62i0zo7x6XRiTqppG3JkMAAAjPTtj28DgUWhONGBPQRa4isF9vAAD+nwA6x0jR5D4lsF9vwPE9pSaUBKpEriPg+F4piboq8rI9p+12kRU0EMSREQklAcf38sk4y8ZToe82G+xzlQgEcQSnF+fsnmfjKWTjaR4BdbR7XBZIOL4nLNCIgNtssNHLUavMbTYEDai0oCTA7fUqmRvfGbvHZalzJYEgjipHriKBhouhuaBAQHXO5T037aMGKAltHsAXqJBeioCRBtApngKbvee0oHJuRABvtbDbgfDsBL5/HIBN/aiLXKkBmUDY7cB2kUE2e4Cw24HJ0z1Mnu7ZPadjciCqu+AVrggHMaf/ur1jczwanhbVuG7vrTQgJ6S7nz+g3+7lzun4pw9xPkbVr6sRSzVganLEslXSwH69ye93ldH7n5qpBkrzwHaRsQ64Z0wJWGsAH0YnsjO6QLnVFbpKAhgVLma7yPIqV8asi5wblwnU3r5/90zrAHoXZLOHwqUk53iVEOk4dyHhYuo0D9AzLTvHpDRKk3zy/Xoj/KGN0kTYLu5CYjXAVUBy7Te8umEjpW2/3RNqQo4EqwG5rqNJZnB9Cf12TygyRmkiJCEZs7UGqABPL87zbcCtwUm/fPuqFB4ucpQmeVbUFaYsAXoK8DqmRiOXjZIwyYgFDVACts7LxrlMKJwCinv2+Vb4v+m3HyQgvydHXiDQmgzh8DgUcj++NEoT4w9QozRh39PeBVh0lP2ux2Q1uL5ULmB4dQOrZG70xcRtNv4RQMHRdMutOIgjVhcU/yqZQxBHxt8H/gJCZGhKkm3AuQAAAABJRU5ErkJggg==", "artificer": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAoCAYAAACfKfiZAAADiElEQVR42rVXMWjbUBB9Fg4BJYvBAUOwyaKhBEwpWTx4iUIpMZ2Du7ZzizIVAh0MhdDBhmZsC4UMpmuLoYQ4i6FZgileOmizKahEkKFgyOQuvs/ppP8lpe0t5/vf+vfv/fvv7hdW1uwFlrK6UcLt9Q3S7DSdZz1rdaMUWzzNzjtusgsra/biX0V+F2QK61ubi7SP7ypZNmXRTuROk+y82oQE2f8VgSxIWKbI/xaBLEgYEdBF4nY9AIA/vILj7qj5y14f81mQCwkrT+T7px3UWs2Ic394pZyX6w7sagV2tWJEInMOkNRaTbx6/VLZnaNj5Zx00rwOEe4nwgNJWjo/CM4AANsn40TnfB4ApoOREeFEBLi8/z5IPM+D4AzbJ+OI86R52oAOASMPuF0Pj948AQD0L84j+lPlIaaDUep8Uk7wYFMR+P31hVqQS+foGOHER7nuIJz4ePvlQ2w+KfrcOWBXK/j17gDbJ2OEEx/zWQC7WgEA9ds0b7qCxhxwu566YuHER8NrR2wAKNedTPMk/sfPsU0UkvoBipxHKSOiMS5ynmz+Wwar7QfmswA34x8AoLR0TIumbYx/LxEoZilEpz+/oX9xjvbuXqJWEC+PAHQ0S+e5a4HkAXL27H4rNk4yPOxFmJMSMu0WaHlAOulfnEdIiTunpCXhzmutJm6vb7Q8YOl6O+mE4NYxI8FP85QLxAU6P1oekFGZRJ390iHP+jQesExV8LLXV5o70Uk48VFrNSNXl2hY50fLA5wP5rMg0oSQUDUk4pFX0hS58V0g+YCjwJ1JVEyRlx7cg9v1YrlgZe2G57Mg4jyc+JF2TCIg7z9RtTEHTEjQ4lT9Gl5b5QhnQR45ABV5e3dP2VwXsrwNpd4/7cQKj47riQsoZ/jxTQejbO8CiYRdraBcdyL13lRwaBOOu4P27h6eP36K+Sz4u7dh3kcIlXdiyUw5IBmMtNv14HY91FpNuF1Pnb3u/8SkdFSpPMDtWquJ6WCkzpHYjmxZdOT/7GpF3YBw4sdKczHLmfNFebWTY1Jkb5BUmos6HkhaUHfnaUO8BaMNNry2QiOJEYtZIuaLEg+U6w7CZd8XG19qnvUStVhPmBa1hDyLNLw2hoe9yFHQBgk9a3WjlMm57HDTbHonED/IefJXWN/aXMiMpo84bHw8TfOWnvcHct1y3YGly1x5ZnyRLDa9Gfl6ZPNc+QO7DOQLvBCRUAAAAABJRU5ErkJggg==", "herald": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAoCAYAAACfKfiZAAAEl0lEQVR42rVXQWsbRxT+5CQYSQEhKhshR0YUJOqLMI4uNlUaopwq8gOkQ0sb91JKzOZgCoYSDIWcLMhZMQkFbU89JKgUKgljQXQRRdWlkMUULEcslWJXUG/sFKMekjedmZ1dbdL0Xcbj1bxv3jffvDfPdyEYGOO1Tc+EcTo4wqT5pNFtPQCUO1WsLuYRiEfhu5iYG3txqhrJvP4+EI/i3uP74M13IRgYv6vIncbw0gKsnolyp8p83rpxE1bP9MaAHOmbzMNLC7ao9UYNRr0N48GjVwz8n5Hz4Jsbd9nfxoNHmJ4J41xgbvbOmXUiLJbnfGTng35Xpui7KvKPch+i7zvB4e99HD/7A6eDI5yX1TspskrsGFeKCezu9IXxUmUkrLd6phB5MpcBALRKOqyeyfA8a+CgGIKbrYzSeBLqItX0A4AtetrIfrUp+J/yEvlBMYTdnT4A2MZU049U049h18DKKG0D1Bs1JjzC4fEmMjBYe03z1RhznGr6EUknMewayvGbb792VL3sf8or+O5On0VLYAAEcJrzEdM47BrKjKlkgCwQj+Jp9oUN1M3uPb4vXDcy+expPDf+++wOAOHqmV9EkXl+iO+fvcSvn32J9Q0Nfd8J1jc0/BkNuo56o4avVj9B33eC996PYf2HbWx+YCHz/BA/z6Xw115P2ISNAfnMP818jre1h+1tJtgrV2Pshhz98hvDE2rBYC2hpPtdzik/OGogvLTgGpWb+mVBysaDCwx4yf0kSqtneh69ZFbXPBCIR5X0vam5bULQgAzOXy29UUPh2nXlyCpcvS0AD7uGKxOueYA2wIOvLuaZ83KnKoDXb5fY3/P5LAOfdBzKWsDTTaB6oya8aHhwAMhtabbIvWhhiiKWP87ns4yJVklndPOb4I3op+/8+kA8CiccRw3wqpcjdALna4EXBgC8YsCpFvARyAJTGeUBAue15ITjmAdoITlb1gq2aJO5DFolXZls5PV8+uXxHDXAM2D1TLRKOgMnmlslHZF0kmVI/uzl9XLkSg14YcJrBqR1fOQTNaACp8jI4Xw+i0g6yUTJq502wa8LLy24pveJfQE55yP5+LtNdhz71aZS7fw6N/9KDcg/tnomq5LTM2EmvP1qUzgefh1/9m7+PfeG1NH+l8Kj8u9aDYlGub2iJsOot4Wr6LUET3wP8FHzub9V0lE+20OxH2Ti4yueExOeNMCfsRP40+wLWD/uILelYdg1hJdPuVNFuVNFbktDJXaMwVoCB8WQ4FelAdYXLGsF5sApcpoXrl1H+WwPVs+E1TMxn89idTEPvVFD/XaJ9RFkg7WEY7LzzWYvj1X9O1U/o97Gk1CXfftpvQK9UcPD9rbwgKWN0LFQPyH3FfxxnQ6OMEU5Xm/UoDdqrKm4deMmu2rUEa2M0uz/lyojRNJJdhUpIpoTKD3FqVBVYscIxKP/vglns5fHtAm+vNL5ql65y1rB9kLKbWm2wuT2iqY07buYmBsTdaorpbJyp8qYGnYNLGsFVpiIAZXJNeOgGMIUOUnmMiy98ozwj1PVPJJOwqi3bTVD9Xu5cKWafvwDPbQ214ocBQkAAAAASUVORK5CYII=", "chest": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAiCAYAAAAtZZsLAAAEAklEQVR42u1YPWjbQBT+ZAgGp4tBBkOw6aKhiwjFiwteokwR7a4hUGjmgjwZDB4EBk82ZE6g4EF7gztZXgrJEkrI0kFLqTEYHPDSCEwGd3rH0+nk2E7/ht7yfE93p3ff+96PDPwfTxvaUw/Y2c0ts4U8FrM50uTDfaT9MQOfPd9b0u/FbI6jvocwuIZhVZTy7jZENJ6K9dlCHj++TbRfbiAhVbZrG13o7jaEbhqxeTSero1sZl3jjvoeynYNhlUBgLVl1XVic900ULZr6E8uY97YCsFnz/eWi9kc/cklvGZH6Ml9T50bVgWfjlsr3Z5ZZZzVddGfXOL963cxZOjwp8xb7QbC4BpHfQ+5UjEVTS3NuLJdQ6vdgNfsJHik4timkowN6j2U7ZrgpoxkJs04w6rAHw2V3Lq7DcV6+aXrzglBMk43DSWSCQMXs7lwg3NwiDC4hm4auOr5AICrni9eIiO4ydxrdsRl6TlFd6qLKVo5Z1RG/YpxenEuAo/OpXfMv3wVKUhTuZc20SGrDDu9OE995o+GAnl56KYhOJgrFYV+/uUrAAgDMyrukUGcgwBERZBl2gjqvdR9nINcn3/5Qp1mFrM5Wu2GQKXqOjEOVl0HZzeDhPRHwwRqAOA1O8iViqn7OAe5XjcNZAv5JAcp7wFQcrDqOspaS5cCgJN9GwCE4UG9B6vrpu5LS/7hh49JDu7s5pb5ly8QjafIlYqIxlNxU4ow0nNJSJNBVHmIf2n7ZA7y57xOCxdnC3nopgGr6wrpj4YCIa6neTSeCuOcg0Oc3QyQLeSFm6PxNLGe5nQucZDOT60kO7u5pfH2TSwvnV6c42TfjnUwct6yum7MyOO9V6J2y+kjGk9jZ30ffFaix2tzDEHefeimAX80hNV1cXcbxroRLp2DQyH90VC417AqiMbTxHo6p9VuoGzXEs+pyVVGMQUE3Y6imAKHJ1WeigDg/et3MXnV85ErFRPr6RyK4u+Dz7HnciVJIEjuKNs1ZS2Wa2sYXIvopbzH85+qQZBrsYxgah6UOUbu000jhqBc9uglnF/UmMrrKa96zQ5a7YbQE5LEwVQEZQ4G9d5KDm6rb7UbONm3hZ4uJ3Pw0ShOi0YalNPk6H5Mz/tBOod3M8o8KHOMc7DqOrG+jW7M9Zxrsp4G6dfl4FoI8ijjgxDZRk+VRK42G+dBIrJuGsruJe1T4DE9VZLH8mACQf7tenYzwPHeq1gLxG9L3NlGr5uGiFzSV10Hn45bqznIyeyPhjjqe0rjuAu30VMl4akpqPeEHfRtovHvX/k/Fbm74XlKzleb6jnC8jcRB00j9/6r/25luL/lEP/b4+E+0jJ88uPbRCMjZfm7hup9D/eRRqD9BGnn9bBfIfyeAAAAAElFTkSuQmCC", "mimic": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAEo0lEQVR42s1YTWgbVxD+1rEaIhmKSWIHRFRfNiUuhBDr4oAu3Z4sHHqzfQgU3JwMBvVkMBhHYPDJApfcbCjooISeWqMejGQIBvniGKGDA1kKwkKg1gKlrixqL+nmNI/Zp7c/TiqnD8R4nmfffm/eN29mFujhGBiJ2qFI2HaTo3PTQndbo6+XIGLJBCayaahktl6CbsSRrZcQSyYc6/D1NT8AoUjYvnpzEGfHLahkLJmAbsRhFvfFM0F1Pt+smLhxT0ezYqJTa6BdrWu+HgxFwna2XoKxlhI7lT3BXya/3EtfWlkQ882KifHUDACgU2vg7Ljl78FQJGzr3z1yzNEuP2bwNQhss2J2gbNOOxoA9Ks4dXbcwkQ2LXaaXlwVO11aWXDY53YKjuOSpWyfXlxFs2JifWvTsS4Noo/Sg0RsN87wlz2OPkS2XsJUYxvfHvZhL5MTHCK5vrWptP/qx4MubhL3iNtdHJTBEWc4V/i4enNQ/G0W98WxyVJlL6/r5UEBkCZpRyTTi6tCn2psg9tPNbYx/OSF8IAs3eybFVMcLz8pjqMLIO2QRxvtlPThJy8w1djG/OQszl8tC0+pwAFQ2lMwBDkZBwd51OpGXHBKFW1eo1NrIHz7lpB8ng+Z60f5XeFBJQe5B4lTFLWqnQYBR6A4WA56L5NzgAOAbL3kzUF6iLzFOUgvU/1aB68BwFeOp2awUc4DgIjyjXIesWQCG+U85idnvTnId0RcIc/Kx6TiDs88KglAgFBJ10QgVxckhxJj9ujctD0wErWfvy3bo3PTnpLshxJj4ifrflWOMkgGRqK2sZbCzNffILdTUEo6bn4Z90IePnuuKaN4IpvGXibnyAAE7jL13x4viVzs4CAFyP9pCIDtal3jQZDbKTii+rJ07j3XCnkoMSaI/yl0jueKDA4ArJM2Tu8M480vL2GdtC9Vb/9ew5XPQsv/WtZT5VUzMBIVVwpdG5epy1dNn3zZUkb5/n7SkaZ6qVO9yHOxEmC7WtfkamKjnHdkkF7ociZS5mK3eowu54voxloKsWTiQs/Te+X/a6oo5juj4w6q03VBBcbSyoLv89QO0JifnMWfu6+6205qmOSmiC/mp+9lcjCL++J+m5+c9X2eg8vtFLC+tQkKlK6ehPpd7u6LSOpveVXyIesQJ7sqalUC79QaAnSQeQ6QV+FB1jF/+tXRF3fVgxwcfxFV1PL/qSvj9p1aA7oRh27Ehe5lz+cHH9yFMpPY1rvl6/e/dOwsPHwdzYoJ66SNd/2hrp3TPNlx+z8Oq3jzcwGf3/kCf5lHsP4597UnL/dHruH87d9PXT2oktyDQeaJi9Qg+dmTDN++5d2TuLWQ/AtA0HljLSV0aiPc7ElS7+Lak6gqXJk7Qef5etTNudmTlDnoGcVyO+nWZrrNj6dmYBb3cZTfVfbKqnUoDbr2xTI4Gm7dlts852DQdQjo2XFLZDSNvEfubR28Vn5J5Vz1m6dPd7oRR/GHjLJK8VqHO80B8L8YE9m0Ixfzz2ofMjTVt+iPGYMP7uLGPd3Bu4uuSTis044mOGiddjReD8oy6KBrIig41fva1bpGqe49EGGrmIM6XY8AAAAASUVORK5CYII=", "cage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAwCAYAAABjezibAAADm0lEQVR42u2Yv2vqUBTHvze0CNYlUB+CKC4ZXDr4XFpwqZ2e8HaHwvsX7NSpQ6Frhc7t1CF/QPFN6lJ4XXyluHTIIg1CeApZNCAOedMNN9eb39EuPSC3iTX55HvOuefkAF/2ZV+2fds/yNq5StEWrUmvLSWBoh+5VgUA8GsmLyMprBQXTq5VkcnLkGtVWLqBbKmwsYpgtw5I4byg/GDjQEq7gLN0w7lGVEhpF3BUwTiQ0i7gWAWjQoZWME04AFjNTGTycuB9SVIFqYWB4uFWMxPrpUUSK5jJy4HK0GP+/GpmbqwUbisKJjEeKjUFAcB8ffdVxk8xfr1/66HcajibeGLA9dIi/JOzbmIh+fO8O+VaFeqwj6ubSxx32shVinZiF7Nu5pVkoYKM/l6uVXF4pEBp1jG46GIxmZLEgOyT3r/1AADqsI/26RnOiyeeyv14vIY2GGE+1pwYXkym5Fvju3339AAAOC+eeMbiXpQAB4Afj9cuOHXYx+P0j+uYNW0wcv4utxqYjzUAsC3dgDrsQxuMINeq+Pf8N76CuUrRvn/ruSAGF10XPIWkxn+v/PrpqFhuNfDRe0a2VMDd04NzPZGr96LAscrhFg6sSLnmbcelIOtipVl3ztHfecVwqCxmb94+PXOtg4vuBhy13+dXuLq5pG51Kg6NST6BYrl4/yBr07iLYqxyfLWhLmaTzsvNUpgy99JVXcEeBCaC4y1bKmA1M5EtFRwP8G1ZKMDFZEos3cB8rEUC5es0WyY/es8wX9+xXlrE0g20T8+gDUY47rQ3WrBQMUghLd2A0qxvQLKqKc26S7nDI2VDHbYGUwWVZh0vXXWjgSBRlMhVina2VHBuysOyxxRS1N3wmzJVLZOXo8egSEkWRhRnIjgac6KKQWt9rH1QZBSAhZuPNd+ksHQDmbyM9dLyfPhEtVjkaks3nA1ZtLXwza1fU5C4WRDtj5m8jHKr4VJR1NSGaUxTH33QG7Lu5mMuDSNJLxDUcCZRL3aS8Ma6me5nYRJjqy7m+0Q+Uai7w3TaWwX0enVkB0afCui37326gqIEoc0oq2BQIqWaxWzd5LtmUZlr3nbw0lVdb4NRsppE2ZRXMzNwoiqqIOzsJupshoRRix97RB0chYH1KoOSX3zxM2geRgTHng/6f/ZdxCtOiZ9Loxq9aZwhE8123uXEKzOjzPvSNtbdkijmWCiafWGmVmmtrLuJ354mmuft8ngxmZL/PYB7h+tk8AMAAAAASUVORK5CYII=", "scene": "data:image/png;base64,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", "frame": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAB30lEQVR42u1ZsY3DMAyUjN/ny69+DgOZIUD6DJA+QGYwoDlcufRE+ooBn6BMinIUOZCqIAnto3SkSJ5zzLpcz3FZ57isc3RvXhKOAYO+XM/ROefut4d3jS3AlnQAQFOPqWHqQaVAuN8xjtM4umWdY9KeGmJH8INSx6l1TGMPnykOzn7AHqbWz/evSClsbzkl+n4KNOX4YN3JHDAWe27TABvG6Jd1jlMI4kunEHYBJ70j9/m+hVS5W4rCQZsKYomT2sDV2qfuAfhuwCkUeIf5BxQrpYZlU03sgAttM+dWuA+4E+BSrfkKr11KpAB77BGXATR3wKsd4CgpljuHK+asR/iqrFi8gR9zAq2vz3KgpU6sOBZ7DLwrBsw1SIWTyErlnUI9je7kQO0yYrdY7DFQaX1J/UBLabT3A70f6EHc+4GD9AOHlJjwtKs1iWlrNPnPgfvt4bU1SI3RIvwHy0ucRpA1k7RMp7X29H9bvH9Op7FX3MOXdY6ncSza8ZwSBTMAxprYnjp+eIGjuXsAAjZbU8CqDCdvStzXSLGSvaQUbcqsUwhPzmHvLRSzKjqQBcFeM9of6C5QpVCrD2DQlnsE7FO2UlZU98K1pCUOB5cxvZarqi5ox36Apt5spegotdAfBDm4qg8yoyMAAAAASUVORK5CYII=", "tile": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAIAAAAzn+mLAAAAhElEQVR42u2VsQqAMAxE20AR2snB//9AB2c3h0KHrHmSE8wQbjwel1xtoxelsSI23tB27Lnaplr7Pq9cXUUz5Dglbk9o0kvUf4Y+n6F8QjpstDOkZYiijXSirR8Q38g/q210yhN2ZaAb5sreIBTqMrkMsb2NfepgV/MZYtkAGYpzQjL0AOdayrG/aShxAAAAAElFTkSuQmCC", "skelA": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAeCAYAAAAhDE4sAAAB40lEQVR42p1VPUjDQBT+LloKuuigszhoB+vgVLooxKE4NJJJhzhK6OIqN6lDd7fuHRIctO0UwYIglAzi4M8gSHFwEBycFIqU53Th8nNN2rckuXf35b3vfe8dg8IMbtN+dTf4djottOsNptqf6HB9j1QH9kqVxDPaOCAi0kxAAGDpJizdTF1LBQKAr6OlTGtKIKfTAgAsnL/HNi+cv+Op9zgZ2ZZuotm9DHz8+Az92x7LlJqISnAinmJ9LHN9jz6/P8jgNn1+f5Dre7S8VSZMYga3yfW9TCChXHnNpPWDw0w/iXKlySAvc4uBci3dDDhxOq2AJ358hr1ShRXL6yHgKfEyHA5Pbi6umajYYD4P0WvF1QIG83kUVwvQtzfx8NY/8ZtXzOA2vd7dn4Yi2iqtxf4erZSlm6GU5KYOrLyxQnLFXN8jQbaK9Fjf8ZpJvGZStGK52RlyfY9yszNkcDtWOVm4QWq3/nMIvF1vsJ2jAwBAs3uJp95jTNExgcppqbSkEm3IpwKaWJCjRm1a045MR5AsE6+KbnoU4N/PL2vXGzK5iVEqx8h+dTdxZIhbJNoeI0etahI6nRZUUWUut1z2qKq1rGmlRaWNk1aUq1SgJDLTLkstyZFGprxPaIqpunksBQP4B26BKeBJIA/YAAAAAElFTkSuQmCC", "skelB": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAeCAYAAAAhDE4sAAABq0lEQVR42p1VIWzCQBT9R4YBjV8mUFMogiKpIROUVIHodIPBkpOIeszSTA7RKtJW1ZCgmqoJmJpYEAiSCdRmJv7Ubwrtcdd+09z9f//ef/f+LwOB6dzCyXCUrt3Qh8B2mCi+0OElEYoOjLuDwjO1MkkIqVIiAABTM8DUDOmeNBEAwPfsXmlPmMgNfQAAaC0PueDW8gD7eFeNbFMzYLVZpz4+X8DXNmZKpREq4oS+tF/KvCTC0/mIOrfwdD6il0T40O8hVDGdW+glkVISVkZDWdu9vYL9smY5jnRuIanW1IyUDzf0U474fAHj7oAVccUoSWA7LIvIDX247jVa08v1Om2M3z9ZiogC6LasgrO3m5px8fz97uPt/iGCiWwR6b1OG6WNqnML680GekmE9WYDdW7lXo5PDeRTA9PSisgLbIc9zZ4BAGC1WcM+3uUUvU0+8mXItCTy58qrKkhKxFRHraxpbyIhkrPEi9Dd3Ur49/PLAtvJaqoQZWlySVPK40NErPIokT21zF8KulJ5KreJUNVkP76i1imKr12LT3UuT4aji1hWZZZnSyOl/wParz175eHfAgAAAABJRU5ErkJggg==", "gob": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAOCAYAAADNGCeJAAAA2UlEQVR42mNkwAG0siP+qzqboIjd3nuG4drUFYy49DASYwg6wGUok5it8X+t7Ij/xBrEwMDAoOpswoCsR8zW+D8DAwMDCykuQjeQgYHhP4rLXh0+y/jm0m0Uhdti6xg2aP3DMACb+JtLtxleHT7LyMDAwMDEwMAA5yADNuMGrC5CF0fWy4JNg9fiJpTAhnkfWRwbYCIUa8g0IcCCLVywGrxgE07X43XZ4ye3UGhcYngTLXLy4M6owqrh64w2nAmXqjkAaz6DpWgRPVWMNIUrKaEYBjOAFIBuKABCRmvrSmZ6QAAAAABJRU5ErkJggg==", "gobHand": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAKElEQVR42mNkYGBg0MqO+K/qbMLABGMwMDAwMF2buoLx9t4zEA5OGQAIIRCSoWvpWgAAAABJRU5ErkJggg==", "batA": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAICAYAAAAftBSpAAAAcklEQVR42mPQyo74z0AB0MqO+M8EY5BrAAMDAwPTo62HGXAZxKMg/R+ZxmbAo62HGRhhCuS8beEKrk1dwYiu+cuDp4zolsEcgKEY2bBHWw8zPIniZ5BZ9hFDHNlwRnSnkwJgrmNCF0CniZXHCfAFLDIAACwUQwC/oL03AAAAAElFTkSuQmCC", "batB": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAICAYAAAD0g6+qAAAAX0lEQVR42mNgoAfgUZD+j0zjA0zEGka2QVrZEf8ZGBgYnkTxo/BxAUZcBjzaehhDsZy3LQMDAwPDtakrGHEahM8Aog3Uyo74z6MgDcfYAhqZhmEU78IMoSRmtbIj/gMAECIssK9Xh7oAAAAASUVORK5CYII=", "eyeA": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAwElEQVR42mNkwAL8qzL+YxPf2DaDEV2MBZvGSL8ABhzgP7pBjMia8WhEAcs3bYAbwohNM1dRBFaN3/pWYBjCgq6IqyiCwc5BCqsBh4oiUAxhYGBgYES2HVkzf1wCA5txAwMDAwPDr7MNDB8XLYAYcuAZ3JDlmzYwMOHyJ0wzOhsd4DTg19kGrGx0gBGIeMMAzflYA/Fb3wqGQ0TEAnXTAbEpcfmmDTiTNIYhyPkBmxgDoUxEDJso24l2BSFbcMkDALy3e0Yhb/mCAAAAAElFTkSuQmCC", "eyeB": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAwElEQVR42mNkwAL8qzL+YxPf2DaDEV2MBZvGSL8ABhzgP7pBjMia8WhEAcs3bYAbwohNM1dRBFaN3/pWYBjCgq6IqyiCwc5BCqsBh4oiUAxhYGBgYES2HVkzf1wCA5txAwMDAwPDr7MNDB8XLYAYcuAZ3JDlmzYwMOHyJ0wzOhsd4DTg19kGrGx0gBGIeMMAzflYA/Fb3wqGQ0TEAnXTAbEpcfmmDTiTNIYhyPkBmxhBAwgZxkBMLiTZFfhswiUHAIg3e0Y7zn+hAAAAAElFTkSuQmCC", "ghost": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAkUlEQVR42mNkwAJWnNjxH5t4hIUHI7oYIzaNipzc2PQz3P/+FcMgRmTNuDRiMwhmCBOpmmEuhLmWCV3SxsqdwcbKnYFYcSZSbUd3BSO5BsDCggWXJLpzjxzbiVUdEzGacYnhNACbbbhcgNMLuDQQ5QJSAHUNgKV1ZD42MawGwNI3TAGMj00M3RCM7IstO+NSAwD0gF/bw3EUdQAAAABJRU5ErkJggg=="};
+
+// 3D d12 geometry (dodecahedron), computed once
+const D12 = (() => {
+  const p = (1 + Math.sqrt(5)) / 2, q = 1 / p, S = 34;
+  const sub = (a, b) => [a[0] - b[0], a[1] - b[1], a[2] - b[2]], add = (a, b) => [a[0] + b[0], a[1] + b[1], a[2] + b[2]];
+  const mul = (a, k) => [a[0] * k, a[1] * k, a[2] * k], dot = (a, b) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
+  const cross = (a, b) => [a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]];
+  const norm = a => mul(a, 1 / Math.sqrt(dot(a, a)));
+  const V = [];
+  for (const x of [-1, 1]) for (const y of [-1, 1]) for (const z of [-1, 1]) V.push([x, y, z]);
+  for (const a of [-1, 1]) for (const b of [-1, 1]) { V.push([0, a * q, b * p]); V.push([a * q, b * p, 0]); V.push([a * p, 0, b * q]); }
+  const C = [];
+  for (const a of [-1, 1]) for (const b of [-1, 1]) { C.push([0, a * p, b]); C.push([a * p, b, 0]); C.push([b, 0, a * p]); }
+  const NUMS = [1, 7, 4, 12, 6, 9, 10, 3, 8, 5, 11, 2];
+  const faces = C.map((c0, fi) => {
+    const N = norm(c0);
+    const vs = V.map(v => [v, dot(norm(v), N)]).sort((a, b) => b[1] - a[1]).slice(0, 5).map(x => x[0]);
+    const cen = mul(vs.reduce(add, [0, 0, 0]), 1 / 5);
+    const U = norm(cross([0.3, 1, 0.2], N));
+    const W = cross(N, U);
+    const loc = vs.map(v => { const d = sub(v, cen); return [dot(d, U) * S, dot(d, W) * S]; });
+    loc.sort((a, b) => Math.atan2(a[1], a[0]) - Math.atan2(b[1], b[0]));
+    const minx = Math.min(...loc.map(l => l[0])), miny = Math.min(...loc.map(l => l[1]));
+    const maxx = Math.max(...loc.map(l => l[0])), maxy = Math.max(...loc.map(l => l[1]));
+    const O = add(add(mul(cen, S), mul(U, minx)), mul(W, miny));
+    const m = 'matrix3d(' + [U[0], U[1], U[2], 0, W[0], W[1], W[2], 0, N[0], N[1], N[2], 0, O[0], O[1], O[2], 1].map(x => +x.toFixed(4)).join(',') + ')';
+    return { U, W, N, m, n: 0, w: (maxx - minx).toFixed(2), h: (maxy - miny).toFixed(2), pts: loc.map(l => (l[0] - minx).toFixed(2) + ',' + (l[1] - miny).toFixed(2)).join(' '), tx: (-minx).toFixed(2), ty: (-miny).toFixed(2) };
+  });
+  // number faces so opposite faces sum to 13
+  let k = 1; faces.forEach(f => { if (f.n) return; f.n = k; const o = faces.find(g => g !== f && dot(g.N, f.N) < -0.99); if (o) o.n = 13 - k; k++; });
+  return { faces, dot };
+})();
+
+// Pricing shown on the site. Bracketed numbers are suggestions for Cage to confirm.
+const OFFERS = [
+  { size: 'tiny', name: 'Retouching', desc: 'Clean-up, colour and compositing, image by image.', price: 'S$[30]', unit: ' · per image' },
+  { size: 'small', name: 'Direction session', desc: 'Two hours, one page of direction.', price: 'S$400', unit: '' },
+  { size: 'small', name: 'Social content', desc: 'Posts, edits and captions, made to a plan.', price: 'S$[1,200]', unit: ' · a month' },
+  { size: 'small', name: 'Brand refresh', desc: 'New life for a tired logo, palette and type, without starting over.', price: 'S$[1,500]', unit: '' },
+  { size: 'medium', name: 'Photoshoot', desc: 'Half or full day, crew included, edited finals.', price: 'S$[1,800]', unit: '' },
+  { size: 'medium', name: 'Founding identity', desc: 'Full identity and a printed booklet. First three clients only.', price: 'S$3,000', unit: '', note: ' · [3] of 3 left', dark: true },
+  { size: 'medium', name: 'Small ad campaign', desc: 'One idea, one shoot, cut for every channel.', price: 'S$[3,500]', unit: '' },
+  { size: 'large', name: 'Identity', desc: 'Identity, guidelines and basic collateral.', price: 'S$5,500', unit: '' },
+  { size: 'large', name: 'Events', desc: 'Launches, pop-ups and activations, planned and run.', price: 'S$[8,000]', unit: '' },
+  { size: 'large', name: 'Full brand launch', desc: 'Identity, campaign, shoot and launch, as one system.', price: 'S$[15,000]', unit: '' }
+];
+
+// AI and marketing facts, checked against original sources (Nov 2026).
+const FACTS = [
+  ['creative', [
+    ['93%', 'of marketers now use AI to create or help create content.', 'Ahrefs, State of AI in Content Marketing, 2026'],
+    ['73%', 'of marketers use generative AI for images and video.', 'WARC and TikTok, The New Creative Advantage, 2026'],
+    ['45%', 'of marketers say generative AI has significantly improved creative quality. 88% say it raised volume.', 'WARC and TikTok, The New Creative Advantage, 2026'],
+    ['24%', 'of marketers now rate AI content as better than human-written, up from 14% a year earlier.', 'Ahrefs, State of AI in Content Marketing, 2026'],
+    ['78%', "of marketers using AI don't tell their audience they did.", 'Ahrefs, 2026']]],
+  ['trust', [
+    ['73%', 'of consumers trust an ad less when they suspect AI made it.', 'The Harris Poll, Cannes Lions 2026'],
+    ['78%', 'of consumers say AI makes ads feel less authentic.', 'The Harris Poll, Cannes Lions 2026'],
+    ['86%', 'of consumers say AI-generated content should be disclosed.', 'Meltwater and YouGov, Trust in the Age of Generative AI, 2026 (~10,000 people, 7 markets)'],
+    ['15%', 'of consumers would trust a brand more if its content is AI-generated. 32% would trust it less.', 'Meltwater and YouGov, 2026']]],
+  ['search', [
+    ['58%', 'fewer clicks go to the top-ranking page when Google shows an AI Overview.', 'Ahrefs, 300,000 keywords, December 2025 data'],
+    ['8%', 'of Google visits with an AI summary ended in a click on a result. Without one: 15%.', 'Pew Research Center, 2025 (900 US adults)'],
+    ['26%', 'of visits ended the browsing session after an AI summary, against 16% without one.', 'Pew Research Center, 2025 (900 US adults)'],
+    ['1%', 'of visits clicked a link inside the AI summary itself.', 'Pew Research Center, 2025 (900 US adults)']]],
+  ['production', [
+    ['85%', 'of marketers using AI say they now produce content faster.', 'Ahrefs, 2026'],
+    ['82%', 'of brands and agencies use generative AI for creative production.', 'Digiday Research, 2026'],
+    ['76%', 'of organisations say generative AI has improved their content volume.', 'Adobe AI and Digital Trends, 2026'],
+    ['99%', 'of marketing leaders plan to spend more on AI tools in 2026.', 'Canva and The Harris Poll, 2026 (1,415 marketers, 7 countries)']]]
+];
+// Studio capacity: update these three when bookings change.
+const SLOTS_TOTAL = 10; // dots shown, not a promise of capacity
+const SLOTS_OPEN = 2;
+class Component extends DCLogic {
+  constructor(p){ super(p); this.state = { ai: 30, chaos: 0, shakes: 0, joined: false, menu: false, dungeon: false, q: { xp: 0, idea: 0, topic: 0, fact: 0, factTurns: 0, ai: 30, shakes: 0, dead: false, roll: 0, rolls: 0, log: 'You enter the dungeon. Scroll down to begin.' }, idea: 0, turns: [0,0,0,0], last: 2 }; }
+  renderVals() {
+    const st = this.state, ai = st.ai, chaos = st.chaos, turns = st.turns;
+    const buzz = () => { try { if (navigator.vibrate) navigator.vibrate(12); } catch (e) {} };
+    const ideas = [
+      ['a kopi bar', 'A kopi bar that only opens after 9pm. The menu is whatever the barista dreamt about.'],
+      ['a band', 'Hide the new album on 12 cassettes in 12 hawker centres. Finders get their names in the liner notes.'],
+      ['a bakery', 'Name every loaf after the regular who ordered it most. Ask for "the Mrs Tan".'],
+      ['a clothing label', 'Every care tag tells one chapter of a ghost story. Buy the whole collection to finish it.'],
+      ['a florist', 'Flowers for people you are angry at. The card just says: not yet.'],
+      ['a bookshop', 'Books wrapped in brown paper, only the first line printed on the front.'],
+      ['a hawker stall', 'Queue numbers printed as lottery tickets. Number 88 eats free.'],
+      ['a ceramics studio', 'Only sell the pieces that cracked in the kiln, with a note on how it happened.'],
+      ['a barbershop', 'A public wall of the worst haircuts they have fixed. Yours could be next.'],
+      ['a gym', 'No mirrors. Progress is measured by how loud the room laughs.']
+    ];
+    const data = FACTS.map((f, k) => ({ area: '0' + (k + 1) + ' ' + f[0], r: f[1] }));
+    const li = st.last, lr = data[li].r, lp = turns[li] % lr.length, reading = lr[lp];
+    const raw = [
+      { label: 'speed', v: ai >= 90 ? 100 : 18 + ai * 0.8, hot: ai >= 90 },
+      { label: 'cost', v: 92 - ai * 0.72 },
+      { label: 'uniqueness*', v: 94 - ai * 0.38 },
+      { label: 'trust*', v: 92 - ai * 0.3 }
+    ];
+    const bars = raw.map(b => { const v = Math.max(4, Math.min(100, Math.round(b.v))); return { label: b.label, v: b.hot ? 'MAX' : v, w: 'width:' + v + '%', color: b.hot ? '#E8371B' : '#111', cls: b.hot ? 'meter hot' : 'meter' }; });
+    let verdict = 'Where Folklore usually works. AI for range and speed, hands for the idea and the finish.';
+    if (ai < 15) verdict = 'All hand. One of a kind, slower, and priced like it.';
+    else if (ai > 45 && ai <= 75) verdict = 'Mostly AI. Faster and cheaper. A sharp idea keeps it yours.';
+    else if (ai > 75) verdict = 'All AI. Fastest and cheapest. A strong idea and an honest label do the rest.';
+    const idea = ideas[st.idea % ideas.length];
+    const pix = (rows, pal) => rows.flatMap((r, y) => r.split('').map((ch, x) => ch === '.' ? null : { x, y, c: pal[ch] }).filter(Boolean));
+    const dragon = pix(['..........GG....', '.........GGGG...', '........GGEGGF..', '........GGGGFFF.', '.DD....GGGG..FF.', 'DDDD..GGGGG.....', '.DDDDGGGGGG.....', '..DDGGGGGGG.....', '...GGGGGGGGG....', '..GGGGGGGGGGG...', '..GG..GG..GG....', '..GG..GG..GG....'], { G: '#4FA64F', D: '#2E6B2E', E: '#120E1C', F: '#FF7A2F' });
+    const chest = pix(['BBBBBBBBBB', 'BWWWWWWWWB', 'BYYYYYYYYB', 'BWWWYYWWWB', 'BWWWYYWWWB', 'BWWWWWWWWB', 'BBBBBBBBBB'], { B: '#3B2412', W: '#8B5A2B', Y: '#FFD23F' });
+    const footers = ["These fall out of my head daily. Steal one. Or book a call and I'll aim one at you.", "Random thought, zero research. Give me a brief and it gets better.", "That cost you eight seconds of attention. That's the real price of every ad.", "I write these on the MRT. The paid ones are better."];
+    const services = [
+      { id: 'identity', k: 'a', t: 'Identity', d: 'Names you, draws your mark and writes the rules, so every touchpoint looks unmistakably like you.' },
+      { id: 'visuals', k: 'b', t: 'Visuals', d: 'Builds the photography, patterns and layouts people learn to recognise you by.' },
+      { id: 'production', k: 'c', t: 'Production', d: 'Plans, shoots and finishes your campaigns, films and content, end to end.' },
+      { id: 'events', k: 'd', t: 'Events', d: 'Designs and runs launches, pop-ups and activations, from floor plan to last guest.' }
+    ];
+    const steps = [
+      { n: '01', t: 'Brief', d: 'A 20-minute call. You talk, Folklore listens for the one thing worth saying.', c: '#111' },
+      { n: '02', t: 'Idea', d: 'The single idea everything hangs on, agreed before anything is made.', c: '#111' },
+      { n: '03', t: 'Make', d: 'Identity, shoots, films and builds, made by the right hands for each.', c: '#111' },
+      { n: '04', t: 'Release', d: 'Launched, handed over with the files and the rules. Your brand, your keys.', c: '#E8371B' }
+    ];
+    const production = [
+      { t: 'Film and photo', d: 'Campaign films, product shoots and portraits, in studio or on location.', x: 'campaigns · product · portraits' },
+      { t: 'Motion', d: 'Logo animations, explainers and launch cuts that move the way the brand speaks.', x: 'animation · explainers · social cuts' },
+      { t: 'Content systems', d: 'One shoot planned to fill weeks of posts, cut for every channel.', x: 'planning · versioning · channels' },
+      { t: 'AI pre-production', d: 'Moodboards, storyboards and test frames that settle the look before a studio is booked.', x: 'moodboards · storyboards · test frames' },
+      { t: 'Post', d: 'Edit, colour, sound and retouching, delivered in every format you need.', x: 'edit · grade · sound · retouch' },
+      { t: 'Events and builds', d: 'Launch nights, pop-ups and sets, from floor plan to fabrication to the last guest out.', x: 'launches · pop-ups · sets · fabrication' }
+    ];
+    return {
+      slotsOpen: SLOTS_OPEN,
+      slotDots: Array.from({ length: SLOTS_TOTAL }, (_, i) => i < SLOTS_TOTAL - SLOTS_OPEN ? '#111' : 'transparent'),
+      stickyCta: 'consult now',
+      offerList: OFFERS.map(o => Object.assign({ note: '', bg: o.dark ? '#111' : '#F4F4F2', fg: o.dark ? '#F4F4F2' : '#111', mute: o.dark ? '#A3A39D' : '#6B6B66' }, o)),
+      services, steps, production, burgerClass: st.menu ? 'x' : '',
+      dragon, chest,
+      joined: st.joined, notJoined: !st.joined, join: () => { buzz(); this.setState({ joined: true }); },
+      ideaFooter: footers[st.idea % footers.length],
+      qv: this.questVals(), notDungeon: !st.dungeon, dungeon: st.dungeon, dungeonPressed: st.dungeon ? 'true' : 'false',
+      dungeonLabel: 'secret door', doorOpen: !!st.doorOpen, doorShut: !st.doorOpen,
+      toggleDungeon: () => { buzz(); this.setState({ doorOpen: true }); setTimeout(() => { this.setState({ dungeon: true, doorOpen: false, chaos: 0, menu: false }); try { window.scrollTo(0, 0); } catch (e) {} }, 450); },
+      headline: st.dungeon ? 'A wild founder appears.' : 'Say the thing nobody else will.',
+      chaosClass: chaos > 0 ? 'ch' : '', broken: chaos > 0,
+      reset: () => this.setState({ chaos: 0 }),
+      shake: st.shakes === 0 ? '' : (st.shakes % 2 ? 'shA' : 'shB'),
+      cta: st.dungeon ? 'join the party' : 'book a 20-minute call',
+      o1: st.dungeon ? 'Scroll of Direction' : 'Direction Session', o2: st.dungeon ? "Founder's Starter Kit" : 'Founding Identity', o3: st.dungeon ? 'Legendary Identity' : 'Standard Identity',
+      closing: st.dungeon ? 'Quest\ncomplete.' : 'Kill the\nsafe idea.',
+      dialTitle: st.dungeon ? 'How much magic goes in?' : 'How much should AI create?',
+      idea: idea[1], ideaFor: idea[0], ideaNo: (st.idea % ideas.length) + 1, ideaCount: ideas.length,
+      nextIdea: () => { buzz(); this.setState({ idea: st.idea + 1, shakes: st.shakes + 1 }); },
+      press: () => { buzz(); this.setState({ chaos: chaos + 1 }); },
+      pressLabel: "don't press",
+      deviceBg: '#E7E7E4',
+      ai, bars, verdict, aiColor: ai >= 90 ? '#E8371B' : '#111',
+      onDial: (e) => this.setState({ ai: Number(e.target.value) }),
+      menuIsOpen: st.menu, menuOpen: st.menu ? 'true' : 'false', menuLabel: st.menu ? 'Close menu' : 'Open menu',
+      toggleMenu: () => this.setState({ menu: !st.menu }),
+      closeMenu: () => this.setState({ menu: false }),
+      readArea: data[li].area, readPos: (lp + 1) + ' of ' + lr.length, readBig: reading[0], readLine: reading[1], readSource: reading[2],
+      knobs: data.map((d, i) => ({
+        no: d.area.slice(0, 2), name: d.area.slice(3), pos: (turns[i] % d.r.length + 1) + ' of ' + d.r.length,
+        ticks: d.r.map((x, j) => ({ a: -120 + j * (240 / Math.max(1, d.r.length - 1)), c: j === turns[i] % d.r.length ? '#E8371B' : '#5A5A56' })),
+        turn: 'rotate(' + (-120 + (turns[i] % d.r.length) * (240 / Math.max(1, d.r.length - 1))) + 'deg)',
+        turnIt: () => { buzz(); const t = turns.slice(); t[i] = t[i] + 1; this.setState({ turns: t, last: i }); }
+      })),
+      brands: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10']
+    };
+  }
+  questVals() {
+    const st = this.state.q;
+    const setQ = (o) => this.setState({ q: Object.assign({}, this.state.q, o) });
+    const buzz = (ms) => { try { if (navigator.vibrate) navigator.vibrate(ms || 12); } catch (e) {} };
+    const pix = (rows, pal) => rows.flatMap((r, y) => r.split('').map((ch, x) => ch === '.' ? null : { x, y, c: pal[ch] }).filter(Boolean));
+    const gain = (n, msg, extra) => {
+      const before = Math.floor(st.xp / 50), xp = st.xp + n, lvUp = Math.floor(xp / 50) > before;
+      setQ(Object.assign({ xp, log: lvUp ? 'LEVEL UP! ' + msg : msg }, extra || {}));
+    };
+    const moon = pix(['..MMMM..', '.MMMMSM.', 'MMMMMMMM', 'MMSMMMMM', 'MMMMMMMM', 'MMMMMSMM', '.MMMMMM.', '..MMMM..'], { M: '#e9d8a6', S: '#c4b07c' });
+    const stars = [[8, 14], [22, 34], [31, 10], [44, 52], [52, 22], [63, 40], [71, 12], [79, 60], [88, 30], [15, 70], [38, 80], [58, 66], [94, 78], [5, 44]].map((s, i) => ({ x: s[0], y: s[1], tw: i % 3 ? '' : 'tw' }));
+    const C = '#0a0908', W = '#2a1c18', Y = '#f0b040';
+    const castle = [
+      { x: 0, y: 22, w: 120, h: 8, c: C },
+      { x: 6, y: 10, w: 14, h: 20, c: C }, { x: 6, y: 7, w: 3, h: 3, c: C }, { x: 11.5, y: 7, w: 3, h: 3, c: C }, { x: 17, y: 7, w: 3, h: 3, c: C },
+      { x: 20, y: 16, w: 30, h: 14, c: C }, { x: 22, y: 14, w: 3, h: 2, c: C }, { x: 28, y: 14, w: 3, h: 2, c: C }, { x: 34, y: 14, w: 3, h: 2, c: C }, { x: 40, y: 14, w: 3, h: 2, c: C }, { x: 46, y: 14, w: 3, h: 2, c: C },
+      { x: 50, y: 4, w: 12, h: 26, c: C }, { x: 50, y: 1, w: 3, h: 3, c: C }, { x: 54.5, y: 1, w: 3, h: 3, c: C }, { x: 59, y: 1, w: 3, h: 3, c: C },
+      { x: 62, y: 18, w: 58, h: 12, c: C }, { x: 96, y: 12, w: 10, h: 18, c: C },
+      { x: 12, y: 15, w: 2, h: 3, c: Y }, { x: 55, y: 9, w: 2, h: 3, c: Y }, { x: 55, y: 16, w: 2, h: 3, c: Y }, { x: 100, y: 16, w: 2, h: 3, c: Y }, { x: 54, y: 24, w: 4, h: 6, c: W }
+    ];
+    const skin = '#f0c8a0', K = '#141210';
+    const party = [
+      { name: 'The Scribe', cls: 'Identity', desc: 'Names, logos, colour, type and the rules that hold them together.', img: (QUEST_STYLE === 'dark' ? SPRD : SPR).scribe },
+      { name: 'The Illusionist', cls: 'Visuals', desc: 'Images, patterns and layouts your brand repeats until people know it.', img: (QUEST_STYLE === 'dark' ? SPRD : SPR).illusionist },
+      { name: 'The Artificer', cls: 'Production', desc: 'Shoots, films, motion and ads. Piloted with AI, directed by people.', img: (QUEST_STYLE === 'dark' ? SPRD : SPR).artificer },
+      { name: 'The Herald', cls: 'Events', desc: 'Launch nights, pop-ups and shop takeovers, planned and run.', img: (QUEST_STYLE === 'dark' ? SPRD : SPR).herald }
+    ];
+    const ideas = [
+      ['a kopi bar', 'A kopi bar that only opens after 9pm. The menu is whatever the barista dreamt about.'],
+      ['a band', 'Hide the new album on 12 cassettes in 12 hawker centres. Finders get their names in the liner notes.'],
+      ['a bakery', 'Name every loaf after the regular who ordered it most. Ask for "the Mrs Tan".'],
+      ['a clothing label', 'Every care tag tells one chapter of a ghost story. Buy the whole collection to finish it.'],
+      ['a hawker stall', 'Queue numbers printed as lottery tickets. Number 88 eats free.']
+    ];
+    const footers = ["These fall out of my head daily. Steal one.", "Random thought, zero research. Give me a brief and it gets better.", "That cost you eight seconds of attention. That's the real price of every ad.", "I write these on the MRT. The paid ones are better."];
+    const topics = FACTS.map(f => [f[0][0].toUpperCase() + f[0].slice(1), f[1]]);
+    const tp = topics[st.topic], list = tp[1], f = list[st.fact % list.length], idea = ideas[st.idea % ideas.length];
+    const ai = st.ai;
+    const stats = [['Speed', ai >= 90 ? 100 : 18 + ai * 0.8], ['Cost', 92 - ai * 0.72], ['Unique', 94 - ai * 0.38], ['Trust', 92 - ai * 0.3]];
+    const bars = stats.map(s => { const n = Math.max(1, Math.min(10, Math.round(s[1] / 10))); const col = (s[0] === 'Speed' && ai >= 90) ? '#f07a2a' : '#4caa3a'; return { label: s[0], segs: Array.from({ length: 10 }, (_, i) => i < n ? col : '#d6bf84') }; });
+    let rarity = 'RARE ITEM', verdict = 'AI for range and speed, hands for the idea and the finish.', vc = '#8fd47a';
+    if (ai < 15) { rarity = 'LEGENDARY ITEM'; verdict = 'All hand. One of a kind, slower, and priced like it.'; vc = '#e8b84a'; }
+    else if (ai > 45 && ai <= 75) { rarity = 'ENCHANTED ITEM'; verdict = 'Mostly magic. Faster and cheaper. A sharp idea keeps it yours.'; vc = '#a8f0d0'; }
+    else if (ai > 75) { rarity = 'CONJURED ITEM'; verdict = 'All magic. Fastest and cheapest. A strong idea and an honest label do the rest.'; vc = '#f07a2a'; }
+    const brands = Array.from({ length: 6 }, (_, i) => ({ n: String(i + 1).padStart(2, '0'), name: '[Brand to come]' }));
+    const R = '#a81c1c', RD = '#5c0c0c', RL = '#dc5a4c';
+    const d20 = pix(['.......LL.......', '.....LLRRLL.....', '...LLRRRRRRLL...', '.LLRRRRRRRRRRDD.', '.LRRRRRRRRRRRRD.', '.LRRRRRRRRRRRRD.', '.LRRRRRRRRRRRRD.', '.LRRRRRRRRRRRRD.', '.LRRRRRRRRRRRRD.', '.LRRRRRRRRRRRRD.', '.LRRRRRRRRRRRRD.', '.LRRRRRRRRRRRRD.', '.LLRRRRRRRRRRDD.', '...DDRRRRRRDD...', '.....DDRRDD.....', '.......DD.......'], { L: RL, R, D: RD });
+    const r = st.roll;
+    let rollMsg = 'Roll to see how the call goes. (It goes well.)';
+    if (r === 12) rollMsg = 'Twelve. Critical hit. Book it before the luck runs out.';
+    else if (r === 1) rollMsg = 'A one. Book anyway. The Dungeon Master is forgiving.';
+    else if (r >= 7) rollMsg = 'You rolled ' + r + '. Success. The Dungeon Master will see you.';
+    else if (r > 0) rollMsg = 'You rolled ' + r + '. Close enough. Calls don’t need a check.';
+    const lvl = 1 + Math.floor(st.xp / 50);
+    return {
+      lvl, xpPct: (st.xp % 50) * 2, log: st.log,
+      motes: [[18, 70, 0, 9], [32, 55, 1.5, 11], [44, 78, 3, 8], [58, 62, 4.5, 10], [70, 74, 2, 12], [82, 58, 6, 9], [26, 84, 7, 10], [64, 86, 5.5, 11], [12, 60, 8, 9], [88, 80, 2.5, 13], [50, 66, 6.5, 10], [38, 90, 9, 12]].map(m => ({ x: m[0], y: m[1], d: m[2], t: m[3] })),
+      stars, moon, castle, party: party.map((m, i) => Object.assign({ delay: (i * 0.45).toFixed(2) }, m)), d20, spr: QUEST_STYLE === 'dark' ? SPRD : SPR, theme: QUEST_STYLE === 'dark' ? 'dk' : '', dark: QUEST_STYLE === 'dark', classic: QUEST_STYLE !== 'dark',
+      idea: idea[1], ideaFor: idea[0], ideaNo: (st.idea % ideas.length) + 1, ideaFooter: footers[st.idea % footers.length],
+      shake: st.shakes === 0 ? '' : (st.shakes % 2 ? 'shk' : 'shk2'),
+      nextIdea: () => { buzz(); gain(10, 'You pull a new notice from the board. +10 XP', { idea: st.idea + 1, shakes: st.shakes + 1 }); },
+      topics: topics.map((t, i) => ({ name: t[0], on: String(i === st.topic), cls: i === st.topic ? 'on' : 'stone', pick: () => { buzz(8); setQ({ topic: i, fact: 0, factTurns: st.factTurns + 1, log: 'The Oracle turns to ' + t[0].toLowerCase() + '.' }); } })),
+      topicName: tp[0].toUpperCase(), factBig: f[0], factLine: f[1], factSource: f[2], factNo: (st.fact % list.length) + 1, factCount: list.length,
+      factAnim: st.factTurns === 0 ? '' : (st.factTurns % 2 ? 'shk' : 'shk2'),
+      nextFact: () => { buzz(); gain(5, 'The Oracle speaks again. +5 XP', { fact: st.fact + 1, factTurns: st.factTurns + 1 }); },
+      ai, bars, rarity, verdict, verdictColor: vc,
+      onDial: (e) => { const v = Number(e.target.value); buzz(6); setQ({ ai: v, log: 'You forge at ' + v + '% AI.' }); },
+      slotsOpen: SLOTS_OPEN, slotDots: Array.from({ length: SLOTS_TOTAL }, (_, i) => i < SLOTS_TOTAL - SLOTS_OPEN ? '#c9d1c3' : 'transparent'),
+      offers: OFFERS.map(o => ({ name: o.name, desc: o.desc + (o.note || ''), price: 'from ' + o.price + (o.unit || ''), gold: o.price.replace('S$', '') + ' gold' })),
+      brands,
+      production: [
+        { t: 'Film and photo', x: 'campaigns · product · portraits' }, { t: 'Motion', x: 'animation · explainers · cuts' },
+        { t: 'Content systems', x: 'one shoot, weeks of posts' }, { t: 'AI pre-production', x: 'moodboards · storyboards' },
+        { t: 'Post', x: 'edit · colour · sound' }, { t: 'Events and builds', x: 'launches · pop-ups · sets' }
+      ],
+      shootSteps: [{ n: '01', t: 'Brief' }, { n: '02', t: 'Pre-prod' }, { n: '03', t: 'Shoot' }, { n: '04', t: 'Post' }],
+      exit: () => { this.setState({ dungeon: false }); try { window.scrollTo(0, 0); } catch (e) {} },
+      steps: [{ n: 1, t: 'The call', d: '20 minutes, free.' }, { n: 2, t: 'The idea', d: 'The one thing you stand for.' }, { n: 3, t: 'The build', d: 'By hand. Two rounds of changes.' }, { n: 4, t: 'The reveal', d: 'Files, booklet, your keys.' }],
+      roll: r === 0 ? '?' : r, rollMsg, rollAnim: st.rolls === 0 ? '' : (st.rolls % 2 ? 'roll' : 'roll2'),
+      rollShown: r === 0 ? '' : String(r),
+      ...(() => {
+        const shown = r === 0 ? 12 : r;
+        const front = D12.faces.find(f => f.n === shown) || D12.faces[0];
+        const U = front.U, W = front.W, N = front.N;
+        // rotation R with rows U, W, N; decompose R = Rx(a) Ry(b) Rz(c)
+        const R = [U, W, N];
+        const b = Math.asin(Math.max(-1, Math.min(1, R[0][2])));
+        const a = Math.atan2(-R[1][2], R[2][2]);
+        const c = Math.atan2(-R[0][1], R[0][0]);
+        const deg = x => x * 180 / Math.PI;
+        const spins = st.rolls || 0;
+        const dieRot = 'rotateX(' + (deg(a) + spins * 720).toFixed(2) + 'deg) rotateY(' + (deg(b) + spins * 360).toFixed(2) + 'deg) rotateZ(' + (deg(c) + spins * 360).toFixed(2) + 'deg)';
+        const L = [-0.35, -0.6, 0.72], Ln = Math.sqrt(D12.dot(L, L));
+        const ramp = QUEST_STYLE === 'dark' ? ['#3a0c04', '#5a1606', '#8a2408', '#b23a10', '#e0602a', '#f07a2a'] : ['#4a0a0a', '#6c0c0c', '#8e1414', '#a81c1c', '#c83a30', '#dc5a4c'];
+        const dieFaces = D12.faces.map(f => {
+          const n = [D12.dot(f.N, U), D12.dot(f.N, W), D12.dot(f.N, N)];
+          const lam = Math.max(0, D12.dot(n, L) / Ln);
+          const col = ramp[Math.min(ramp.length - 1, Math.round(lam * (ramp.length - 1)))];
+          return { m: f.m, n: f.n, c: col, w: f.w, h: f.h, pts: f.pts, tx: f.tx, ty: f.ty, fs: f.n === shown ? 22 : 16, tc: f.n === shown ? '#ffe9b0' : '#2a0804' };
+        });
+        return { dieRot, dieFaces, tossCls: spins === 0 ? '' : (spins % 2 ? 't1' : 't2') };
+      })(),
+      rollDie: () => { buzz([20, 40, 20, 60, 30]); const v = 1 + Math.floor(Math.random() * 12); gain(20, 'You roll the d12: ' + v + '. +20 XP', { roll: v, rolls: st.rolls + 1 }); },
+      dead: st.dead, deadClass: st.dead ? 'dead' : '',
+      die: () => { buzz([40, 30, 80]); setQ({ dead: true, log: 'It was a mimic.' }); },
+      revive: () => setQ({ dead: false, log: 'You rest at the inn. Everything is back where it was.' })
+    };
+  }
+}
+
+DC.mount(Component, document.getElementById('app'), document.getElementById('tpl').textContent);
+</script>
+</body>
+</html>
