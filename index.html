@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kuo Jinn, Creative Lead, Singapore</title>
+<meta name="description" content="Creative lead in Singapore. Ten years of film, social and brand work at Dentsu, Tribal Worldwide, Distilleri and Briq.">
+<meta property="og:title" content="Kuo Jinn, Creative Lead, Singapore">
+<meta property="og:description" content="Creative lead in Singapore. Ten years of film, social and brand work at Dentsu, Tribal Worldwide, Distilleri and Briq.">
+<meta property="og:image" content="assets/nongfu/h0.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0a">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..600&display=swap">
+<style>/* Layout: a screening room. The work fills the screen; type behaves like film titles and end credits.
+   One typeface, two weights, sentence case throughout, no labels. */
+:root {
+  --bg: #0b0b0a;
+  --bg-2: #151513;
+  --fg: #eeebe5;
+  --mute: rgba(238, 235, 229, 0.56);
+  --faint: rgba(238, 235, 229, 0.3);
+  --line: rgba(238, 235, 229, 0.13);
+  --font: "Geist", "Helvetica Neue", Arial, sans-serif;
+  --gl: max(16px, env(safe-area-inset-left, 0px));
+  --gr: max(16px, env(safe-area-inset-right, 0px));
+  --pad: 8px;
+  --space: clamp(72px, 11vw, 168px);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font-family: var(--font); font-size: 16px; line-height: 1.5; font-weight: 400;
+  -webkit-font-smoothing: antialiased; overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+img, video { display: block; max-width: 100%; }
+p { margin: 0; }
+:focus-visible { outline: 1px solid var(--fg); outline-offset: 4px; }
+.small { font-size: 13px; color: var(--mute); }
+.view[hidden] { display: none !important; }
+
+/* Film grain */
+body::after {
+  content: ""; position: fixed; inset: -50%; pointer-events: none; z-index: 60; opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain 1.2s steps(6) infinite;
+}
+@keyframes grain { 0%{transform:translate(0,0)} 20%{transform:translate(-3%,2%)} 40%{transform:translate(2%,-3%)} 60%{transform:translate(-2%,-1%)} 80%{transform:translate(3%,3%)} 100%{transform:translate(0,0)} }
+
+/* Header */
+.top {
+  position: fixed; inset: 0 0 auto; z-index: 50; display: flex; justify-content: space-between; align-items: baseline;
+  padding: calc(env(safe-area-inset-top, 0px) + 18px) calc(var(--gr) + var(--pad)) 0 calc(var(--gl) + var(--pad));
+  pointer-events: none; mix-blend-mode: difference; color: #fff; font-size: 15px; font-weight: 500; letter-spacing: -0.01em;
+}
+.top > * { pointer-events: auto; }
+.nav { display: flex; gap: 24px; }
+.nav a { opacity: .55; transition: opacity .2s; min-height: 44px; }
+.nav a:hover, .nav a[aria-current] { opacity: 1; }
+
+/* ---------- Home ---------- */
+.stage { position: fixed; inset: 0; z-index: 0; overflow: hidden; background: var(--bg); }
+.stage figure { position: absolute; inset: 0; margin: 0; opacity: 0; transition: opacity 1.1s ease; }
+.stage figure.on { opacity: 1; }
+.stage img, .stage video { width: 100%; height: 100%; object-fit: cover; }
+.stage::after { content: ""; position: absolute; inset: 0; transition: opacity .8s ease;
+  background: radial-gradient(ellipse at center, rgba(11,11,10,.2) 0%, rgba(11,11,10,.55) 70%, rgba(11,11,10,.85) 100%); }
+.stage::before { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: 0; transition: opacity .8s ease;
+  background: radial-gradient(ellipse at center, rgba(250,249,246,0) 0%, rgba(250,249,246,.35) 65%, rgba(250,249,246,.75) 100%); }
+@media (min-width: 700px) {
+  .stage figure.tri { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+}
+.stage figure.tri > :nth-child(n+2) { display: none; }
+@media (min-width: 700px) { .stage figure.tri > :nth-child(n+2) { display: block; } }
+
+.index { position: relative; z-index: 2; min-height: 100svh; display: grid; place-items: center; padding-block: 18vh; padding-left: var(--gl); padding-right: var(--gr); }
+.intro { position: fixed; left: calc(var(--gl) + var(--pad)); bottom: calc(env(safe-area-inset-bottom, 0px) + 18px); z-index: 3; margin: 0;
+  max-width: 28ch; font-size: 15px; font-weight: 400; line-height: 1.4; color: var(--mute); transition: color .6s; }
+.list { list-style: none; margin: 0; padding: 0; text-align: center; display: grid; gap: 0.02em;
+  font-size: clamp(30px, 4.4vw, 62px); font-weight: 500; line-height: 1.08; letter-spacing: -0.035em; }
+.list a { color: rgba(238,235,229,.34); transition: color .35s ease; text-shadow: 0 1px 30px rgba(0,0,0,.35); }
+.list li.on a, .list a:hover { color: var(--fg); }
+/* Phones: the list scrolls through the middle of the screen, and the name there sets the background */
+/* Phones: the list stays fixed in the middle of one screen. Scrolling moves the highlight, one name per step. */
+@media (hover: none) and (max-width: 899px) {
+  .index { display: block; padding: 0; min-height: 0; height: calc(100svh + (var(--n) - 1) * 64px); }
+  .index > nav { position: sticky; top: 0; height: 100svh; display: grid; place-items: center; padding-inline: var(--gl) var(--gr); }
+  .list { gap: .3em; }
+}
+body.home-light .stage::after { opacity: 0; }
+body.home-light .stage::before { opacity: 1; }
+body.home-light .list a { color: rgba(22,21,19,.3); text-shadow: none; }
+body.home-light .list li.on a, body.home-light .list a:hover { color: #161513; }
+body.home-light .intro { color: rgba(22,21,19,.62); }
+
+/* ---------- Project ---------- */
+.project { position: relative; z-index: 2; background: var(--bg); }
+.p-hero { position: relative; height: 88svh; min-height: 520px; overflow: hidden; }
+@media (min-width: 700px) { .p-hero { height: 100svh; min-height: 560px; } }
+.p-frames { position: absolute; inset: 0; will-change: transform; }
+.p-frames > * { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .9s ease; }
+.p-frames > .on { opacity: 1; }
+@media (min-width: 700px) {
+  .p-frames.tri { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .p-frames.tri > * { position: relative; opacity: 1; height: 100%; }
+}
+.p-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,11,10,.85), rgba(11,11,10,0) 45%); }
+.p-title { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: 0 var(--gr) clamp(24px, 4vw, 44px) var(--gl); }
+.p-title .inner { padding-inline: var(--pad); display: grid; gap: 12px; }
+.p-title h2 { margin: 0; font-size: clamp(44px, 7.4vw, 120px); font-weight: 500; line-height: .95; letter-spacing: -0.045em; text-wrap: balance; max-width: 14ch; }
+.p-title h2 .w { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: .1em; margin-bottom: -.1em; }
+.p-title h2 .w > span { display: inline-block; }
+.p-title .sub { font-size: 15px; color: var(--mute); }
+
+.wrap { padding-left: var(--gl); padding-right: var(--gr); }
+.wrap > .inner { padding-inline: var(--pad); display: grid; gap: 12px; }
+.lead { padding-block: var(--space) calc(var(--space) * .6); font-size: clamp(28px, 3.7vw, 58px); font-weight: 400; line-height: 1.1; letter-spacing: -0.03em; max-width: 21ch; text-wrap: balance; }
+.body { padding-block: calc(var(--space) * .6) 0; font-size: 18px; line-height: 1.6; color: var(--mute); max-width: 42ch; }
+@media (min-width: 900px) { .body, .ch-text, .awards { margin-left: 50%; } }
+
+/* Films */
+.films { display: grid; gap: 12px; }
+.films.many { grid-template-columns: 1fr 1fr; }
+.films.many > :first-child { grid-column: 1 / -1; }
+.films.tall { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 699px) {
+  .films.many { grid-template-columns: 1fr; }
+  .films.tall { grid-template-columns: repeat(3, 78%); overflow-x: auto; scroll-snap-type: x mandatory; margin-right: calc(-1 * (var(--gr) + var(--pad))); padding-right: calc(var(--gr) + var(--pad)); }
+  .films.tall > * { scroll-snap-align: start; }
+}
+.film-wrap { margin: 0; display: grid; gap: 10px; }
+.film-wrap figcaption { font-size: 13px; color: var(--mute); }
+.film { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; background: var(--bg-2); }
+.films.tall .film { aspect-ratio: 4 / 5; }
+.film img { width: 100%; height: 100%; object-fit: cover; opacity: .82; transition: opacity .4s, transform .9s ease; }
+.film:hover img { opacity: 1; transform: scale(1.02); }
+.film .play { position: absolute; left: 50%; top: 50%; translate: -50% -50%; width: 64px; height: 64px; border-radius: 50%;
+  border: 1px solid rgba(238,235,229,.8); background: rgba(11,11,10,.2); backdrop-filter: blur(4px); color: #eeebe5;
+  display: grid; place-items: center; transition: background .3s, color .3s; }
+.film .play svg { translate: 2px 0; }
+.film:hover .play { background: #eeebe5; color: #0b0b0a; }
+.film iframe, .film video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #000; z-index: 2; }
+.film.playing .play { display: none; }
+.film.post { cursor: default; }
+.film.post video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+/* Contact sheet: one frame per shot, each one starts the film at that moment */
+.sheet { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 4px; margin-top: 4px; }
+.sheet.tall { grid-template-columns: repeat(auto-fill, minmax(108px, 1fr)); }
+.cs-f { appearance: none; border: 0; padding: 0; margin: 0; display: block; overflow: hidden; background: var(--bg-2); cursor: pointer; }
+.cs-f img { width: 100%; height: 100%; object-fit: cover; transition: opacity .3s, transform .6s ease; }
+.sheet:hover .cs-f img { opacity: .4; }
+.sheet .cs-f:hover img, .sheet .cs-f:focus-visible img { opacity: 1; transform: scale(1.05); }
+@media (max-width: 699px) { .sheet { grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); } .sheet.tall { grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); } }
+
+/* Images, always shown whole */
+.reel { display: grid; gap: 12px; }
+.reel .row { display: grid; gap: 12px; align-items: start; }
+.reel .row.n2 { grid-template-columns: 1fr 1fr; }
+.reel .row.n3 { grid-template-columns: repeat(3, 1fr); }
+.reel .row.n4 { grid-template-columns: repeat(4, 1fr); }
+.reel .row.lone figure { width: min(100%, 620px); margin-inline: auto; }
+.reel figure { margin: 0; background: var(--bg-2); }
+.reel img { width: 100%; height: auto; }
+@media (max-width: 699px) { .reel .row.n3, .reel .row.n4 { grid-template-columns: 1fr 1fr; } }
+
+/* Chapters (PUB) */
+.chapter { display: grid; gap: 12px; padding-top: var(--space); }
+.ch-head { display: flex; align-items: baseline; gap: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--line); margin-bottom: 20px; }
+.ch-head h3 { margin: 0; font-size: clamp(30px, 3.6vw, 56px); font-weight: 500; letter-spacing: -0.035em; line-height: 1; }
+.ch-head .yr { font-size: 15px; color: var(--mute); }
+.ch-text { font-size: 18px; line-height: 1.6; color: var(--mute); max-width: 42ch; margin-bottom: 28px; }
+.awards { list-style: none; padding: 28px 0 0; margin-top: 0; margin-bottom: 0; display: grid; gap: 4px; font-size: 15px; }
+.awards li { color: var(--fg); }
+
+/* End credits */
+.credits { display: grid; grid-template-columns: 1fr 1fr; column-gap: 20px; row-gap: 6px; margin: 0; padding-block: var(--space) calc(var(--space) * .6); font-size: 14px; }
+.credits dt { text-align: right; color: var(--mute); }
+.credits dd { margin: 0; color: var(--fg); }
+
+/* Next */
+.next { position: relative; display: block; height: clamp(280px, 46vw, 560px); overflow: hidden; }
+.next img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .42; transition: opacity .6s, transform 1.2s ease; }
+.next:hover img { opacity: .7; transform: scale(1.03); }
+.next-in { position: absolute; left: 0; right: 0; bottom: 0; display: grid; gap: 8px; padding: 0 calc(var(--gr) + var(--pad)) clamp(24px, 4vw, 44px) calc(var(--gl) + var(--pad)); }
+.next strong { font-size: clamp(40px, 7vw, 112px); font-weight: 500; letter-spacing: -0.045em; line-height: .95; }
+
+/* White page (NLB) */
+.project.light {
+  --fg: #161513; --mute: rgba(22,21,19,.62); --faint: rgba(22,21,19,.35); --line: rgba(22,21,19,.14); --bg-2: #eeece7;
+  background: #faf9f6; color: var(--fg);
+}
+.project.light .p-hero { height: auto; min-height: 0; display: flex; flex-direction: column-reverse; gap: clamp(20px, 3vw, 36px);
+  padding-top: calc(env(safe-area-inset-top, 0px) + 96px); overflow: visible; }
+.project.light .p-hero::after { display: none; }
+.project.light .p-title { position: static; padding-bottom: 0; }
+.project.light .p-frames { position: relative; inset: auto; aspect-ratio: 16 / 9; overflow: hidden; margin-inline: calc(var(--gl) + var(--pad)) calc(var(--gr) + var(--pad)); }
+@media (max-width: 699px) { .project.light .p-frames { aspect-ratio: 1 / 1; } }
+.project.light .next { background: #0b0b0a; color: #eeebe5; }
+
+/* ---------- Info ---------- */
+.info { position: relative; z-index: 2; background: var(--bg); padding-top: calc(env(safe-area-inset-top, 0px) + 40px); padding-bottom: 48px; }
+.info-grid { display: grid; grid-template-columns: 1fr; gap: 48px; }
+@media (min-width: 900px) { .info-grid { grid-template-columns: 1fr 1fr; gap: 12px; } }
+.about { display: grid; gap: 16px; max-width: 42ch; font-size: 18px; line-height: 1.6; color: var(--mute); }
+.about .small { padding-top: 8px; }
+.jobs { list-style: none; margin: 0; padding: 0; }
+.jobs li { display: grid; grid-template-columns: 9em minmax(0, 1fr); gap: 16px; padding-block: 12px; border-top: 1px solid var(--line); font-size: 16px; }
+.jobs li:last-child { border-bottom: 1px solid var(--line); }
+.jobs .when { color: var(--mute); font-variant-numeric: tabular-nums; }
+.contact { display: grid; gap: 14px; padding-block: var(--space) 0; }
+.contact .big { font-size: clamp(32px, 5.4vw, 84px); font-weight: 500; letter-spacing: -0.04em; line-height: 1; overflow-wrap: anywhere; transition: color .25s; }
+.contact .big:hover { color: var(--mute); }
+.contact .link { text-decoration: underline; text-underline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  body::after { animation: none; }
+  .stage figure, .p-frames > *, .cs-f img { transition: none; }
+  .film img, .next img { transition: none; }
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Kuo Jinn", "jobTitle": "Creative Lead", "address": {"@type": "PostalAddress", "addressLocality": "Singapore", "addressCountry": "SG"}, "description": "Creative lead in Singapore. Ten years of film, social and brand work at Dentsu, Tribal Worldwide, Distilleri and Briq.", "email": "kuojinn@gmail.com", "sameAs": ["https://www.linkedin.com/in/kuojinntan/"], "alumniOf": ["Glasgow School of Art", "Nanyang Polytechnic"]}</script>
+</head>
+<body>
+
+<header class="top">
+  <a class="mark" href="#work">Kuo Jinn</a>
+  <nav class="nav" aria-label="Main"><a href="#work">Work</a><a href="#info">Info</a></nav>
+</header>
+<div class="stage" aria-hidden="true"><figure class="on"><video src="assets/nongfu/loop.mp4" autoplay preload="auto" poster="assets/nongfu/loop.jpg" width="1600" height="900" muted loop playsinline aria-hidden="true"></video></figure><figure class="tri"><video data-src="assets/shell/loop0.mp4" preload="none" poster="assets/shell/loop0.jpg" width="958" height="1100" muted loop playsinline aria-hidden="true"></video><video data-src="assets/shell/loop1.mp4" preload="none" poster="assets/shell/loop1.jpg" width="958" height="1150" muted loop playsinline aria-hidden="true"></video><video data-src="assets/shell/loop2.mp4" preload="none" poster="assets/shell/loop2.jpg" width="958" height="1150" muted loop playsinline aria-hidden="true"></video></figure><figure><video data-src="assets/pub/loop.mp4" preload="none" poster="assets/pub/loop.jpg" width="1600" height="670" muted loop playsinline aria-hidden="true"></video></figure><figure><video data-src="assets/nlb/loop.mp4" preload="none" poster="assets/nlb/loop.jpg" width="1600" height="900" muted loop playsinline aria-hidden="true"></video></figure><figure><video data-src="assets/canon/loop.mp4" preload="none" poster="assets/canon/loop.jpg" width="1600" height="900" muted loop playsinline aria-hidden="true"></video></figure><figure><video data-src="assets/pru/loop.mp4" preload="none" poster="assets/pru/loop.jpg" width="1280" height="592" muted loop playsinline aria-hidden="true"></video></figure><figure><video data-src="assets/gxs/loop.mp4" preload="none" poster="assets/gxs/loop.jpg" width="1600" height="900" muted loop playsinline aria-hidden="true"></video></figure><figure><video data-src="assets/ioi/loop.mp4" preload="none" poster="assets/ioi/loop.jpg" width="1600" height="900" muted loop playsinline aria-hidden="true"></video></figure><figure><video data-src="assets/pringles/loop.mp4" preload="none" poster="assets/pringles/loop.jpg" width="1600" height="900" muted loop playsinline aria-hidden="true"></video></figure></div>
+<main class="view index" id="v-work" data-title="Kuo Jinn, Creative Lead, Singapore" style="--n:9">
+  <h1 class="intro">Kuo Jinn is a creative lead in Singapore, making film, social and brand work.</h1>
+  <nav aria-label="Selected work"><ol class="list"><li><a href="#nongfu">Nongfu Spring</a></li><li><a href="#shell">Shell Advance</a></li><li><a href="#pub">PUB</a></li><li data-light><a href="#nlb">National Library Board</a></li><li><a href="#canon">Canon</a></li><li class="other"><a href="#pru">Prudential</a></li><li class="other"><a href="#gxs">GXS Bank</a></li><li class="other"><a href="#ioi">IOI Properties</a></li><li class="other"><a href="#pringles">Pringles</a></li></ol></nav>
+</main>
+<article class="view project" id="v-nongfu" hidden data-title="Unbottle Wonder, Nongfu Spring | Kuo Jinn">
+  <header class="p-hero">
+    <div class="p-frames"><video class="on" data-src="assets/nongfu/loop.mp4" preload="none" poster="assets/nongfu/loop.jpg" width="1600" height="900" muted loop playsinline aria-hidden="true"></video></div>
+    <div class="p-title"><div class="inner">
+      <h2><span class="w"><span>Unbottle</span></span> <span class="w"><span>Wonder</span></span></h2>
+      <p class="sub">Nongfu Spring Cha π. Creative lead at Briq, 2026.</p>
+    </div></div>
+  </header>
+  <div class="wrap"><div class="inner">
+    <p class="lead">Every possibility starts with the twist of a cap.</p>
+    <div class="films"><figure class="film-wrap"><div class="film" role="button" tabindex="0" data-video="assets/nongfu/film.mp4" data-key="nongfu:0" aria-label="Play Unbottle Wonder"><img src="assets/nongfu/h3.jpg" alt="" loading="lazy" width="1800" height="1013"><span class="play" aria-hidden="true"><svg width="15" height="17" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z" fill="currentColor"/></svg></span></div></figure></div>
+    <div class="sheet"><button class="cs-f" data-key="nongfu:0" data-t="0.6" aria-label="Play from 0:00" style="aspect-ratio:480/270"><img src="assets/nongfu/cs/00.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nongfu:0" data-t="2.34" aria-label="Play from 0:02" style="aspect-ratio:480/270"><img src="assets/nongfu/cs/01.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nongfu:0" data-t="4.08" aria-label="Play from 0:04" style="aspect-ratio:480/270"><img src="assets/nongfu/cs/02.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nongfu:0" data-t="5.28" aria-label="Play from 0:05" style="aspect-ratio:480/270"><img src="assets/nongfu/cs/03.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nongfu:0" data-t="6.88" aria-label="Play from 0:06" style="aspect-ratio:480/270"><img src="assets/nongfu/cs/04.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nongfu:0" data-t="7.88" aria-label="Play from 0:07" style="aspect-ratio:480/270"><img src="assets/nongfu/cs/05.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nongfu:0" data-t="8.97" aria-label="Play from 0:08" style="aspect-ratio:480/270"><img src="assets/nongfu/cs/06.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nongfu:0" data-t="10.06" aria-label="Play from 0:10" style="aspect-ratio:480/270"><img src="assets/nongfu/cs/07.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nongfu:0" data-t="12.24" aria-label="Play from 0:12" style="aspect-ratio:480/270"><img src="assets/nongfu/cs/08.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nongfu:0" data-t="13.33" aria-label="Play from 0:13" style="aspect-ratio:480/270"><img src="assets/nongfu/cs/09.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nongfu:0" data-t="14.42" aria-label="Play from 0:14" style="aspect-ratio:480/270"><img src="assets/nongfu/cs/10.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nongfu:0" data-t="15.51" aria-label="Play from 0:15" style="aspect-ratio:480/270"><img src="assets/nongfu/cs/11.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nongfu:0" data-t="16.6" aria-label="Play from 0:16" style="aspect-ratio:480/270"><img src="assets/nongfu/cs/12.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nongfu:0" data-t="18.64" aria-label="Play from 0:18" style="aspect-ratio:480/270"><img src="assets/nongfu/cs/13.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nongfu:0" data-t="20.08" aria-label="Play from 0:20" style="aspect-ratio:480/270"><img src="assets/nongfu/cs/14.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nongfu:0" data-t="21.08" aria-label="Play from 0:21" style="aspect-ratio:480/270"><img src="assets/nongfu/cs/15.jpg" alt="" loading="lazy" width="480" height="270"></button></div>
+    <div class="reel"><div class="row"><figure><img src="assets/nongfu/02.jpg" alt="" loading="lazy" width="1800" height="723"></figure></div><div class="row"><figure><img src="assets/nongfu/05.jpg" alt="" loading="lazy" width="1800" height="772"></figure></div><div class="row"><figure><img src="assets/nongfu/06.jpg" alt="" loading="lazy" width="1788" height="1264"></figure></div><div class="row"><figure><img src="assets/nongfu/07.jpg" alt="" loading="lazy" width="1800" height="970"></figure></div><div class="row lone"><figure><img src="assets/nongfu/08.jpg" alt="" loading="lazy" width="792" height="1128"></figure></div></div>
+    <p class="body">Cha π, a ready-to-drink tea from China, was launching across Southeast Asia, and the brand&#x27;s down-to-earth voice had to survive every market. So the wonder begins in an ordinary moment. Twist the cap, and characters from the Cha π world step out beside real people on real streets.</p>
+    
+    <dl class="credits"><dt>Creative lead</dt><dd>Kuo Jinn</dd></dl>
+  </div></div>
+  <a class="next" href="#shell">
+    <img src="assets/shell/loop0.jpg" alt="" loading="lazy" width="958" height="1100">
+    <span class="next-in"><span class="small">Next</span><strong>Shell Advance</strong></span>
+  </a>
+</article>
+<article class="view project" id="v-shell" hidden data-title="Crazy Good Oil, Shell Advance | Kuo Jinn">
+  <header class="p-hero">
+    <div class="p-frames tri"><video class="on" data-src="assets/shell/loop0.mp4" preload="none" poster="assets/shell/loop0.jpg" width="958" height="1100" muted loop playsinline aria-hidden="true"></video><video data-src="assets/shell/loop1.mp4" preload="none" poster="assets/shell/loop1.jpg" width="958" height="1150" muted loop playsinline aria-hidden="true"></video><video data-src="assets/shell/loop2.mp4" preload="none" poster="assets/shell/loop2.jpg" width="958" height="1150" muted loop playsinline aria-hidden="true"></video></div>
+    <div class="p-title"><div class="inner">
+      <h2><span class="w"><span>Crazy</span></span> <span class="w"><span>Good</span></span> <span class="w"><span>Oil</span></span></h2>
+      <p class="sub">Shell Advance, Asia Pacific. Creative lead at Briq, 2025.</p>
+    </div></div>
+  </header>
+  <div class="wrap"><div class="inner">
+    <p class="lead">Riders can tell who knows the sport. So riders and mechanics do the talking.</p>
+    <div class="films tall"><figure class="film-wrap"><div class="film" role="button" tabindex="0" data-video="assets/shell/film1.mp4" data-key="shell:0" aria-label="Play Crazy Good Oil"><img src="assets/shell/pf1.jpg" alt="" loading="lazy" width="720" height="1064"><span class="play" aria-hidden="true"><svg width="15" height="17" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z" fill="currentColor"/></svg></span></div></figure><figure class="film-wrap"><div class="film" role="button" tabindex="0" data-video="assets/shell/film2.mp4" data-key="shell:1" aria-label="Play Crazy Good Oil"><img src="assets/shell/pf2.jpg" alt="" loading="lazy" width="720" height="1064"><span class="play" aria-hidden="true"><svg width="15" height="17" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z" fill="currentColor"/></svg></span></div></figure><figure class="film-wrap"><div class="film post"><video src="assets/shell/post.mp4" poster="assets/shell/ppost.jpg" muted loop playsinline autoplay preload="metadata" aria-hidden="true"></video></div></figure></div>
+    <div class="sheet tall"><button class="cs-f" data-key="shell:0" data-t="0.9" aria-label="Play from 0:00" style="aspect-ratio:480/710"><img src="assets/shell/cs/00.jpg" alt="" loading="lazy" width="480" height="710"></button><button class="cs-f" data-key="shell:0" data-t="3.77" aria-label="Play from 0:03" style="aspect-ratio:480/710"><img src="assets/shell/cs/01.jpg" alt="" loading="lazy" width="480" height="710"></button><button class="cs-f" data-key="shell:0" data-t="6.63" aria-label="Play from 0:06" style="aspect-ratio:480/710"><img src="assets/shell/cs/02.jpg" alt="" loading="lazy" width="480" height="710"></button><button class="cs-f" data-key="shell:0" data-t="11.1" aria-label="Play from 0:11" style="aspect-ratio:480/710"><img src="assets/shell/cs/03.jpg" alt="" loading="lazy" width="480" height="710"></button><button class="cs-f" data-key="shell:0" data-t="13.33" aria-label="Play from 0:13" style="aspect-ratio:480/710"><img src="assets/shell/cs/04.jpg" alt="" loading="lazy" width="480" height="710"></button><button class="cs-f" data-key="shell:0" data-t="15.57" aria-label="Play from 0:15" style="aspect-ratio:480/710"><img src="assets/shell/cs/05.jpg" alt="" loading="lazy" width="480" height="710"></button><button class="cs-f" data-key="shell:1" data-t="0.9" aria-label="Play from 0:00" style="aspect-ratio:480/710"><img src="assets/shell/cs/06.jpg" alt="" loading="lazy" width="480" height="710"></button><button class="cs-f" data-key="shell:1" data-t="5.13" aria-label="Play from 0:05" style="aspect-ratio:480/710"><img src="assets/shell/cs/07.jpg" alt="" loading="lazy" width="480" height="710"></button><button class="cs-f" data-key="shell:1" data-t="8.5" aria-label="Play from 0:08" style="aspect-ratio:480/710"><img src="assets/shell/cs/08.jpg" alt="" loading="lazy" width="480" height="710"></button><button class="cs-f" data-key="shell:1" data-t="12.17" aria-label="Play from 0:12" style="aspect-ratio:480/710"><img src="assets/shell/cs/09.jpg" alt="" loading="lazy" width="480" height="710"></button><button class="cs-f" data-key="shell:1" data-t="16.77" aria-label="Play from 0:16" style="aspect-ratio:480/710"><img src="assets/shell/cs/10.jpg" alt="" loading="lazy" width="480" height="710"></button><button class="cs-f" data-key="shell:1" data-t="18.27" aria-label="Play from 0:18" style="aspect-ratio:480/710"><img src="assets/shell/cs/11.jpg" alt="" loading="lazy" width="480" height="710"></button></div>
+    <div class="reel"><div class="row lone"><figure><img src="assets/shell/00.jpg" alt="" loading="lazy" width="1290" height="1818"></figure></div></div>
+    <p class="body">Shell Advance social across Asia Pacific, built from inside riding culture: content made by riders themselves, collaborations with mechanics around the region, a Ducati series, and race weekends with Marc Márquez and Francesco Bagnaia.</p>
+    
+    <dl class="credits"><dt>Creative lead</dt><dd>Kuo Jinn</dd></dl>
+  </div></div>
+  <a class="next" href="#pub">
+    <img src="assets/pub/loop.jpg" alt="" loading="lazy" width="1600" height="670">
+    <span class="next-in"><span class="small">Next</span><strong>PUB</strong></span>
+  </a>
+</article>
+<article class="view project" id="v-pub" hidden data-title="PUB, PUB | Kuo Jinn">
+  <header class="p-hero">
+    <div class="p-frames"><video class="on" data-src="assets/pub/loop.mp4" preload="none" poster="assets/pub/loop.jpg" width="1600" height="670" muted loop playsinline aria-hidden="true"></video></div>
+    <div class="p-title"><div class="inner">
+      <h2><span class="w"><span>PUB</span></span></h2>
+      <p class="sub">Singapore&#x27;s National Water Agency. Art director at Tribal Worldwide, 2020 to 2022.</p>
+    </div></div>
+  </header>
+  <div class="wrap"><div class="inner">
+    <p class="lead">Water arrives so easily it becomes invisible. The work made people see the care inside every drop.</p>
+    
+    
+    
+    <p class="body">Campaigns for Singapore&#x27;s national water agency about why water is precious, how it brings people together, and how much love goes into every drop. The team re-pitched PUB and kept the account.</p>
+    
+    <section class="chapter">
+      <header class="ch-head"><h3>The Frog Prince</h3><span class="yr">2020</span></header>
+      <p class="ch-text">A ten minute Qing Ming film set in 1970s Singapore, about filial piety and remembering where our blessings come from. One of PUB&#x27;s most shared posts of 2020.</p>
+      <div class="films many"><figure class="film-wrap"><div class="film" role="button" tabindex="0" data-video="assets/pub/frogprince.mp4" data-key="frog" aria-label="Play The Frog Prince"><img src="assets/frog-prince/00.jpg" alt="" loading="lazy" width="1280" height="720"><span class="play" aria-hidden="true"><svg width="15" height="17" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z" fill="currentColor"/></svg></span></div><figcaption>The Frog Prince</figcaption></figure><figure class="film-wrap"><div class="film" role="button" tabindex="0" data-video="assets/pub/fathers.mp4" data-key="pub:1" aria-label="Play Fathers and sons react"><img src="assets/frog-prince/p0.jpg" alt="" loading="lazy" width="1280" height="720"><span class="play" aria-hidden="true"><svg width="15" height="17" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z" fill="currentColor"/></svg></span></div><figcaption>Fathers and sons react</figcaption></figure><figure class="film-wrap"><div class="film" role="button" tabindex="0" data-video="assets/pub/themesong.mp4" data-key="pub:2" aria-label="Play Theme song, 一点一滴"><img src="assets/frog-prince/p1.jpg" alt="" loading="lazy" width="1280" height="720"><span class="play" aria-hidden="true"><svg width="15" height="17" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z" fill="currentColor"/></svg></span></div><figcaption>Theme song, 一点一滴</figcaption></figure></div>
+      <div class="sheet"><button class="cs-f" data-key="frog" data-t="25.4" aria-label="Play from 0:25" style="aspect-ratio:480/200"><img src="assets/pub/cs/00.jpg" alt="" loading="lazy" width="480" height="200"></button><button class="cs-f" data-key="frog" data-t="62.0" aria-label="Play from 1:02" style="aspect-ratio:480/200"><img src="assets/pub/cs/01.jpg" alt="" loading="lazy" width="480" height="200"></button><button class="cs-f" data-key="frog" data-t="64.24" aria-label="Play from 1:04" style="aspect-ratio:480/200"><img src="assets/pub/cs/02.jpg" alt="" loading="lazy" width="480" height="200"></button><button class="cs-f" data-key="frog" data-t="68.28" aria-label="Play from 1:08" style="aspect-ratio:480/200"><img src="assets/pub/cs/03.jpg" alt="" loading="lazy" width="480" height="200"></button><button class="cs-f" data-key="frog" data-t="72.36" aria-label="Play from 1:12" style="aspect-ratio:480/200"><img src="assets/pub/cs/04.jpg" alt="" loading="lazy" width="480" height="200"></button><button class="cs-f" data-key="frog" data-t="83.32" aria-label="Play from 1:23" style="aspect-ratio:480/200"><img src="assets/pub/cs/05.jpg" alt="" loading="lazy" width="480" height="200"></button><button class="cs-f" data-key="frog" data-t="158.56" aria-label="Play from 2:38" style="aspect-ratio:480/200"><img src="assets/pub/cs/06.jpg" alt="" loading="lazy" width="480" height="200"></button><button class="cs-f" data-key="frog" data-t="159.48" aria-label="Play from 2:39" style="aspect-ratio:480/200"><img src="assets/pub/cs/07.jpg" alt="" loading="lazy" width="480" height="200"></button><button class="cs-f" data-key="frog" data-t="167.4" aria-label="Play from 2:47" style="aspect-ratio:480/200"><img src="assets/pub/cs/08.jpg" alt="" loading="lazy" width="480" height="200"></button><button class="cs-f" data-key="frog" data-t="175.12" aria-label="Play from 2:55" style="aspect-ratio:480/200"><img src="assets/pub/cs/09.jpg" alt="" loading="lazy" width="480" height="200"></button><button class="cs-f" data-key="frog" data-t="203.48" aria-label="Play from 3:23" style="aspect-ratio:480/200"><img src="assets/pub/cs/10.jpg" alt="" loading="lazy" width="480" height="200"></button><button class="cs-f" data-key="frog" data-t="206.48" aria-label="Play from 3:26" style="aspect-ratio:480/200"><img src="assets/pub/cs/11.jpg" alt="" loading="lazy" width="480" height="200"></button><button class="cs-f" data-key="frog" data-t="222.16" aria-label="Play from 3:42" style="aspect-ratio:480/200"><img src="assets/pub/cs/12.jpg" alt="" loading="lazy" width="480" height="200"></button><button class="cs-f" data-key="frog" data-t="226.96" aria-label="Play from 3:46" style="aspect-ratio:480/200"><img src="assets/pub/cs/13.jpg" alt="" loading="lazy" width="480" height="200"></button><button class="cs-f" data-key="frog" data-t="230.44" aria-label="Play from 3:50" style="aspect-ratio:480/200"><img src="assets/pub/cs/14.jpg" alt="" loading="lazy" width="480" height="200"></button><button class="cs-f" data-key="frog" data-t="404.76" aria-label="Play from 6:44" style="aspect-ratio:480/200"><img src="assets/pub/cs/15.jpg" alt="" loading="lazy" width="480" height="200"></button></div>
+      <div class="reel"><div class="row lone"><figure><img src="assets/frog-prince/01.jpg" alt="" loading="lazy" width="1800" height="2544"></figure></div></div>
+      <ul class="awards"><li>Best Cinematography, Canberra Film Festival</li><li>Gold, Film (Online), Gong Awards</li><li>Bronze, Direction, Gong Awards</li><li>Gold, Most Effective Use, MARKies</li><li>Bronze, Video Stars, AdStars</li></ul>
+    </section>
+    <section class="chapter">
+      <header class="ch-head"><h3>Tuas Nexus</h3><span class="yr">2021</span></header>
+      <p class="ch-text">The launch of Singapore&#x27;s first integrated water and solid waste treatment facility, and the care engineered into it.</p>
+      <div class="films"><figure class="film-wrap"><div class="film" role="button" tabindex="0" data-video="assets/pub/tuas.mp4" data-key="tuas" aria-label="Play Tuas Nexus"><img src="assets/tuas-nexus/00.jpg" alt="" loading="lazy" width="1280" height="720"><span class="play" aria-hidden="true"><svg width="15" height="17" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z" fill="currentColor"/></svg></span></div><figcaption>Tuas Nexus</figcaption></figure></div>
+      <div class="sheet"><button class="cs-f" data-key="tuas" data-t="3.4" aria-label="Play from 0:03" style="aspect-ratio:480/270"><img src="assets/pub/cs/16.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="tuas" data-t="16.88" aria-label="Play from 0:16" style="aspect-ratio:480/270"><img src="assets/pub/cs/17.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="tuas" data-t="27.6" aria-label="Play from 0:27" style="aspect-ratio:480/270"><img src="assets/pub/cs/18.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="tuas" data-t="46.24" aria-label="Play from 0:46" style="aspect-ratio:480/270"><img src="assets/pub/cs/19.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="tuas" data-t="57.04" aria-label="Play from 0:57" style="aspect-ratio:480/270"><img src="assets/pub/cs/20.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="tuas" data-t="69.8" aria-label="Play from 1:09" style="aspect-ratio:480/270"><img src="assets/pub/cs/21.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="tuas" data-t="89.36" aria-label="Play from 1:29" style="aspect-ratio:480/270"><img src="assets/pub/cs/22.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="tuas" data-t="102.36" aria-label="Play from 1:42" style="aspect-ratio:480/270"><img src="assets/pub/cs/23.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="tuas" data-t="115.08" aria-label="Play from 1:55" style="aspect-ratio:480/270"><img src="assets/pub/cs/24.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="tuas" data-t="144.84" aria-label="Play from 2:24" style="aspect-ratio:480/270"><img src="assets/pub/cs/25.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="tuas" data-t="158.52" aria-label="Play from 2:38" style="aspect-ratio:480/270"><img src="assets/pub/cs/26.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="tuas" data-t="177.32" aria-label="Play from 2:57" style="aspect-ratio:480/270"><img src="assets/pub/cs/27.jpg" alt="" loading="lazy" width="480" height="270"></button></div>
+      
+      
+    </section>
+    <section class="chapter">
+      <header class="ch-head"><h3>The Flash Mob</h3><span class="yr">2022</span></header>
+      <p class="ch-text">Floodwater as an opportunist mob racing through the streets, until PUB&#x27;s defences stop it. 26K views and 62 shares in its first week.</p>
+      <div class="films"><figure class="film-wrap"><div class="film" role="button" tabindex="0" data-video="assets/pub/flashmob.mp4" data-key="flash" aria-label="Play The Flash Mob"><img src="assets/pub/h1.jpg" alt="" loading="lazy" width="1920" height="804"><span class="play" aria-hidden="true"><svg width="15" height="17" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z" fill="currentColor"/></svg></span></div><figcaption>The Flash Mob</figcaption></figure></div>
+      <div class="sheet"><button class="cs-f" data-key="flash" data-t="2.4" aria-label="Play from 0:02" style="aspect-ratio:480/202"><img src="assets/pub/cs/28.jpg" alt="" loading="lazy" width="480" height="202"></button><button class="cs-f" data-key="flash" data-t="5.02" aria-label="Play from 0:05" style="aspect-ratio:480/202"><img src="assets/pub/cs/29.jpg" alt="" loading="lazy" width="480" height="202"></button><button class="cs-f" data-key="flash" data-t="7.63" aria-label="Play from 0:07" style="aspect-ratio:480/202"><img src="assets/pub/cs/30.jpg" alt="" loading="lazy" width="480" height="202"></button><button class="cs-f" data-key="flash" data-t="10.25" aria-label="Play from 0:10" style="aspect-ratio:480/202"><img src="assets/pub/cs/31.jpg" alt="" loading="lazy" width="480" height="202"></button><button class="cs-f" data-key="flash" data-t="12.87" aria-label="Play from 0:12" style="aspect-ratio:480/202"><img src="assets/pub/cs/32.jpg" alt="" loading="lazy" width="480" height="202"></button><button class="cs-f" data-key="flash" data-t="15.49" aria-label="Play from 0:15" style="aspect-ratio:480/202"><img src="assets/pub/cs/33.jpg" alt="" loading="lazy" width="480" height="202"></button><button class="cs-f" data-key="flash" data-t="18.11" aria-label="Play from 0:18" style="aspect-ratio:480/202"><img src="assets/pub/cs/34.jpg" alt="" loading="lazy" width="480" height="202"></button><button class="cs-f" data-key="flash" data-t="20.72" aria-label="Play from 0:20" style="aspect-ratio:480/202"><img src="assets/pub/cs/35.jpg" alt="" loading="lazy" width="480" height="202"></button><button class="cs-f" data-key="flash" data-t="23.34" aria-label="Play from 0:23" style="aspect-ratio:480/202"><img src="assets/pub/cs/36.jpg" alt="" loading="lazy" width="480" height="202"></button><button class="cs-f" data-key="flash" data-t="24.65" aria-label="Play from 0:24" style="aspect-ratio:480/202"><img src="assets/pub/cs/37.jpg" alt="" loading="lazy" width="480" height="202"></button><button class="cs-f" data-key="flash" data-t="25.96" aria-label="Play from 0:25" style="aspect-ratio:480/202"><img src="assets/pub/cs/38.jpg" alt="" loading="lazy" width="480" height="202"></button><button class="cs-f" data-key="flash" data-t="28.58" aria-label="Play from 0:28" style="aspect-ratio:480/202"><img src="assets/pub/cs/39.jpg" alt="" loading="lazy" width="480" height="202"></button><button class="cs-f" data-key="flash" data-t="31.19" aria-label="Play from 0:31" style="aspect-ratio:480/202"><img src="assets/pub/cs/40.jpg" alt="" loading="lazy" width="480" height="202"></button><button class="cs-f" data-key="flash" data-t="33.81" aria-label="Play from 0:33" style="aspect-ratio:480/202"><img src="assets/pub/cs/41.jpg" alt="" loading="lazy" width="480" height="202"></button><button class="cs-f" data-key="flash" data-t="36.43" aria-label="Play from 0:36" style="aspect-ratio:480/202"><img src="assets/pub/cs/42.jpg" alt="" loading="lazy" width="480" height="202"></button><button class="cs-f" data-key="flash" data-t="39.05" aria-label="Play from 0:39" style="aspect-ratio:480/202"><img src="assets/pub/cs/43.jpg" alt="" loading="lazy" width="480" height="202"></button></div>
+      <div class="reel"><div class="row"><figure><img src="assets/flash-mob/00.jpg" alt="" loading="lazy" width="1920" height="804"></figure></div><div class="row"><figure><img src="assets/flash-mob/01.jpg" alt="" loading="lazy" width="1920" height="804"></figure></div><div class="row"><figure><img src="assets/flash-mob/02.jpg" alt="" loading="lazy" width="1920" height="804"></figure></div></div>
+      
+    </section>
+    <dl class="credits"><dt>Executive creative director</dt><dd>Benson Toh</dd><dt>Creative director</dt><dd>Colin Koh</dd><dt>Creative group heads</dt><dd>Tytan Chang, Boston Ho</dd><dt>Senior art director</dt><dd>Ong Beng Wee</dd><dt>Art director</dt><dd>Kuo Jinn</dd><dt>Copywriters</dt><dd>Ploy Lawjindakul, Anwar Johari</dd><dt>Account</dt><dd>Khoo Suat Ling, Vion Seng</dd><dt>Head of broadcast</dt><dd>Casey Poh</dd></dl>
+  </div></div>
+  <a class="next" href="#nlb">
+    <img src="assets/nlb/loop.jpg" alt="" loading="lazy" width="1600" height="900">
+    <span class="next-in"><span class="small">Next</span><strong>National Library Board</strong></span>
+  </a>
+</article>
+<article class="view project light" id="v-nlb" hidden data-title="National Reading Movement, National Library Board | Kuo Jinn">
+  <header class="p-hero">
+    <div class="p-frames"><video class="on" data-src="assets/nlb/loop.mp4" preload="none" poster="assets/nlb/loop.jpg" width="1600" height="900" muted loop playsinline aria-hidden="true"></video></div>
+    <div class="p-title"><div class="inner">
+      <h2><span class="w"><span>National</span></span> <span class="w"><span>Reading</span></span> <span class="w"><span>Movement</span></span></h2>
+      <p class="sub">National Library Board. Art director at Dentsu, 2018.</p>
+    </div></div>
+  </header>
+  <div class="wrap"><div class="inner">
+    <p class="lead">One book is a step. A stack becomes a staircase. Read enough, and you&#x27;re off the ground.</p>
+    <div class="films many"><figure class="film-wrap"><div class="film" role="button" tabindex="0" data-video="assets/nlb/film.mp4" data-key="nlb:0" aria-label="Play National Reading Movement"><img src="assets/nlb/loop.jpg" alt="" loading="lazy" width="1600" height="900"><span class="play" aria-hidden="true"><svg width="15" height="17" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z" fill="currentColor"/></svg></span></div></figure><figure class="film-wrap"><div class="film" role="button" tabindex="0" data-video="assets/nlb/film1.mp4" data-key="nlb:1" aria-label="Play National Reading Movement"><img src="assets/nlb/00.jpg" alt="" loading="lazy" width="1280" height="477"><span class="play" aria-hidden="true"><svg width="15" height="17" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z" fill="currentColor"/></svg></span></div></figure><figure class="film-wrap"><div class="film" role="button" tabindex="0" data-video="assets/nlb/film2.mp4" data-key="nlb:2" aria-label="Play National Reading Movement"><img src="assets/nlb/03.jpg" alt="" loading="lazy" width="1080" height="1080"><span class="play" aria-hidden="true"><svg width="15" height="17" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z" fill="currentColor"/></svg></span></div></figure></div>
+    <div class="sheet"><button class="cs-f" data-key="nlb:0" data-t="3.4" aria-label="Play from 0:03" style="aspect-ratio:480/270"><img src="assets/nlb/cs/00.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nlb:0" data-t="7.47" aria-label="Play from 0:07" style="aspect-ratio:480/270"><img src="assets/nlb/cs/01.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nlb:0" data-t="9.51" aria-label="Play from 0:09" style="aspect-ratio:480/270"><img src="assets/nlb/cs/02.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nlb:0" data-t="11.55" aria-label="Play from 0:11" style="aspect-ratio:480/270"><img src="assets/nlb/cs/03.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nlb:0" data-t="13.59" aria-label="Play from 0:13" style="aspect-ratio:480/270"><img src="assets/nlb/cs/04.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nlb:0" data-t="15.62" aria-label="Play from 0:15" style="aspect-ratio:480/270"><img src="assets/nlb/cs/05.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nlb:0" data-t="19.7" aria-label="Play from 0:19" style="aspect-ratio:480/270"><img src="assets/nlb/cs/06.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nlb:0" data-t="21.74" aria-label="Play from 0:21" style="aspect-ratio:480/270"><img src="assets/nlb/cs/07.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nlb:0" data-t="23.77" aria-label="Play from 0:23" style="aspect-ratio:480/270"><img src="assets/nlb/cs/08.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nlb:0" data-t="25.81" aria-label="Play from 0:25" style="aspect-ratio:480/270"><img src="assets/nlb/cs/09.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nlb:0" data-t="26.83" aria-label="Play from 0:26" style="aspect-ratio:480/270"><img src="assets/nlb/cs/10.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nlb:0" data-t="27.85" aria-label="Play from 0:27" style="aspect-ratio:480/270"><img src="assets/nlb/cs/11.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nlb:0" data-t="28.87" aria-label="Play from 0:28" style="aspect-ratio:480/270"><img src="assets/nlb/cs/12.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nlb:0" data-t="29.89" aria-label="Play from 0:29" style="aspect-ratio:480/270"><img src="assets/nlb/cs/13.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nlb:0" data-t="31.93" aria-label="Play from 0:31" style="aspect-ratio:480/270"><img src="assets/nlb/cs/14.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="nlb:0" data-t="33.96" aria-label="Play from 0:33" style="aspect-ratio:480/270"><img src="assets/nlb/cs/15.jpg" alt="" loading="lazy" width="480" height="270"></button></div>
+    <div class="reel"><div class="row lone"><figure><img src="assets/nlb/01.jpg" alt="" loading="lazy" width="1120" height="1377"></figure></div><div class="row"><figure><img src="assets/nlb/02.jpg" alt="" loading="lazy" width="1400" height="559"></figure></div></div>
+    <p class="body">The National Reading Movement asked Singaporeans to read more, at a moment when the library was stepping beyond its walls and into people&#x27;s phones through an app. The film shows what books do for you. The roadshow met readers where they already read, over coffee, beside artworks painted with it.</p>
+    
+    <dl class="credits"><dt>Art director</dt><dd>Kuo Jinn</dd></dl>
+  </div></div>
+  <a class="next" href="#canon">
+    <img src="assets/canon/loop.jpg" alt="" loading="lazy" width="1600" height="900">
+    <span class="next-in"><span class="small">Next</span><strong>Canon</strong></span>
+  </a>
+</article>
+<article class="view project" id="v-canon" hidden data-title="Picture-Perfect Shots, Canon | Kuo Jinn">
+  <header class="p-hero">
+    <div class="p-frames"><video class="on" data-src="assets/canon/loop.mp4" preload="none" poster="assets/canon/loop.jpg" width="1600" height="900" muted loop playsinline aria-hidden="true"></video></div>
+    <div class="p-title"><div class="inner">
+      <h2><span class="w"><span>Picture-Perfect</span></span> <span class="w"><span>Shots</span></span></h2>
+      <p class="sub">Canon EOS M200. Art director at Dentsu, 2019.</p>
+    </div></div>
+  </header>
+  <div class="wrap"><div class="inner">
+    <p class="lead">One camera. The whole crew.</p>
+    <div class="films many"><figure class="film-wrap"><div class="film" role="button" tabindex="0" data-video="assets/canon/film.mp4" data-key="canon:0" aria-label="Play Picture-Perfect Shots"><img src="assets/canon/pf0.jpg" alt="" loading="lazy" width="1600" height="900"><span class="play" aria-hidden="true"><svg width="15" height="17" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z" fill="currentColor"/></svg></span></div></figure><figure class="film-wrap"><div class="film" role="button" tabindex="0" data-video="assets/canon/film1.mp4" data-key="canon:1" aria-label="Play Picture-Perfect Shots"><img src="assets/canon/pf1.jpg" alt="" loading="lazy" width="1600" height="900"><span class="play" aria-hidden="true"><svg width="15" height="17" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z" fill="currentColor"/></svg></span></div></figure></div>
+    <div class="sheet"><button class="cs-f" data-key="canon:0" data-t="1.4" aria-label="Play from 0:01" style="aspect-ratio:480/270"><img src="assets/canon/cs/00.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="canon:0" data-t="2.56" aria-label="Play from 0:02" style="aspect-ratio:480/270"><img src="assets/canon/cs/01.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="canon:0" data-t="3.6" aria-label="Play from 0:03" style="aspect-ratio:480/270"><img src="assets/canon/cs/02.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="canon:0" data-t="5.6" aria-label="Play from 0:05" style="aspect-ratio:480/270"><img src="assets/canon/cs/03.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="canon:0" data-t="6.8" aria-label="Play from 0:06" style="aspect-ratio:480/270"><img src="assets/canon/cs/04.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="canon:0" data-t="8.68" aria-label="Play from 0:08" style="aspect-ratio:480/270"><img src="assets/canon/cs/05.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="canon:0" data-t="10.59" aria-label="Play from 0:10" style="aspect-ratio:480/270"><img src="assets/canon/cs/06.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="canon:0" data-t="12.5" aria-label="Play from 0:12" style="aspect-ratio:480/270"><img src="assets/canon/cs/07.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="canon:0" data-t="13.46" aria-label="Play from 0:13" style="aspect-ratio:480/270"><img src="assets/canon/cs/08.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="canon:0" data-t="14.41" aria-label="Play from 0:14" style="aspect-ratio:480/270"><img src="assets/canon/cs/09.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="canon:0" data-t="15.37" aria-label="Play from 0:15" style="aspect-ratio:480/270"><img src="assets/canon/cs/10.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="canon:0" data-t="16.32" aria-label="Play from 0:16" style="aspect-ratio:480/270"><img src="assets/canon/cs/11.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="canon:0" data-t="17.54" aria-label="Play from 0:17" style="aspect-ratio:480/270"><img src="assets/canon/cs/12.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="canon:0" data-t="18.76" aria-label="Play from 0:18" style="aspect-ratio:480/270"><img src="assets/canon/cs/13.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="canon:0" data-t="20.07" aria-label="Play from 0:20" style="aspect-ratio:480/270"><img src="assets/canon/cs/14.jpg" alt="" loading="lazy" width="480" height="270"></button><button class="cs-f" data-key="canon:0" data-t="21.38" aria-label="Play from 0:21" style="aspect-ratio:480/270"><img src="assets/canon/cs/15.jpg" alt="" loading="lazy" width="480" height="270"></button></div>
+    <div class="reel"><div class="row"><figure><img src="assets/canon/01.jpg" alt="" loading="lazy" width="1280" height="720"></figure></div><div class="row n4"><figure><img src="assets/canon/02.jpg" alt="" loading="lazy" width="1800" height="1800"></figure><figure><img src="assets/canon/03.jpg" alt="" loading="lazy" width="1800" height="1801"></figure><figure><img src="assets/canon/04.jpg" alt="" loading="lazy" width="1800" height="1800"></figure><figure><img src="assets/canon/05.jpg" alt="" loading="lazy" width="1800" height="1800"></figure></div><div class="row n2"><figure><img src="assets/canon/06.jpg" alt="" loading="lazy" width="1800" height="1801"></figure><figure><img src="assets/canon/07.jpg" alt="" loading="lazy" width="1263" height="1787"></figure></div></div>
+    <p class="body">The EOS M200 could never win a spec fight against DSLRs and studio setups, so the launch refused to have one. Small creators work alone, so the camera became the crew they don&#x27;t have. A regional launch across Hong Kong, Taiwan and Southeast Asia, and Canon extended the TVC to Hong Kong, a first for the account.</p>
+    
+    <dl class="credits"><dt>Creative director</dt><dd>Mark Ringer</dd><dt>Head of art</dt><dd>Trevor Lim</dd><dt>Art director</dt><dd>Kuo Jinn</dd><dt>Senior copywriter</dt><dd>Mandara Nagaraj</dd></dl>
+  </div></div>
+  <a class="next" href="#pru">
+    <img src="assets/pru/loop.jpg" alt="" loading="lazy" width="1280" height="592">
+    <span class="next-in"><span class="small">Next</span><strong>Prudential</strong></span>
+  </a>
+</article>
+<article class="view project" id="v-pru" hidden data-title="Do Generation, Prudential | Kuo Jinn">
+  <header class="p-hero">
+    <div class="p-frames"><video class="on" data-src="assets/pru/loop.mp4" preload="none" poster="assets/pru/loop.jpg" width="1280" height="592" muted loop playsinline aria-hidden="true"></video></div>
+    <div class="p-title"><div class="inner">
+      <h2><span class="w"><span>Do</span></span> <span class="w"><span>Generation</span></span></h2>
+      <p class="sub">Prudential, Asia Pacific and Hong Kong. Art director at Dentsu, 2019.</p>
+    </div></div>
+  </header>
+  <div class="wrap"><div class="inner">
+    <p class="lead">People are doing more than ever. We gave them somewhere to find their niche.</p>
+    <div class="films"><figure class="film-wrap"><div class="film" role="button" tabindex="0" data-video="assets/pru/film.mp4" data-key="pru:0" aria-label="Play Do Generation"><img src="assets/pru/p0.jpg" alt="" loading="lazy" width="1280" height="592"><span class="play" aria-hidden="true"><svg width="15" height="17" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z" fill="currentColor"/></svg></span></div></figure></div>
+    
+    <div class="reel"><div class="row n4"><figure><img src="assets/pru/00.jpg" alt="" loading="lazy" width="1000" height="1413"></figure><figure><img src="assets/pru/01.jpg" alt="" loading="lazy" width="1000" height="1413"></figure><figure><img src="assets/pru/02.jpg" alt="" loading="lazy" width="1000" height="1413"></figure><figure><img src="assets/pru/03.jpg" alt="" loading="lazy" width="1000" height="1413"></figure></div></div>
+    <p class="body">Do Generation was Prudential&#x27;s brand campaign across Asia Pacific and Hong Kong: a film for the Do Tribe, from food to fitness to gardening. Pruworks for business was a separate, smaller B2B campaign, print written to the founders and HR leaders it serves. Art direction on both.</p>
+    
+    <dl class="credits"><dt>Executive creative director</dt><dd>Andy Greenaway</dd><dt>Associate creative director</dt><dd>Justin Kuruvilla</dd><dt>Head of art</dt><dd>Trevor Lim</dd><dt>Art director</dt><dd>Kuo Jinn</dd></dl>
+  </div></div>
+  <a class="next" href="#gxs">
+    <img src="assets/gxs/loop.jpg" alt="" loading="lazy" width="1600" height="900">
+    <span class="next-in"><span class="small">Next</span><strong>GXS Bank</strong></span>
+  </a>
+</article>
+<article class="view project" id="v-gxs" hidden data-title="GXS Bank, GXS Bank | Kuo Jinn">
+  <header class="p-hero">
+    <div class="p-frames"><video class="on" data-src="assets/gxs/loop.mp4" preload="none" poster="assets/gxs/loop.jpg" width="1600" height="900" muted loop playsinline aria-hidden="true"></video></div>
+    <div class="p-title"><div class="inner">
+      <h2><span class="w"><span>GXS</span></span> <span class="w"><span>Bank</span></span></h2>
+      <p class="sub">Launch. Art director at Distilleri, 2022 to 2023.</p>
+    </div></div>
+  </header>
+  <div class="wrap"><div class="inner">
+    <p class="lead">A digital bank built for the next generation.</p>
+    <div class="films"><figure class="film-wrap"><div class="film" role="button" tabindex="0" data-video="assets/gxs/film.mp4" data-key="gxs:0" aria-label="Play GXS Bank"><img src="assets/gxs/01.jpg" alt="" loading="lazy" width="1522" height="836"><span class="play" aria-hidden="true"><svg width="15" height="17" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z" fill="currentColor"/></svg></span></div></figure></div>
+    
+    <div class="reel"><div class="row"><figure><img src="assets/gxs/00.jpg" alt="" loading="lazy" width="1280" height="720"></figure></div><div class="row lone"><figure><img src="assets/gxs/02.jpg" alt="" loading="lazy" width="1800" height="1610"></figure></div></div>
+    <p class="body">Launch social and short how-to films that explain saving by showing it, playful enough to cut through the clutter.</p>
+    
+    <dl class="credits"><dt>Art director</dt><dd>Kuo Jinn</dd></dl>
+  </div></div>
+  <a class="next" href="#ioi">
+    <img src="assets/ioi/loop.jpg" alt="" loading="lazy" width="1600" height="900">
+    <span class="next-in"><span class="small">Next</span><strong>IOI Properties</strong></span>
+  </a>
+</article>
+<article class="view project" id="v-ioi" hidden data-title="W Residences Marina View, IOI Properties | Kuo Jinn">
+  <header class="p-hero">
+    <div class="p-frames"><video class="on" data-src="assets/ioi/loop.mp4" preload="none" poster="assets/ioi/loop.jpg" width="1600" height="900" muted loop playsinline aria-hidden="true"></video></div>
+    <div class="p-title"><div class="inner">
+      <h2><span class="w"><span>W</span></span> <span class="w"><span>Residences</span></span> <span class="w"><span>Marina</span></span> <span class="w"><span>View</span></span></h2>
+      <p class="sub">IOI Properties. Creative lead at Briq, 2025.</p>
+    </div></div>
+  </header>
+  <div class="wrap"><div class="inner">
+    <p class="lead">Make the inside move.</p>
+    <div class="films"><figure class="film-wrap"><div class="film" role="button" tabindex="0" data-video="assets/ioi/film.mp4" data-key="ioi:0" aria-label="Play W Residences Marina View"><img src="assets/ioi/03.jpg" alt="" loading="lazy" width="1800" height="852"><span class="play" aria-hidden="true"><svg width="15" height="17" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z" fill="currentColor"/></svg></span></div></figure></div>
+    
+    <div class="reel"><div class="row"><figure><img src="assets/ioi/00.jpg" alt="" loading="lazy" width="1800" height="859"></figure></div><div class="row"><figure><img src="assets/ioi/01.jpg" alt="" loading="lazy" width="1800" height="575"></figure></div><div class="row"><figure><img src="assets/ioi/02.jpg" alt="" loading="lazy" width="1800" height="575"></figure></div></div>
+    <p class="body">Launch film and campaign for W Residences at Marina View.</p>
+    
+    <dl class="credits"><dt>Creative lead</dt><dd>Kuo Jinn</dd></dl>
+  </div></div>
+  <a class="next" href="#pringles">
+    <img src="assets/pringles/loop.jpg" alt="" loading="lazy" width="1600" height="900">
+    <span class="next-in"><span class="small">Next</span><strong>Pringles</strong></span>
+  </a>
+</article>
+<article class="view project" id="v-pringles" hidden data-title="Pop-Up Party, Pringles | Kuo Jinn">
+  <header class="p-hero">
+    <div class="p-frames"><video class="on" data-src="assets/pringles/loop.mp4" preload="none" poster="assets/pringles/loop.jpg" width="1600" height="900" muted loop playsinline aria-hidden="true"></video></div>
+    <div class="p-title"><div class="inner">
+      <h2><span class="w"><span>Pop-Up</span></span> <span class="w"><span>Party</span></span></h2>
+      <p class="sub">Pringles. Dentsu, 2018.</p>
+    </div></div>
+  </header>
+  <div class="wrap"><div class="inner">
+    <p class="lead">A Pringles tube rebuilt as a speaker. A street turned into a party.</p>
+    <div class="films"><figure class="film-wrap"><div class="film" role="button" tabindex="0" data-video="assets/pringles/film.mp4" data-key="pringles:0" aria-label="Play Pop-Up Party"><img src="assets/pringles/01.jpg" alt="" loading="lazy" width="1390" height="946"><span class="play" aria-hidden="true"><svg width="15" height="17" viewBox="0 0 14 16"><path d="M0 0l14 8-14 8z" fill="currentColor"/></svg></span></div></figure></div>
+    
+    <div class="reel"><div class="row"><figure><img src="assets/pringles/00.jpg" alt="" loading="lazy" width="1280" height="720"></figure></div><div class="row lone"><figure><img src="assets/pringles/02.jpg" alt="" loading="lazy" width="1400" height="1400"></figure></div></div>
+    <p class="body">Dancers took the tube speaker onto the street and invited passers-by to join in.</p>
+    
+    <dl class="credits"><dt>Executive creative director</dt><dd>Andy Greenaway</dd><dt>Associate creative director</dt><dd>Justin Kuruvilla</dd><dt>Social</dt><dd>Kuo Jinn</dd></dl>
+  </div></div>
+  <a class="next" href="#nongfu">
+    <img src="assets/nongfu/loop.jpg" alt="" loading="lazy" width="1600" height="900">
+    <span class="next-in"><span class="small">Next</span><strong>Nongfu Spring</strong></span>
+  </a>
+</article>
+<main class="view info" id="v-info" hidden data-title="Info | Kuo Jinn">
+  <div class="wrap"><div class="inner">
+    <p class="lead">Ten years in Singapore agencies, between strategy, art direction and craft. I&#x27;d rather be in the room when the work is made than sign it off from a distance.</p>
+    <div class="info-grid">
+      <div class="about"><p>At Briq I grew the creative department from four people to nine and lead creative direction across eight to ten accounts. Before that, Distilleri, Tribal Worldwide and Dentsu.</p><p class="small">BA (Hons) Communication Design, Glasgow School of Art, 2015</p></div>
+      <ul class="jobs"><li><span class="when">Since 2024</span><span>Creative lead, Briq</span></li><li><span class="when">2022 to 2023</span><span>Art director, Distilleri</span></li><li><span class="when">2020 to 2022</span><span>Art director, Tribal Worldwide</span></li><li><span class="when">2016 to 2019</span><span>Art director, Dentsu</span></li><li><span class="when">2015</span><span>Intern, J. Walter Thompson</span></li></ul>
+    </div>
+    <section class="contact" id="contact">
+      <a class="big" href="mailto:kuojinn@gmail.com">kuojinn@gmail.com</a>
+      <a class="small link" href="https://www.linkedin.com/in/kuojinntan/" target="_blank" rel="noopener">LinkedIn</a>
+    </section>
+  </div></div>
+</main><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script><script>(function () {
+  var EMBED = !document.querySelector('meta[name="kj-preview"]');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasGsap = typeof window.gsap !== 'undefined';
+  if (hasGsap && window.ScrollTrigger) gsap.registerPlugin(ScrollTrigger);
+
+  /* Smooth scroll */
+  var lenis = null;
+  if (!reduce && typeof window.Lenis !== 'undefined') {
+    lenis = new Lenis({ lerp: 0.1 });
+    if (hasGsap && window.ScrollTrigger) {
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add(function (t) { lenis.raf(t * 1000); });
+      gsap.ticker.lagSmoothing(0);
+    } else {
+      (function raf(t) { lenis.raf(t); requestAnimationFrame(raf); })(0);
+    }
+  }
+  function toTop() { if (lenis) lenis.scrollTo(0, { immediate: true }); else window.scrollTo(0, 0); }
+
+  /* ---------- Clips ---------- */
+  function playIn(el) {
+    if (!el) return;
+    el.querySelectorAll('video').forEach(function (v) {
+      if (v.dataset.src) { v.src = v.dataset.src; delete v.dataset.src; }
+      if (reduce) return; // keep the poster still for people who prefer less motion
+      var p = v.play(); if (p && p.catch) p.catch(function () {});
+    });
+  }
+  function pauseIn(el) { if (el) el.querySelectorAll('video').forEach(function (v) { v.pause(); }); }
+
+  /* ---------- Index ---------- */
+  var stage = document.querySelector('.stage');
+  var frames = stage ? stage.querySelectorAll('figure') : [];
+  var items = document.querySelectorAll('.list li');
+  var current = -1;
+
+  function show(i) {
+    if (i === current || !items[i]) return;
+    current = i;
+    items.forEach(function (li, k) { li.classList.toggle('on', k === i); });
+    frames.forEach(function (f, k) {
+      if (k === i) {
+        f.querySelectorAll('img[data-src]').forEach(function (img) { img.src = img.dataset.src; delete img.dataset.src; });
+        f.classList.remove('on'); void f.offsetWidth; f.classList.add('on');
+        playIn(f);
+      } else { f.classList.remove('on'); pauseIn(f); }
+    });
+    document.body.classList.toggle('home-light', items[i].hasAttribute('data-light'));
+  }
+  /* The home page always opens on the first project (Nongfu Spring).
+     It changes only when someone points at, focuses or scrolls to another name, and then stays there. */
+  items.forEach(function (li, i) {
+    var a = li.querySelector('a');
+    a.addEventListener('mouseenter', function () { show(i); });
+    a.addEventListener('focus', function () { show(i); });
+  });
+  /* Phones: the list stays put in the middle of the screen; each 64px of scroll moves the highlight one name */
+  var STEP = 64, phoneQ = window.matchMedia('(hover: none) and (max-width: 899px)'), ticking = false;
+  window.addEventListener('scroll', function () {
+    if (ticking || !isHome() || !phoneQ.matches) return; ticking = true;
+    requestAnimationFrame(function () {
+      ticking = false;
+      show(Math.max(0, Math.min(items.length - 1, Math.round(window.scrollY / STEP))));
+    });
+  }, { passive: true });
+  show(0);
+
+  /* ---------- Films ---------- */
+  /* Our own films play in place, with sound. startFilm can begin at any second (used by the contact sheet). */
+  function startFilm(a, t) {
+    var v = a.querySelector('video');
+    if (!v) {
+      v = document.createElement('video');
+      v.src = a.dataset.video; v.controls = true; v.playsInline = true; v.preload = 'auto';
+      a.appendChild(v); a.classList.add('playing');
+    }
+    document.querySelectorAll('.film video').forEach(function (o) { if (o !== v) o.pause(); });
+    function go() { if (t != null) { try { v.currentTime = t; } catch (e) {} } var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+    if (v.readyState >= 1) go(); else v.addEventListener('loadedmetadata', go, { once: true });
+  }
+  document.querySelectorAll('.cs-f').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var page = b.closest('.view');
+      var a = page && page.querySelector('.film[data-key="' + b.dataset.key + '"]');
+      if (!a) return;
+      var r = a.getBoundingClientRect();
+      var y = window.scrollY + r.top - Math.max(16, (window.innerHeight - r.height) / 2);
+      if (lenis) lenis.scrollTo(y, { duration: 0.9 }); else window.scrollTo({ top: y, behavior: reduce ? 'auto' : 'smooth' });
+      startFilm(a, parseFloat(b.dataset.t));
+    });
+  });
+  document.querySelectorAll('.film[data-video]').forEach(function (a) {
+    a.addEventListener('keydown', function (ev) { if ((ev.key === 'Enter' || ev.key === ' ') && !a.querySelector('video')) { ev.preventDefault(); startFilm(a, null); } });
+  });
+  document.querySelectorAll('.film').forEach(function (a) {
+    a.addEventListener('click', function (ev) {
+      if (a.dataset.video) { if (!a.querySelector('video')) startFilm(a, null); return; }
+      if (!EMBED || !a.dataset.embed) return; // falls back to opening the film in a new tab
+      ev.preventDefault();
+      if (a.querySelector('iframe')) return;
+      var f = document.createElement('iframe');
+      f.src = a.dataset.embed;
+      f.title = a.getAttribute('aria-label') || 'Film';
+      f.allow = 'autoplay; fullscreen; picture-in-picture';
+      f.allowFullscreen = true;
+      a.appendChild(f);
+    });
+  });
+
+  /* ---------- Hero frames: projects with several film frames cycle through them ---------- */
+  var heroTimer = null;
+  function cycleHero(p) {
+    clearInterval(heroTimer);
+    var box = p && p.querySelector('.p-frames[data-cycle]');
+    if (!box || reduce) return;
+    var imgs = box.querySelectorAll('img'), k = 0;
+    var wide = window.matchMedia('(min-width: 700px)');
+    heroTimer = setInterval(function () {
+      if (document.hidden || (box.classList.contains('tri') && wide.matches)) return;
+      imgs[k].classList.remove('on');
+      k = (k + 1) % imgs.length;
+      imgs[k].classList.add('on');
+    }, 2600);
+  }
+
+  /* ---------- Routing ---------- */
+  var views = document.querySelectorAll('.view');
+  var navLinks = document.querySelectorAll('.nav a');
+  function isHome() { var h = location.hash.slice(1); return !h || h === 'work'; }
+  function route() {
+    var h = location.hash.slice(1) || 'work';
+    var target = document.getElementById('v-' + h) || document.getElementById('v-work');
+    views.forEach(function (v) { v.hidden = v !== target; });
+    if (stage) stage.hidden = target.id !== 'v-work';
+    if (target.id !== 'v-work') document.body.classList.remove('home-light');
+    else if (items[current]) document.body.classList.toggle('home-light', items[current].hasAttribute('data-light'));
+    navLinks.forEach(function (a) { a.toggleAttribute('aria-current', a.getAttribute('href') === '#' + (target.id === 'v-work' ? 'work' : h) || (a.getAttribute('href') === '#work' && target.classList.contains('project'))); });
+    document.title = target.dataset.title || 'Kuo Jinn, Creative Lead, Singapore';
+    toTop();
+    if (hasGsap && window.ScrollTrigger) { ScrollTrigger.getAll().forEach(function (t) { t.kill(); }); }
+    views.forEach(function (v) { if (v !== target && v.classList.contains('project')) pauseIn(v); });
+    if (stage) { if (target.id === 'v-work') playIn(stage.querySelector('figure.on')); else pauseIn(stage); }
+    if (target.classList.contains('project')) {
+      playIn(target.querySelector('.p-frames'));
+      target.querySelectorAll('.film.post').forEach(function (el) { playIn(el); });
+    }
+    cycleHero(target.classList.contains('project') ? target : null);
+    if (target.classList.contains('project')) enter(target);
+    if (hasGsap && window.ScrollTrigger) ScrollTrigger.refresh();
+  }
+
+  function enter(p) {
+    if (!hasGsap || reduce) return;
+    var light = p.classList.contains('light');
+    var words = p.querySelectorAll('.p-title h2 .w > span');
+    gsap.fromTo(words, { yPercent: 105 }, { yPercent: 0, duration: 1.05, ease: 'expo.out', stagger: 0.07, delay: 0.1 });
+    if (!light) gsap.fromTo(p.querySelector('.p-frames'), { scale: 1.14 }, { scale: 1, duration: 2.2, ease: 'expo.out' });
+    if (!window.ScrollTrigger) return;
+    if (!light) gsap.to(p.querySelector('.p-frames'), { yPercent: 14, ease: 'none', scrollTrigger: { trigger: p.querySelector('.p-hero'), start: 'top top', end: 'bottom top', scrub: true } });
+
+  }
+
+  window.addEventListener('hashchange', route);
+  route();
+})();
+</script>
+</body>
+</html>

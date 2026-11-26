@@ -1,0 +1,417 @@
+{
+  "person": {
+    "name": "Kuo Jinn",
+    "role": "Creative Lead",
+    "city": "Singapore",
+    "intro": "Kuo Jinn is a creative lead in Singapore, making film, social and brand work.",
+    "summary": "Creative lead in Singapore. Ten years of film, social and brand work at Dentsu, Tribal Worldwide, Distilleri and Briq.",
+    "email": "kuojinn@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/kuojinntan/"
+  },
+  "projects": [
+    {
+      "id": "nongfu",
+      "client": "Nongfu Spring",
+      "title": "Unbottle Wonder",
+      "sub": "Nongfu Spring Cha π. Creative lead at Briq, 2026.",
+      "line": "Every possibility starts with the twist of a cap.",
+      "body": "Cha π, a ready-to-drink tea from China, was launching across Southeast Asia, and the brand's down-to-earth voice had to survive every market. So the wonder begins in an ordinary moment. Twist the cap, and characters from the Cha π world step out beside real people on real streets.",
+      "films": [
+        {
+          "type": "file",
+          "src": "film",
+          "poster": "h3"
+        }
+      ],
+      "credits": [
+        [
+          "Creative lead",
+          "Kuo Jinn"
+        ]
+      ],
+      "loop": [
+        "loop"
+      ],
+      "featured": true
+    },
+    {
+      "id": "shell",
+      "client": "Shell Advance",
+      "title": "Crazy Good Oil",
+      "sub": "Shell Advance, Asia Pacific. Creative lead at Briq, 2025.",
+      "line": "Riders can tell who knows the sport. So riders and mechanics do the talking.",
+      "body": "Shell Advance social across Asia Pacific, built from inside riding culture: content made by riders themselves, collaborations with mechanics around the region, a Ducati series, and race weekends with Marc Márquez and Francesco Bagnaia.",
+      "filmShape": "tall",
+      "films": [
+        {
+          "type": "file",
+          "src": "film1",
+          "poster": "pf1"
+        },
+        {
+          "type": "file",
+          "src": "film2",
+          "poster": "pf2"
+        },
+        {
+          "type": "post",
+          "src": "post",
+          "poster": "ppost"
+        }
+      ],
+      "credits": [
+        [
+          "Creative lead",
+          "Kuo Jinn"
+        ]
+      ],
+      "heroLayout": "tri",
+      "loop": [
+        "loop0",
+        "loop1",
+        "loop2"
+      ],
+      "featured": true
+    },
+    {
+      "id": "pub",
+      "client": "PUB",
+      "title": "PUB",
+      "sub": "Singapore's National Water Agency. Art director at Tribal Worldwide, 2020 to 2022.",
+      "line": "Water arrives so easily it becomes invisible. The work made people see the care inside every drop.",
+      "body": "Campaigns for Singapore's national water agency about why water is precious, how it brings people together, and how much love goes into every drop. The team re-pitched PUB and kept the account.",
+      "films": [],
+      "loop": [
+        "loop"
+      ],
+      "parts": [
+        {
+          "title": "The Frog Prince",
+          "year": "2020",
+          "text": "A ten minute Qing Ming film set in 1970s Singapore, about filial piety and remembering where our blessings come from. One of PUB's most shared posts of 2020.",
+          "films": [
+            {
+              "type": "file",
+              "src": "frogprince",
+              "poster": "frog-prince/00",
+              "key": "frog",
+              "label": "The Frog Prince"
+            },
+            {
+              "type": "file",
+              "src": "fathers",
+              "poster": "frog-prince/p0",
+              "label": "Fathers and sons react"
+            },
+            {
+              "type": "file",
+              "src": "themesong",
+              "poster": "frog-prince/p1",
+              "label": "Theme song, 一点一滴"
+            }
+          ],
+          "images": [
+            "frog-prince/01"
+          ],
+          "awards": [
+            "Best Cinematography, Canberra Film Festival",
+            "Gold, Film (Online), Gong Awards",
+            "Bronze, Direction, Gong Awards",
+            "Gold, Most Effective Use, MARKies",
+            "Bronze, Video Stars, AdStars"
+          ]
+        },
+        {
+          "title": "Tuas Nexus",
+          "year": "2021",
+          "text": "The launch of Singapore's first integrated water and solid waste treatment facility, and the care engineered into it.",
+          "films": [
+            {
+              "type": "file",
+              "src": "tuas",
+              "poster": "tuas-nexus/00",
+              "key": "tuas",
+              "label": "Tuas Nexus"
+            }
+          ],
+          "images": []
+        },
+        {
+          "title": "The Flash Mob",
+          "year": "2022",
+          "text": "Floodwater as an opportunist mob racing through the streets, until PUB's defences stop it. 26K views and 62 shares in its first week.",
+          "films": [
+            {
+              "type": "file",
+              "src": "flashmob",
+              "poster": "pub/h1",
+              "key": "flash",
+              "label": "The Flash Mob"
+            }
+          ],
+          "images": [
+            "flash-mob/00",
+            "flash-mob/01",
+            "flash-mob/02"
+          ]
+        }
+      ],
+      "credits": [
+        [
+          "Executive creative director",
+          "Benson Toh"
+        ],
+        [
+          "Creative director",
+          "Colin Koh"
+        ],
+        [
+          "Creative group heads",
+          "Tytan Chang, Boston Ho"
+        ],
+        [
+          "Senior art director",
+          "Ong Beng Wee"
+        ],
+        [
+          "Art director",
+          "Kuo Jinn"
+        ],
+        [
+          "Copywriters",
+          "Ploy Lawjindakul, Anwar Johari"
+        ],
+        [
+          "Account",
+          "Khoo Suat Ling, Vion Seng"
+        ],
+        [
+          "Head of broadcast",
+          "Casey Poh"
+        ]
+      ],
+      "featured": true
+    },
+    {
+      "id": "nlb",
+      "client": "National Library Board",
+      "title": "National Reading Movement",
+      "sub": "National Library Board. Art director at Dentsu, 2018.",
+      "line": "One book is a step. A stack becomes a staircase. Read enough, and you're off the ground.",
+      "body": "The National Reading Movement asked Singaporeans to read more, at a moment when the library was stepping beyond its walls and into people's phones through an app. The film shows what books do for you. The roadshow met readers where they already read, over coffee, beside artworks painted with it.",
+      "films": [
+        {
+          "type": "file",
+          "src": "film",
+          "poster": "loop"
+        },
+        {
+          "type": "file",
+          "src": "film1",
+          "poster": "00"
+        },
+        {
+          "type": "file",
+          "src": "film2",
+          "poster": "03"
+        }
+      ],
+      "credits": [
+        [
+          "Art director",
+          "Kuo Jinn"
+        ]
+      ],
+      "theme": "light",
+      "loop": [
+        "loop"
+      ],
+      "featured": true
+    },
+    {
+      "id": "canon",
+      "client": "Canon",
+      "title": "Picture-Perfect Shots",
+      "sub": "Canon EOS M200. Art director at Dentsu, 2019.",
+      "line": "One camera. The whole crew.",
+      "body": "The EOS M200 could never win a spec fight against DSLRs and studio setups, so the launch refused to have one. Small creators work alone, so the camera became the crew they don't have. A regional launch across Hong Kong, Taiwan and Southeast Asia, and Canon extended the TVC to Hong Kong, a first for the account.",
+      "films": [
+        {
+          "type": "file",
+          "src": "film",
+          "poster": "pf0"
+        },
+        {
+          "type": "file",
+          "src": "film1",
+          "poster": "pf1"
+        }
+      ],
+      "credits": [
+        [
+          "Creative director",
+          "Mark Ringer"
+        ],
+        [
+          "Head of art",
+          "Trevor Lim"
+        ],
+        [
+          "Art director",
+          "Kuo Jinn"
+        ],
+        [
+          "Senior copywriter",
+          "Mandara Nagaraj"
+        ]
+      ],
+      "loop": [
+        "loop"
+      ],
+      "featured": true
+    },
+    {
+      "id": "pru",
+      "client": "Prudential",
+      "title": "Do Generation",
+      "sub": "Prudential, Asia Pacific and Hong Kong. Art director at Dentsu, 2019.",
+      "line": "People are doing more than ever. We gave them somewhere to find their niche.",
+      "body": "Do Generation was Prudential's brand campaign across Asia Pacific and Hong Kong: a film for the Do Tribe, from food to fitness to gardening. Pruworks for business was a separate, smaller B2B campaign, print written to the founders and HR leaders it serves. Art direction on both.",
+      "films": [
+        {
+          "type": "file",
+          "src": "film",
+          "poster": "p0"
+        }
+      ],
+      "credits": [
+        [
+          "Executive creative director",
+          "Andy Greenaway"
+        ],
+        [
+          "Associate creative director",
+          "Justin Kuruvilla"
+        ],
+        [
+          "Head of art",
+          "Trevor Lim"
+        ],
+        [
+          "Art director",
+          "Kuo Jinn"
+        ]
+      ],
+      "loop": [
+        "loop"
+      ]
+    },
+    {
+      "id": "gxs",
+      "client": "GXS Bank",
+      "title": "GXS Bank",
+      "sub": "Launch. Art director at Distilleri, 2022 to 2023.",
+      "line": "A digital bank built for the next generation.",
+      "body": "Launch social and short how-to films that explain saving by showing it, playful enough to cut through the clutter.",
+      "films": [
+        {
+          "type": "file",
+          "src": "film",
+          "poster": "01"
+        }
+      ],
+      "credits": [
+        [
+          "Art director",
+          "Kuo Jinn"
+        ]
+      ],
+      "loop": [
+        "loop"
+      ]
+    },
+    {
+      "id": "ioi",
+      "client": "IOI Properties",
+      "title": "W Residences Marina View",
+      "sub": "IOI Properties. Creative lead at Briq, 2025.",
+      "line": "Make the inside move.",
+      "body": "Launch film and campaign for W Residences at Marina View.",
+      "films": [
+        {
+          "type": "file",
+          "src": "film",
+          "poster": "03"
+        }
+      ],
+      "credits": [
+        [
+          "Creative lead",
+          "Kuo Jinn"
+        ]
+      ],
+      "loop": [
+        "loop"
+      ]
+    },
+    {
+      "id": "pringles",
+      "client": "Pringles",
+      "title": "Pop-Up Party",
+      "sub": "Pringles. Dentsu, 2018.",
+      "line": "A Pringles tube rebuilt as a speaker. A street turned into a party.",
+      "body": "Dancers took the tube speaker onto the street and invited passers-by to join in.",
+      "films": [
+        {
+          "type": "file",
+          "src": "film",
+          "poster": "01"
+        }
+      ],
+      "credits": [
+        [
+          "Executive creative director",
+          "Andy Greenaway"
+        ],
+        [
+          "Associate creative director",
+          "Justin Kuruvilla"
+        ],
+        [
+          "Social",
+          "Kuo Jinn"
+        ]
+      ],
+      "loop": [
+        "loop"
+      ]
+    }
+  ],
+  "about": [
+    "Ten years in Singapore agencies, between strategy, art direction and craft. I'd rather be in the room when the work is made than sign it off from a distance.",
+    "At Briq I grew the creative department from four people to nine and lead creative direction across eight to ten accounts. Before that, Distilleri, Tribal Worldwide and Dentsu."
+  ],
+  "experience": [
+    [
+      "Since 2024",
+      "Creative lead, Briq"
+    ],
+    [
+      "2022 to 2023",
+      "Art director, Distilleri"
+    ],
+    [
+      "2020 to 2022",
+      "Art director, Tribal Worldwide"
+    ],
+    [
+      "2016 to 2019",
+      "Art director, Dentsu"
+    ],
+    [
+      "2015",
+      "Intern, J. Walter Thompson"
+    ]
+  ],
+  "education": "BA (Hons) Communication Design, Glasgow School of Art, 2015"
+}
