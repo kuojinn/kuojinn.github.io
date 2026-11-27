@@ -174,6 +174,73 @@ input[type=range]{width:100%;accent-color:#E8371B;height:52px;margin:0}
 @keyframes tfl{0%{opacity:.55}33%{opacity:1}66%{opacity:.75}}@keyframes eyep{0%,100%{opacity:.35}50%{opacity:1}}
 @media (prefers-reduced-motion:reduce){.q.dk .tflick,.q.dk .eyeglow{animation:none}}
 .q .btn:hover{color:#2b1d0e}.q .btn.red:hover{color:#fff4dc}.q .btn.stone:hover,.q .btn.on:hover{color:#e9d8a6}
+/* ---------- home page polish (homepage-polish branch) ---------- */
+.qpg-nav{display:flex;align-items:center;gap:8px;margin:0 0 10px}.qpg-nav span{margin-right:auto;font-size:14px}.qpg-nav .btn{width:44px;min-height:44px;padding:0}
+.qpg{display:grid;grid-auto-flow:column;grid-auto-columns:88%;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;padding-bottom:4px}
+.qpg::-webkit-scrollbar{display:none}.qpgc{scroll-snap-align:start}
+@media (min-width:720px){.qpg{grid-auto-columns:62%}}
+.qhot{background:#2b1d0e;color:#e9d8a6;margin:0 -16px;padding:10px 16px!important}.qhot p{color:#e9d8a6!important}.qhot p:last-child{color:#ffd88a!important}
+
+.labhead{margin-bottom:8px}
+.doorcard{display:grid;gap:24px;align-items:end;border-top:1px solid #111;padding-top:24px}
+.doorbtn{justify-self:start;display:inline-flex;gap:10px;align-items:center;min-height:52px;padding:0 24px;border-radius:26px;border:1px solid #111;background:transparent;font:inherit;color:#111;cursor:pointer}
+.doorbtn:hover{background:#111;color:#F4F4F2}
+@media (min-width:900px){.doorcard{grid-template-columns:minmax(0,1fr) auto}}
+.pg-wrap{position:relative}
+.pg-nav{display:flex;align-items:center;justify-content:flex-end;gap:8px;margin:0 0 12px}
+.pg-hint{margin-right:auto;font-size:13px;color:#6B6B66}
+.pg-a{width:44px;height:44px;border-radius:22px;border:1px solid #111;background:transparent;font:inherit;cursor:pointer}
+.pg-a:hover{background:#111;color:#F4F4F2}
+.pg{display:grid!important;grid-auto-flow:column;grid-auto-columns:86%;grid-template-columns:none!important;gap:12px!important;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;overscroll-behavior-x:contain}
+.pg::-webkit-scrollbar{display:none}
+.pgc{scroll-snap-align:start}
+@media (min-width:900px){.pg{grid-auto-columns:calc((100% - 12px) / 1.6)}}
+
+.pl{grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.pl{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.stats{display:grid;gap:16px;border-top:1px solid #111;padding-top:16px}
+.stats>div{display:grid;grid-template-columns:72px minmax(0,1fr);gap:16px;align-items:center}
+.stats .big{font-size:56px!important}
+.stats p{margin:0!important}
+@media (min-width:900px){.stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.stats>div{display:block}.stats .big{font-size:96px!important}.stats p{margin-top:6px!important}}
+.stk{transform:translateY(110%);transition:transform .25s cubic-bezier(.2,.7,.2,1)}
+html.past-hero .stk{transform:none}
+@media (prefers-reduced-motion:reduce){.stk{transition:none}}
+
+@media (min-width:900px){button.m{display:none!important}}
+.door:hover{color:#111}
+/* work */
+.wk{display:grid;grid-template-columns:56px minmax(0,1fr);gap:8px 16px;padding:24px 0;border-bottom:1px solid #CBCBC6}
+.wk-n{font-family:'Doto',monospace;font-weight:900;font-size:28px;line-height:1;font-variant-numeric:tabular-nums}
+.wk-t{margin:0;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,5.6vw,28px);line-height:1.15;letter-spacing:-.015em}
+.wk-x{margin:8px 0 0;color:#4A4A46}
+.wk-s{grid-column:2;display:grid;grid-template-columns:88px minmax(0,1fr);gap:4px 12px;margin:8px 0 0;font-size:13px}
+.wk-s dt{color:#6B6B66}.wk-s dd{margin:0}
+.wk-st{grid-column:2;justify-self:start;font-size:13px;color:#6B6B66;border:1px solid #CBCBC6;border-radius:12px;padding:2px 10px}
+@media (min-width:900px){
+.wk{grid-template-columns:72px minmax(0,1.2fr) minmax(0,1fr) auto;gap:0 24px;padding:32px 0}
+.wk-n{font-size:40px}
+.wk-s{grid-column:auto;margin:4px 0 0}
+.wk-st{grid-column:auto;align-self:start;margin-top:4px}
+}
+/* pricing groups */
+.pg{display:grid;gap:12px}
+.pgc{border:1px solid #CBCBC6;border-radius:16px;padding:24px;background:#F4F4F2}
+.pg-l{margin:0;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(28px,7vw,40px);line-height:1;letter-spacing:-.03em}
+.pg-x{margin:8px 0 16px;font-size:13px;color:#6B6B66}
+.pg-u{list-style:none;margin:0;padding:0}
+.pr{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:16px 0;border-top:1px solid #CBCBC6}
+.pr-b{display:grid;gap:2px;min-width:0}
+.pr-n{font-family:'Inter Tight',sans-serif;font-weight:400;font-size:19px;line-height:1.25}
+.pr-d{font-size:13px;color:#4A4A46;line-height:1.45}
+.pr-note{font-size:13px;color:#E8371B}.pr-note:empty{display:none}
+.pr-p{display:grid;justify-items:end;font-family:'Doto',monospace;font-weight:900;font-size:22px;line-height:1;white-space:nowrap;font-variant-numeric:tabular-nums}
+.pr-f{font-family:'JetBrains Mono',monospace;font-weight:300;font-size:13px;color:#6B6B66;margin-bottom:6px}
+.pr.hot{background:#111;color:#F4F4F2;border-radius:12px;padding:16px;margin:0 -12px;border-top-color:transparent}
+.pr.hot .pr-d,.pr.hot .pr-f{color:#C9C9C4}.pr.hot .pr-note{color:#F4F4F2}
+.pr.hot+.pr{border-top-color:transparent}
+@media (min-width:900px){.pg{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.pgc{padding:28px}}
+
 </style>
 
 </head>
@@ -188,16 +255,16 @@ input[type=range]{width:100%;accent-color:#E8371B;height:52px;margin:0}
 
 <header class="wrap" style="display:flex;gap:10px;align-items:center;justify-content:space-between;padding-block:14px;border-bottom:1px solid #CBCBC6">
 <a href="#top" aria-label="Folklore, home" style="display:block;line-height:0"><img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%22-1.772 -0.800 40.779 7.600%22%3E%3Ccircle cx=%220.007%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%221.007%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%222.008%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%223.008%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%223.972%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2210.235%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2211.238%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2214.247%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%220.006%22 cy=%221.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2211.238%22 cy=%221.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2214.246%22 cy=%221.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%220.006%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2211.239%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2214.246%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2217.780%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%221.028%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%222.027%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%222.997%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2211.236%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2214.246%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2216.602%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%220.006%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2211.239%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2214.246%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2215.424%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%220.006%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2211.238%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2214.246%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2216.601%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%220.007%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2210.235%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2211.238%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2212.234%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2214.247%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2217.780%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%228.805%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%228.537%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%227.805%22 cy=%225.732%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%226.805%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%225.805%22 cy=%225.732%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%225.073%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%224.805%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%225.073%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%225.805%22 cy=%222.268%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%226.805%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%227.805%22 cy=%222.268%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%228.537%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2219.355%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2220.355%22 cy=%220.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2220.355%22 cy=%221.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2220.355%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2220.355%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2220.355%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2220.355%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2220.355%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2219.355%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2221.355%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2228.592%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2230.591%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2231.589%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2228.591%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2229.592%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2232.589%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2228.592%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2228.591%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2228.576%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2226.817%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2226.549%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2225.817%22 cy=%225.732%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2224.817%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2223.817%22 cy=%225.732%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2223.085%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2222.817%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2223.085%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2223.817%22 cy=%222.268%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2224.817%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2225.817%22 cy=%222.268%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2226.549%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2238.207%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2237.207%22 cy=%225.732%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2236.207%22 cy=%226.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2235.207%22 cy=%225.732%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2234.475%22 cy=%225.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2234.207%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2234.475%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2235.207%22 cy=%222.268%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2236.207%22 cy=%222.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2237.207%22 cy=%222.268%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2237.939%22 cy=%223.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2235.207%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2236.207%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%2237.207%22 cy=%224.000%22 r=%220.42%22 fill=%22%230A0908%22/%3E%3Ccircle cx=%22-0.972%22 cy=%223.000%22 r=%220.42%22 fill=%22%23E8371B%22/%3E%3C/svg%3E" alt="Folklore" width="140" height="26" style="display:block;width:clamp(120px,32vw,160px);height:auto"></a>
-<nav class="d"><a href="#services" style="text-decoration:none;margin-right:28px">services</a><a href="#production-detail" style="text-decoration:none;margin-right:28px">production</a><a href="#offers" style="text-decoration:none;margin-right:28px">pricing</a><a href="#faq" style="text-decoration:none">faq</a></nav>
+<nav class="d"><a href="#services" style="text-decoration:none;margin-right:28px">services</a><a href="#offers" style="text-decoration:none;margin-right:28px">pricing</a><a href="#lab" style="text-decoration:none;margin-right:28px">lab</a><a href="#faq" style="text-decoration:none">faq</a></nav>
 <span style="display:flex;gap:8px">
-<button type="button" onClick="{{toggleDungeon}}" aria-label="Secret door: play this site as a game" style="display:inline-flex;align-items:center;gap:8px;white-space:nowrap;min-height:44px;padding:0 14px;border-radius:22px;border:1px dashed #111;background:transparent;font-size:13px"><sc-if value="{{doorShut}}" hint-placeholder-val="{{true}}"><svg class="wob" viewBox="0 0 9 11" width="16" height="20" shape-rendering="crispEdges" aria-hidden="true"><path d="M0 0h9v11h-9z" fill="#111"/><path d="M1 1h7v10h-7z" fill="#E8371B"/><path d="M2 2h2v4h-2zM5 2h2v4h-2z" fill="#B82A12"/><path d="M6 7h1v1h-1z" fill="#F4F4F2"/></svg></sc-if><sc-if value="{{doorOpen}}" hint-placeholder-val="{{false}}"><svg viewBox="0 0 9 11" width="16" height="20" shape-rendering="crispEdges" aria-hidden="true"><path d="M0 0h9v11h-9z" fill="#111"/><path d="M1 1h7v10h-7z" fill="#FFD23F"/><path d="M3 4h3v7h-3z" fill="#FFF3B0"/><path d="M1 1h2v10h-2z" fill="#E8371B"/></svg></sc-if>{{dungeonLabel}}</button>
+<sc-if value="{{dungeon}}" hint-placeholder-val="{{false}}"><button type="button" onClick="{{toggleDungeon}}" aria-label="Secret door: play this site as a game" style="display:inline-flex;align-items:center;gap:8px;white-space:nowrap;min-height:44px;padding:0 14px;border-radius:22px;border:0;background:transparent;font-size:13px;color:#4A4A46" class="door"><sc-if value="{{doorShut}}" hint-placeholder-val="{{true}}"><svg viewBox="0 0 9 11" width="16" height="20" shape-rendering="crispEdges" aria-hidden="true"><path d="M0 0h9v11h-9z" fill="#111"/><path d="M1 1h7v10h-7z" fill="#E8371B"/><path d="M2 2h2v4h-2zM5 2h2v4h-2z" fill="#B82A12"/><path d="M6 7h1v1h-1z" fill="#F4F4F2"/></svg></sc-if><sc-if value="{{doorOpen}}" hint-placeholder-val="{{false}}"><svg viewBox="0 0 9 11" width="16" height="20" shape-rendering="crispEdges" aria-hidden="true"><path d="M0 0h9v11h-9z" fill="#111"/><path d="M1 1h7v10h-7z" fill="#FFD23F"/><path d="M3 4h3v7h-3z" fill="#FFF3B0"/><path d="M1 1h2v10h-2z" fill="#E8371B"/></svg></sc-if>{{dungeonLabel}}</button></sc-if>
 <button type="button" class="m" onClick="{{toggleMenu}}" aria-expanded="{{menuOpen}}" aria-label="{{menuLabel}}" style="width:44px;height:44px;border-radius:22px;border:1px solid #111;background:transparent;display:grid;place-items:center;padding:0"><span class="burger {{burgerClass}}" aria-hidden="true"><i></i><i></i><i></i></span></button>
-<a href="#book" class="d" style="min-height:44px;line-height:44px;padding:0 18px;border-radius:22px;background:#111;color:#F4F4F2;text-decoration:none">book a call</a>
+<a href="#book" class="d" style="min-height:44px;line-height:44px;padding:0 18px;border-radius:22px;background:#111;color:#F4F4F2;text-decoration:none">book a 20-minute call</a>
 </span>
 </header>
 <sc-if value="{{menuIsOpen}}" hint-placeholder-val="{{false}}">
 <nav class="wrap" style="display:grid;padding-block:8px 24px;border-bottom:1px solid #CBCBC6;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(56px,16vw,96px);letter-spacing:-.03em;line-height:1.3">
-<a href="#services" style="text-decoration:none">services</a><a href="#production-detail" style="text-decoration:none">production</a><a href="#offers" style="text-decoration:none">pricing</a><a href="#faq" style="text-decoration:none">faq</a><button type="button" onClick="{{toggleDungeon}}" style="text-align:left;border:0;background:none;padding:0;color:#E8371B;font:inherit">secret door</button>
+<a href="#services" style="text-decoration:none">services</a><a href="#offers" style="text-decoration:none">pricing</a><a href="#lab" style="text-decoration:none">lab</a><a href="#faq" style="text-decoration:none">faq</a>
 </nav>
 </sc-if>
 
@@ -212,7 +279,7 @@ input[type=range]{width:100%;accent-color:#E8371B;height:52px;margin:0}
 <div class="panel" style="background:#111;color:#F4F4F2;border-radius:12px;padding:16px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;gap:14px">
 <div style="display:flex;justify-content:space-between;gap:12px;font-size:13px;color:#A3A39D"><span>random thought #{{ideaNo}}</span><span>for {{ideaFor}}</span></div>
 <p style="margin:0;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,6vw,32px);line-height:1.12;letter-spacing:-.015em;color:#F4F4F2">{{idea}}</p>
-<p style="margin:0;font-size:11px;line-height:1.5;color:#A3A39D">{{ideaFooter}}</p>
+<p style="margin:0;font-size:13px;line-height:1.5;color:#A3A39D">{{ideaFooter}}</p>
 
 </div>
 <div style="display:flex;align-items:center;justify-content:flex-end;gap:12px;padding:12px 4px 2px">
@@ -222,16 +289,14 @@ input[type=range]{width:100%;accent-color:#E8371B;height:52px;margin:0}
 </div>
 <div class="s6" style="display:flex;flex-direction:column;justify-content:flex-end;gap:16px">
 <p style="margin:0;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,6vw,32px);line-height:1.2">Folklore builds brands worth retelling. Identity, visuals, production and events, from the first idea to opening night.</p>
-<a href="#book" class="d" style="min-height:52px;line-height:52px;text-align:center;border-radius:26px;background:#111;color:#F4F4F2;text-decoration:none">book a 20-minute call</a>
-<a href="#offers" style="display:flex;align-items:center;justify-content:center;min-height:52px;border-radius:26px;border:1px solid #111;text-decoration:none">see services and pricing</a>
+<a href="#book" style="min-height:52px;line-height:52px;text-align:center;border-radius:26px;background:#111;color:#F4F4F2;text-decoration:none">book a 20-minute call</a>
+<a href="#offers" style="align-self:center;display:inline-flex;align-items:center;min-height:44px;text-underline-offset:5px">see what it costs</a>
 
 </div>
 </div>
 </section>
 
-<div class="panel" style="background:#111;color:#F4F4F2;overflow:hidden;padding:20px 0;margin-top:72px;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(26px,7vw,44px);letter-spacing:-.02em" aria-label="Four lines from Folklore">
-<div class="tick"><span>polite brands die quietly.</span><span>nobody retells a mission statement.</span><span>legends aren't approved by committee.</span><span>say it first.</span><span>polite brands die quietly.</span><span>nobody retells a mission statement.</span><span>legends aren't approved by committee.</span><span>say it first.</span><span aria-hidden="true">polite brands die quietly.</span><span aria-hidden="true">nobody retells a mission statement.</span><span aria-hidden="true">legends aren't approved by committee.</span><span aria-hidden="true">say it first.</span><span aria-hidden="true">polite brands die quietly.</span><span aria-hidden="true">nobody retells a mission statement.</span><span aria-hidden="true">legends aren't approved by committee.</span><span aria-hidden="true">say it first.</span></div>
-</div>
+<div class="panel" style="background:#111;color:#F4F4F2;padding:28px 0;margin-top:72px"><p class="wrap" style="margin:0 auto;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(26px,7vw,44px);line-height:1.1;letter-spacing:-.02em">Polite brands die quietly.</p></div>
 
 <section id="services" class="wrap sec g">
 <p class="s3" style="margin:0;color:#6B6B66;font-size:13px">what we do</p>
@@ -241,34 +306,83 @@ input[type=range]{width:100%;accent-color:#E8371B;height:52px;margin:0}
 <div id="identity"><div style="border-top:1px solid #111;padding-top:16px"><svg viewBox="0 0 56 56" width="56" height="56" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="28" cy="28" r="20"/><path d="M22 18v20M22 18h12M22 27h9"/><circle cx="41" cy="15" r="4" fill="#E8371B" stroke="none"/></svg><h3 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,5.6vw,28px);letter-spacing:-.02em;margin:14px 0 4px">Identity</h3><p style="margin:0;font-size:13px;color:#4A4A46">Name, mark and the rules.</p></div></div>
 <div id="visuals"><div style="border-top:1px solid #111;padding-top:16px"><svg viewBox="0 0 56 56" width="56" height="56" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="12" width="40" height="32" rx="2"/><path d="M8 38l12-12 10 10 6-6 12 12"/><circle cx="38" cy="22" r="4" fill="#E8371B" stroke="none"/></svg><h3 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,5.6vw,28px);letter-spacing:-.02em;margin:14px 0 4px">Visuals</h3><p style="margin:0;font-size:13px;color:#4A4A46">The look people remember.</p></div></div>
 <div id="production"><div style="border-top:1px solid #111;padding-top:16px"><svg viewBox="0 0 56 56" width="56" height="56" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="18" width="32" height="24" rx="2"/><path d="M38 26l12-7v22l-12-7"/><circle cx="14" cy="26" r="3" fill="#E8371B" stroke="none"/></svg><h3 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,5.6vw,28px);letter-spacing:-.02em;margin:14px 0 4px">Production</h3><p style="margin:0;font-size:13px;color:#4A4A46">Shoots, films and content.</p></div></div>
-<div id="events"><div style="border-top:1px solid #111;padding-top:16px"><svg viewBox="0 0 56 56" width="56" height="56" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 16h40v8a4 4 0 0 0 0 8v8H8v-8a4 4 0 0 0 0-8z"/><path d="M30 16v24" stroke-dasharray="2 4"/><path d="M17 25l2 4 4 .6-3 3 .7 4-3.7-2-3.7 2 .7-4-3-3 4-.6z" fill="#E8371B" stroke="none"/></svg><h3 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,5.6vw,28px);letter-spacing:-.02em;margin:14px 0 4px">Events</h3><p style="margin:0;font-size:13px;color:#4A4A46">Launches people show up for.</p></div></div>
+<div id="events"><div style="border-top:1px solid #111;padding-top:16px"><svg viewBox="0 0 56 56" width="56" height="56" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 16h40v8a4 4 0 0 0 0 8v8H8v-8a4 4 0 0 0 0-8z"/><path d="M30 16v24" stroke-dasharray="2 4"/><circle cx="19" cy="28" r="4" fill="#E8371B" stroke="none"/></svg><h3 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,5.6vw,28px);letter-spacing:-.02em;margin:14px 0 4px">Events</h3><p style="margin:0;font-size:13px;color:#4A4A46">Launches people show up for.</p></div></div>
 </div>
-<p style="margin:0;color:#6B6B66;font-size:13px;margin-top:64px">how a project runs</p>
-<ol class="flow" style="list-style:none;padding:0;margin:20px 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px"><li style="position:relative;text-align:center"><span style="position:relative;z-index:1;display:grid;place-items:center;width:48px;height:48px;margin:0 auto;border-radius:50%;background:#F4F4F2;border:1.5px solid #111;font-family:'Doto',monospace;font-weight:900;font-size:19px;color:#111">01</span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;margin-top:10px">Brief</span><span style="display:block;font-size:11px;color:#6B6B66">20-min call</span></li><li style="position:relative;text-align:center"><span style="position:relative;z-index:1;display:grid;place-items:center;width:48px;height:48px;margin:0 auto;border-radius:50%;background:#F4F4F2;border:1.5px solid #111;font-family:'Doto',monospace;font-weight:900;font-size:19px;color:#111">02</span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;margin-top:10px">Idea</span><span style="display:block;font-size:11px;color:#6B6B66">one thing to say</span></li><li style="position:relative;text-align:center"><span style="position:relative;z-index:1;display:grid;place-items:center;width:48px;height:48px;margin:0 auto;border-radius:50%;background:#F4F4F2;border:1.5px solid #111;font-family:'Doto',monospace;font-weight:900;font-size:19px;color:#111">03</span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;margin-top:10px">Make</span><span style="display:block;font-size:11px;color:#6B6B66">the right hands</span></li><li style="position:relative;text-align:center"><span style="position:relative;z-index:1;display:grid;place-items:center;width:48px;height:48px;margin:0 auto;border-radius:50%;background:#E8371B;border:1.5px solid #E8371B;font-family:'Doto',monospace;font-weight:900;font-size:19px;color:#111">04</span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;margin-top:10px">Release</span><span style="display:block;font-size:11px;color:#6B6B66">your keys</span></li></ol>
+
 </div>
 </section>
 
 <section id="production-detail" class="wrap g" style="padding-bottom:96px">
-<p class="s3" style="margin:0;color:#6B6B66;font-size:13px">production</p>
+<p class="s3" style="margin:0;color:#6B6B66;font-size:13px">how it runs</p>
 <div class="s9">
 <h2 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(36px,9vw,72px);line-height:.95;letter-spacing:-.04em;margin:0 0 12px">First sketch to final cut.</h2>
-<p style="margin:0;max-width:520px">Five workstreams run at once, then meet in one proof before anything goes out. One crew, matched to the brief.</p>
-<svg viewBox="0 0 372 176" width="100%" role="img" aria-label="A brief runs through research, exploration, strategy, creative and production at once. They converge in a proof, then the work is released." style="display:block;max-width:560px;margin:8px 0 28px"><path d="M30 76 C 70 76, 70 20, 104 20" stroke="#111" stroke-width="1.2" fill="none"/><circle cx="110" cy="20" r="5" fill="#F4F4F2" stroke="#111" stroke-width="1.5"/><text x="122" y="24" font-family="JetBrains Mono,monospace" font-size="11" fill="#111">research</text><path d="M206 20 C 240 20, 240 76, 266 76" stroke="#E8371B" stroke-width="1.2" fill="none"/><path d="M30 76 C 70 76, 70 48, 104 48" stroke="#111" stroke-width="1.2" fill="none"/><circle cx="110" cy="48" r="5" fill="#F4F4F2" stroke="#111" stroke-width="1.5"/><text x="122" y="52" font-family="JetBrains Mono,monospace" font-size="11" fill="#111">exploration</text><path d="M206 48 C 240 48, 240 76, 266 76" stroke="#E8371B" stroke-width="1.2" fill="none"/><path d="M30 76 C 70 76, 70 76, 104 76" stroke="#111" stroke-width="1.2" fill="none"/><circle cx="110" cy="76" r="5" fill="#F4F4F2" stroke="#111" stroke-width="1.5"/><text x="122" y="80" font-family="JetBrains Mono,monospace" font-size="11" fill="#111">strategy</text><path d="M206 76 C 240 76, 240 76, 266 76" stroke="#E8371B" stroke-width="1.2" fill="none"/><path d="M30 76 C 70 76, 70 104, 104 104" stroke="#111" stroke-width="1.2" fill="none"/><circle cx="110" cy="104" r="5" fill="#F4F4F2" stroke="#111" stroke-width="1.5"/><text x="122" y="108" font-family="JetBrains Mono,monospace" font-size="11" fill="#111">creative</text><path d="M206 104 C 240 104, 240 76, 266 76" stroke="#E8371B" stroke-width="1.2" fill="none"/><path d="M30 76 C 70 76, 70 132, 104 132" stroke="#111" stroke-width="1.2" fill="none"/><circle cx="110" cy="132" r="5" fill="#F4F4F2" stroke="#111" stroke-width="1.5"/><text x="122" y="136" font-family="JetBrains Mono,monospace" font-size="11" fill="#111">production</text><path d="M206 132 C 240 132, 240 76, 266 76" stroke="#E8371B" stroke-width="1.2" fill="none"/><circle cx="22" cy="76" r="10" fill="#111"/><circle cx="276" cy="76" r="11" fill="#E8371B"/><path d="M292 76h22" stroke="#111" stroke-width="2"/><path d="M309 70l7 6-7 6" stroke="#111" stroke-width="2" fill="none"/><rect x="322" y="63" width="26" height="26" fill="#111"/><text x="22" y="168" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#6B6B66">brief</text><text x="276" y="168" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#6B6B66">proof</text><text x="335" y="168" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#6B6B66">release</text></svg>
-<div class="g2" style="gap:0 16px">
-<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="18" width="32" height="24" rx="2"/><path d="M38 26l12-7v22l-12-7"/><circle cx="14" cy="26" r="3" fill="#E8371B" stroke="none"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">Film and photo</span><span style="display:block;font-size:11px;color:#6B6B66">campaigns · product · portraits</span></span></div>
-<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16l18 12-18 12z" fill="#E8371B" stroke="none"/><path d="M6 20h10M4 28h12M6 36h10"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">Motion</span><span style="display:block;font-size:11px;color:#6B6B66">animation · explainers · cuts</span></span></div>
-<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="11" height="11"/><rect x="22.5" y="8" width="11" height="11"/><rect x="37" y="8" width="11" height="11"/><rect x="8" y="22.5" width="11" height="11"/><rect x="22.5" y="22.5" width="11" height="11" fill="#E8371B" stroke="#E8371B"/><rect x="37" y="22.5" width="11" height="11"/><rect x="8" y="37" width="11" height="11"/><rect x="22.5" y="37" width="11" height="11"/><rect x="37" y="37" width="11" height="11"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">Content systems</span><span style="display:block;font-size:11px;color:#6B6B66">one shoot, weeks of posts</span></span></div>
-<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M28 6c2 12 6 16 18 18-12 2-16 6-18 18-2-12-6-16-18-18 12-2 16-6 18-18z" fill="#E8371B" stroke="none"/><path d="M45 38c.8 4 2.2 5.2 6 6-3.8.8-5.2 2-6 6-.8-4-2.2-5.2-6-6 3.8-.8 5.2-2 6-6z"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">AI pre-production</span><span style="display:block;font-size:11px;color:#6B6B66">moodboards · storyboards</span></span></div>
-<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14h36M10 28h36M10 42h36"/><circle cx="20" cy="14" r="4" fill="#F4F4F2"/><circle cx="36" cy="28" r="4" fill="#E8371B" stroke="#E8371B"/><circle cx="26" cy="42" r="4" fill="#F4F4F2"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">Post</span><span style="display:block;font-size:11px;color:#6B6B66">edit · colour · sound</span></span></div>
-<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 46h44M10 46V22l18-12 18 12v24"/><path d="M22 46V32h12v14" fill="#E8371B" stroke="#E8371B"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">Events and builds</span><span style="display:block;font-size:11px;color:#6B6B66">launches · pop-ups · sets</span></span></div>
+<p style="margin:0;max-width:560px">It starts with a 20-minute call and one thing worth saying. Then five workstreams run at once and meet in one proof before anything goes out. One crew, matched to the brief. At release, you get the keys.</p>
+<svg viewBox="0 0 372 176" width="100%" role="img" aria-label="A brief runs through research, exploration, strategy, creative and production at once. They converge in a proof, then the work is released." style="display:block;max-width:560px;margin:8px 0 28px"><path d="M30 76 C 70 76, 70 20, 104 20" stroke="#111" stroke-width="1.2" fill="none"/><circle cx="110" cy="20" r="5" fill="#F4F4F2" stroke="#111" stroke-width="1.5"/><text x="122" y="24" font-family="JetBrains Mono,monospace" font-size="12" fill="#111">research</text><path d="M206 20 C 240 20, 240 76, 266 76" stroke="#E8371B" stroke-width="1.2" fill="none"/><path d="M30 76 C 70 76, 70 48, 104 48" stroke="#111" stroke-width="1.2" fill="none"/><circle cx="110" cy="48" r="5" fill="#F4F4F2" stroke="#111" stroke-width="1.5"/><text x="122" y="52" font-family="JetBrains Mono,monospace" font-size="12" fill="#111">exploration</text><path d="M206 48 C 240 48, 240 76, 266 76" stroke="#E8371B" stroke-width="1.2" fill="none"/><path d="M30 76 C 70 76, 70 76, 104 76" stroke="#111" stroke-width="1.2" fill="none"/><circle cx="110" cy="76" r="5" fill="#F4F4F2" stroke="#111" stroke-width="1.5"/><text x="122" y="80" font-family="JetBrains Mono,monospace" font-size="12" fill="#111">strategy</text><path d="M206 76 C 240 76, 240 76, 266 76" stroke="#E8371B" stroke-width="1.2" fill="none"/><path d="M30 76 C 70 76, 70 104, 104 104" stroke="#111" stroke-width="1.2" fill="none"/><circle cx="110" cy="104" r="5" fill="#F4F4F2" stroke="#111" stroke-width="1.5"/><text x="122" y="108" font-family="JetBrains Mono,monospace" font-size="12" fill="#111">creative</text><path d="M206 104 C 240 104, 240 76, 266 76" stroke="#E8371B" stroke-width="1.2" fill="none"/><path d="M30 76 C 70 76, 70 132, 104 132" stroke="#111" stroke-width="1.2" fill="none"/><circle cx="110" cy="132" r="5" fill="#F4F4F2" stroke="#111" stroke-width="1.5"/><text x="122" y="136" font-family="JetBrains Mono,monospace" font-size="12" fill="#111">production</text><path d="M206 132 C 240 132, 240 76, 266 76" stroke="#E8371B" stroke-width="1.2" fill="none"/><circle cx="22" cy="76" r="10" fill="#111"/><circle cx="276" cy="76" r="11" fill="#E8371B"/><path d="M292 76h22" stroke="#111" stroke-width="2"/><path d="M309 70l7 6-7 6" stroke="#111" stroke-width="2" fill="none"/><rect x="322" y="63" width="26" height="26" fill="#111"/><text x="22" y="168" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="12" fill="#6B6B66">brief</text><text x="276" y="168" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="12" fill="#6B6B66">proof</text><text x="335" y="168" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="12" fill="#6B6B66">release</text></svg>
+<div class="g2 pl" style="gap:0 16px">
+<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="18" width="32" height="24" rx="2"/><path d="M38 26l12-7v22l-12-7"/><circle cx="14" cy="26" r="3" fill="#E8371B" stroke="none"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">Film and photo</span><span style="display:block;font-size:13px;color:#6B6B66">campaigns · product · portraits</span></span></div>
+<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16l18 12-18 12z" fill="#E8371B" stroke="none"/><path d="M6 20h10M4 28h12M6 36h10"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">Motion</span><span style="display:block;font-size:13px;color:#6B6B66">animation · explainers · cuts</span></span></div>
+<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="11" height="11"/><rect x="22.5" y="8" width="11" height="11"/><rect x="37" y="8" width="11" height="11"/><rect x="8" y="22.5" width="11" height="11"/><rect x="22.5" y="22.5" width="11" height="11" fill="#E8371B" stroke="#E8371B"/><rect x="37" y="22.5" width="11" height="11"/><rect x="8" y="37" width="11" height="11"/><rect x="22.5" y="37" width="11" height="11"/><rect x="37" y="37" width="11" height="11"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">Content systems</span><span style="display:block;font-size:13px;color:#6B6B66">one shoot, weeks of posts</span></span></div>
+<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="10" width="44" height="26" rx="2"/><path d="M6 44h22M6 50h14"/><circle cx="42" cy="47" r="4" fill="#E8371B" stroke="none"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">AI pre-production</span><span style="display:block;font-size:13px;color:#6B6B66">moodboards · storyboards</span></span></div>
+<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14h36M10 28h36M10 42h36"/><circle cx="20" cy="14" r="4" fill="#F4F4F2"/><circle cx="36" cy="28" r="4" fill="#E8371B" stroke="#E8371B"/><circle cx="26" cy="42" r="4" fill="#F4F4F2"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">Post</span><span style="display:block;font-size:13px;color:#6B6B66">edit · colour · sound</span></span></div>
+<div style="display:flex;gap:12px;align-items:center;padding:14px 0;border-top:1px solid #CBCBC6"><svg viewBox="0 0 56 56" width="36" height="36" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 46h44M10 46V22l18-12 18 12v24"/><path d="M22 46V32h12v14" fill="#E8371B" stroke="#E8371B"/></svg><span><span style="display:block;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:19px;letter-spacing:-.01em;line-height:1.2">Events and builds</span><span style="display:block;font-size:13px;color:#6B6B66">launches · pop-ups · sets</span></span></div>
 </div>
-<div style="margin-top:32px;padding:20px 0;border-top:1px solid #111;border-bottom:1px solid #111;display:flex;gap:16px;align-items:baseline;flex-wrap:wrap"><span class="big redbit" style="font-family:'Doto',monospace;font-weight:900;font-size:clamp(56px,16vw,96px);line-height:1;color:#E8371B">71%</span><span style="flex:1 1 200px">of consumers say physical experiences deepen their connection to a brand.<br><span style="font-size:13px;color:#6B6B66">The Harris Poll, Cannes Lions 2026</span></span></div>
-<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:28px"><a href="#book" style="display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:26px;background:#111;color:#F4F4F2;text-decoration:none">get a quote</a></div>
+<div style="margin-top:32px;padding:20px 0;border-top:1px solid #111;border-bottom:1px solid #111"><span class="big redbit" style="display:block;font-family:'Doto',monospace;font-weight:900;font-size:clamp(56px,16vw,96px);line-height:1;color:#E8371B;margin-bottom:12px">71%</span><span style="display:block;max-width:520px">of consumers say physical experiences deepen their connection to a brand.<br><span style="font-size:13px;color:#6B6B66">The Harris Poll, Cannes Lions 2026</span></span></div>
 </div>
 </section>
 
-<section class="panel" style="background:#111;color:#F4F4F2">
+<sc-if value="{{labOnHome}}" hint-placeholder-val="{{false}}">
+
+<section class="wrap g ctr" style="padding-bottom:96px">
+
+<p class="s3" style="margin:0;color:#6B6B66;font-size:13px">brands we've worked on · logos coming</p>
+<div class="s9 g2 d5" style="border-top:1px solid #CBCBC6;border-left:1px solid #CBCBC6">
+<sc-for list="{{brands}}" as="b" hint-placeholder-count="10">
+<div class="cell" style="border-right:1px solid #CBCBC6;border-bottom:1px solid #CBCBC6;padding:40px 8px;text-align:center;font-size:13px;color:#A3A39D">[logo {{b}}]</div>
+</sc-for>
+</div>
+</section>
+
+
+</sc-if>
+
+
+<section id="offers" class="wrap g ctr" style="padding-bottom:96px">
+
+<p class="s3" style="margin:0;color:#6B6B66;font-size:13px">pricing</p>
+<div class="s9">
+<p style="margin:0 0 16px;padding-top:16px;border-top:1px solid #111;font-family:'Inter Tight',sans-serif;font-size:19px">From tiny jobs to full brand launches.</p>
+<div class="pg-wrap"><div class="pg-nav"><span class="pg-hint">slide for more →</span><button type="button" class="pg-a" aria-label="Previous price card" onClick="{{prevCard}}">←</button><button type="button" class="pg-a" aria-label="Next price card" onClick="{{nextCard}}">→</button></div>
+<div class="pg" id="pgrail">
+<sc-for list="{{offerGroups}}" as="gr" hint-placeholder-count="3">
+<div class="pgc">
+<p class="pg-l">{{gr.label}}</p>
+<p class="pg-x">{{gr.line}}</p>
+<ul class="pg-u">
+<sc-for list="{{gr.items}}" as="it" hint-placeholder-count="3">
+<li class="{{it.cls}}"><span class="pr-b"><span class="pr-n">{{it.name}}</span><span class="pr-d">{{it.desc}}</span><span class="pr-note">{{it.note}}</span></span><span class="pr-p"><span class="pr-f">from{{it.unit}}</span>{{it.price}}</span></li>
+</sc-for>
+</ul>
+</div>
+</sc-for>
+</div></div>
+<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:20px"><a href="#book" style="display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:26px;background:#111;color:#F4F4F2;text-decoration:none">book a 20-minute call</a><span style="font-size:13px;color:#6B6B66">Every quote is scoped to the brief.</span></div>
+</div>
+</section>
+
+<section class="wrap g ctr" style="padding-bottom:96px">
+<p class="s3" style="margin:0;color:#6B6B66;font-size:13px">who's behind it</p>
+<div class="s9"><h2 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(36px,9vw,72px);line-height:.98;letter-spacing:-.04em;margin:0 0 16px">Made by creatives.</h2><p style="margin:0 0 32px;max-width:640px">Folklore was built on ten years inside creative agencies, and one belief: the safe idea is what kills brands. It exists to make brands worth retelling, and to help build Singapore's culture capital along the way. A core team, trusted specialists and AI agents, scaled to every brief.</p>
+<div class="stats">
+<div><span class="big" style="font-family:'Doto',monospace;font-weight:900;font-size:clamp(56px,16vw,96px);line-height:1">1</span><p style="margin:6px 0 0;font-size:13px;line-height:1.45">senior creative on every project, from brief to release.</p></div>
+<div><span class="big" style="font-family:'Doto',monospace;font-weight:900;font-size:clamp(56px,16vw,96px);line-height:1">0</span><p style="margin:6px 0 0;font-size:13px;line-height:1.45">account managers between you and the work.</p></div>
+<div><span class="big redbit" style="font-family:'Doto',monospace;font-weight:900;font-size:clamp(56px,16vw,96px);line-height:1;color:#E8371B">4</span><p style="margin:6px 0 0;font-size:13px;line-height:1.45">disciplines under one brief: identity, visuals, production and events.</p></div>
+</div>
+</div>
+</section>
+
+<section id="lab" class="panel" style="background:#111;color:#F4F4F2">
 <div class="wrap sec g" style="align-items:start">
+<div class="labhead" style="grid-column:1/-1"><p style="margin:0;font-size:13px;color:#A3A39D">lab · things Folklore builds to think out loud</p></div>
 <div class="s7">
 <h2 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(36px,9vw,72px);line-height:.95;letter-spacing:-.04em;margin:0 0 12px;color:#F4F4F2">What is AI really doing to marketing?</h2>
 <p style="margin:0 0 24px;color:#C9C9C4">Turn a knob to pick a subject: creative, trust, search or production. Each turn reveals a real number from this year's research.</p>
@@ -299,9 +413,9 @@ input[type=range]{width:100%;accent-color:#E8371B;height:52px;margin:0}
 </div>
 </section>
 
-<section class="wrap sec g ctr">
+<section class="wrap g ctr" style="padding-block:96px 120px">
 
-<span class="s3 d"></span>
+<p class="s3 d" style="margin:0;color:#6B6B66;font-size:13px">lab · hand or machine</p>
 <div class="s9 panel" style="background:#E7E7E4;padding:28px 20px;border-radius:16px">
 <h2 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(36px,9vw,72px);line-height:1;letter-spacing:-.03em;margin:0 0 12px">{{dialTitle}}</h2>
 <p style="margin:0">Drag it to see what changes. AI makes work faster and cheaper. What keeps it original is the idea behind it, and what keeps it trusted is being upfront: 73% of consumers trust an ad less when they suspect AI made it (The Harris Poll, 2026).</p>
@@ -317,38 +431,8 @@ input[type=range]{width:100%;accent-color:#E8371B;height:52px;margin:0}
 </section>
 
 <section class="wrap g ctr" style="padding-bottom:96px">
-
-<p class="s3" style="margin:0;color:#6B6B66;font-size:13px">brands we've worked on · logos coming</p>
-<div class="s9 g2 d5" style="border-top:1px solid #CBCBC6;border-left:1px solid #CBCBC6">
-<sc-for list="{{brands}}" as="b" hint-placeholder-count="10">
-<div class="cell" style="border-right:1px solid #CBCBC6;border-bottom:1px solid #CBCBC6;padding:40px 8px;text-align:center;font-size:13px;color:#A3A39D">[logo {{b}}]</div>
-</sc-for>
-</div>
-</section>
-
-
-<section id="offers" class="wrap g ctr" style="padding-bottom:96px">
-
-<p class="s3" style="margin:0;color:#6B6B66;font-size:13px">services and pricing <span class="m">· swipe →</span></p>
-<div class="s9">
-<div class="g2" style="grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:28px;border-top:1px solid #111;padding-top:16px">
-<div><span class="big" style="font-family:'Doto',monospace;font-weight:900;font-size:clamp(56px,16vw,96px);line-height:1">1</span><p style="margin:6px 0 0;font-size:13px;line-height:1.45">senior creative on every project, from brief to release.</p></div>
-<div><span class="big" style="font-family:'Doto',monospace;font-weight:900;font-size:clamp(56px,16vw,96px);line-height:1">0</span><p style="margin:6px 0 0;font-size:13px;line-height:1.45">account managers between you and the work.</p></div>
-<div><span class="big redbit" style="font-family:'Doto',monospace;font-weight:900;font-size:clamp(56px,16vw,96px);line-height:1;color:#E8371B">100</span><p style="margin:6px 0 0;font-size:13px;line-height:1.45">hands on deck: people, tools and AI agents, scaled to the brief.</p></div>
-</div>
-<p style="margin:0 0 16px;font-family:'Inter Tight',sans-serif;font-size:19px">From tiny jobs to full brand launches.</p>
-<div class="rail" style="background:#CBCBC6">
-<sc-for list="{{offerList}}" as="of" hint-placeholder-count="10"><div class="cell" style="background:{{of.bg}};color:{{of.fg}};padding:28px;border:1px solid #CBCBC6"><p style="margin:0;color:{{of.mute}};font-size:13px">{{of.size}}{{of.note}}</p><p class="big" style="font-family:'Doto',monospace;font-weight:900;font-size:clamp(36px,9vw,72px);white-space:nowrap;line-height:1;margin:40px 0 12px"><span style="display:block;font-family:'JetBrains Mono',monospace;font-weight:300;font-size:13px;margin-bottom:6px">from{{of.unit}}</span>{{of.price}}</p><p style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,5.6vw,28px);margin:0 0 6px">{{of.name}}</p><p style="margin:0">{{of.desc}}</p></div></sc-for>
-</div>
-<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:20px"><a href="#book" style="display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:26px;background:#111;color:#F4F4F2;text-decoration:none">get a quote</a><span style="font-size:13px;color:#6B6B66">Every quote is scoped to the brief.</span></div>
-</div>
-</section>
-
-<section class="wrap g ctr prof" style="padding-bottom:96px;align-items:end">
-
-<p class="s3" style="margin:0;color:#6B6B66;font-size:13px">who's behind it</p>
-<div class="s3 cell gen" style="aspect-ratio:4/5;background:#0A0908;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;border-radius:4px"><canvas id="genart" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;display:block"></canvas><img src="assets/folklore-stacked-white.png" alt="Folklore" width="862" height="611" style="position:relative;display:block;width:56%;max-width:220px;height:auto;pointer-events:none"><button type="button" id="genbtn" aria-label="Show the next generative pattern" style="position:absolute;left:10px;bottom:10px;min-height:32px;padding:0 12px;border-radius:16px;border:1px solid #4A4A46;background:rgba(10,9,8,.7);color:#F4F4F2;font:inherit;font-size:11px;cursor:pointer"><span id="genlabel">01 · noise field</span> ↻</button></div>
-<div class="s6"><h2 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(36px,9vw,72px);line-height:.98;letter-spacing:-.04em;margin:0 0 16px">Made by creatives.</h2><p style="margin:0">Folklore was built on ten years inside creative agencies, and one belief: the safe idea is what kills brands. It exists to make brands worth retelling, and to help build Singapore's culture capital along the way. A core team, trusted specialists and AI agents, scaled to every brief.</p></div>
+<p class="s3 d" style="margin:0;color:#6B6B66;font-size:13px">lab · secret door</p>
+<div class="s9 doorcard"><div><p class="m" style="margin:0;font-size:13px;color:#6B6B66">secret door</p><p style="margin:8px 0 0;font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(28px,7vw,44px);line-height:1.05;letter-spacing:-.02em">The same studio, restaged as a dungeon.</p><p style="margin:12px 0 0;max-width:520px">Same offers, same prices, same way to book. Different world. Proof the brand holds wherever it goes.</p></div><button type="button" onClick="{{toggleDungeon}}" class="doorbtn"><svg viewBox="0 0 9 11" width="16" height="20" aria-hidden="true" style="display:block"><rect x="0.5" y="0.5" width="8" height="10" fill="#111"/><rect x="1.5" y="1.5" width="6" height="9" fill="#E8371B"/><circle cx="6" cy="6" r=".8" fill="#111"/></svg>open the door</button></div>
 </section>
 
 <section id="faq" class="wrap g ctr" style="padding-bottom:96px">
@@ -362,29 +446,28 @@ input[type=range]{width:100%;accent-color:#E8371B;height:52px;margin:0}
 </div>
 </section>
 
-<section class="wrap g ctr" style="padding-bottom:96px"><span class="s3 d"></span><div class="s9"><div class="panel" style="border:1px solid #CBCBC6;border-radius:16px;padding:16px;display:grid;gap:10px;background:#FBFBF9">
+<sc-if value="{{labOnHome}}" hint-placeholder-val="{{false}}"><section class="wrap g ctr" style="padding-bottom:96px"><span class="s3 d"></span><div class="s9"><div class="panel" style="border:1px solid #CBCBC6;border-radius:16px;padding:16px;display:grid;gap:10px;background:#FBFBF9">
 <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><span style="display:inline-flex;align-items:center;gap:8px;font-size:13px"><span class="pulse" style="width:8px;height:8px;border-radius:50%;background:#E8371B"></span>studio status</span></div>
 <div style="display:grid;gap:12px"><span style="display:flex;flex-wrap:wrap;gap:6px" aria-hidden="true"><sc-for list="{{slotDots}}" as="sd" hint-placeholder-count="4"><span style="width:22px;height:22px;border-radius:50%;border:1.5px solid #111;background:{{sd}}"></span></sc-for></span><span style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(22px,5.6vw,28px);letter-spacing:-.01em">{{slotsOpen}} project slots left open</span></div>
 <p style="margin:0;font-size:13px;color:#6B6B66">Folklore limits how many projects run at once, so every one gets full attention.</p>
 <a href="#book" style="display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:24px;background:#E8371B;color:#111;text-decoration:none">claim a slot</a>
-</div></div></section>
+</div></div></section></sc-if>
 
 <section id="book" class="panel" style="background:#111;color:#F4F4F2">
 <div class="wrap" style="padding-block:120px 64px">
-<img src="assets/folklore-stacked-white.png" alt="Folklore" width="862" height="611" style="display:block;width:clamp(96px,22vw,160px);height:auto;margin:0 0 48px">
 
 <h2 style="font-family:'Inter Tight',sans-serif;font-weight:300;font-size:clamp(84px,24vw,300px);line-height:.82;letter-spacing:-.06em;margin:0;white-space:pre-line">{{closing}}</h2>
 <div style="display:grid;gap:16px;margin-top:48px;border-top:1px solid #2E2E2B;padding-top:20px">
-<span style="color:#A3A39D">twenty minutes. free. no pitch deck.</span>
-<div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center"><a href="#book" style="display:flex;align-items:center;justify-content:center;min-height:56px;padding:0 32px;border-radius:28px;background:#E8371B;color:#111;text-decoration:none">{{cta}}</a><button type="button" onClick="{{press}}" style="min-height:56px;padding:0 24px;border-radius:28px;border:1px solid #6B6B66;background:transparent;color:#F4F4F2">{{pressLabel}}</button></div>
+<span style="color:#A3A39D">twenty minutes. no pitch deck.</span>
+<div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center"><a href="#book" style="display:flex;align-items:center;justify-content:center;min-height:56px;padding:0 32px;border-radius:28px;background:#E8371B;color:#111;text-decoration:none">{{cta}}</a></div>
 </div>
 </div>
 <footer class="wrap" style="padding-block:20px;display:grid;gap:8px;color:#A3A39D;font-size:13px;border-top:1px solid #2E2E2B">
-<img src="assets/folklore-f-icon-white.png" alt="" width="566" height="668" style="display:block;width:22px;height:auto;margin-bottom:4px"><span>Folklore (working name) is run by [your full legal name], Singapore.</span><span>[email] · @[handle]</span>
+<img src="assets/folklore-f-icon-white.png" alt="" width="566" height="668" style="display:block;width:22px;height:auto;margin-bottom:4px"><span>Folklore (working name) is run by [your full legal name], Singapore.</span><span>[email] · @[handle]</span><span>Familiar, a newsletter by Folklore, is coming soon.</span>
 </footer>
 </section>
 
-<div class="sticky" style="padding:10px 12px;background:rgba(244,244,242,.92);border-top:1px solid #CBCBC6">
+<div class="sticky stk" style="padding:10px 12px;background:rgba(244,244,242,.92);border-top:1px solid #CBCBC6">
 <a href="#book" style="display:flex;align-items:center;justify-content:center;min-height:52px;border-radius:26px;background:#111;color:#F4F4F2;text-decoration:none">{{stickyCta}}</a>
 </div>
 <sc-if value="{{broken}}" hint-placeholder-val="{{false}}">
@@ -462,12 +545,6 @@ input[type=range]{width:100%;accent-color:#E8371B;height:52px;margin:0}
 </div></div>
 </sc-for>
 </div>
-<p class="cap" style="margin-top:22px">how a quest runs</p>
-<div class="frame"><div class="parch">
-<ol style="list-style:none;margin:0;padding:0;display:grid;gap:12px">
-<sc-for list="{{qv.steps}}" as="s" hint-placeholder-count="4"><li style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;display:grid;place-items:center;width:32px;height:32px;background:#2b1d0e;color:#e8b84a;font-weight:700">{{s.n}}</span><span><strong style="font-size:18px">{{s.t}}</strong><br><span style="font-size:16px">{{s.d}}</span></span></li></sc-for>
-</ol>
-</div></div>
 </section>
 
 <section class="qch" id="workshop">
@@ -475,21 +552,76 @@ input[type=range]{width:100%;accent-color:#E8371B;height:52px;margin:0}
 <h2 class="h2">The Workshop</h2>
 <p class="lede">First sketch to final cut.</p>
 <div class="frame"><div class="parch">
-<p style="margin:0 0 12px;font-size:16px">Five workstreams run at once, then meet in one proof before anything goes out. One crew, matched to the brief.</p>
+<p style="margin:0 0 12px;font-size:16px">It starts with a 20-minute call and one thing worth saying. Then five workstreams run at once and meet in one proof before anything goes out. One crew, matched to the brief. At release, you get the keys.</p>
 <div class="qmap">
 <span class="qnode">brief</span><span class="qarrow">▼</span>
 <div class="qlanes"><span>research</span><span>exploration</span><span>strategy</span><span>creative</span><span>production</span></div>
 <span class="qarrow">▼</span><span class="qnode ember">proof</span><span class="qarrow">▼</span><span class="qnode">release</span>
 </div>
 <sc-for list="{{qv.production}}" as="pr" hint-placeholder-count="6"><p style="margin:0;padding:8px 0;border-top:3px dotted #b89a5c"><strong style="font-size:17px">{{pr.t}}</strong><br><span style="font-size:15px">{{pr.x}}</span></p></sc-for>
-<p style="margin:12px 0 0;padding:10px 0 0;border-top:3px dotted #b89a5c;font-size:15px"><strong style="font-size:26px;color:#8a1414">71%</strong> of consumers say physical experiences deepen their connection to a brand. <span style="font-size:12px">The Harris Poll, Cannes Lions 2026</span></p>
+<p style="margin:12px 0 0;padding:10px 0 0;border-top:3px dotted #b89a5c;font-size:15px"><strong style="display:block;font-size:40px;line-height:1;margin-bottom:6px;color:#8a1414">71%</strong>of consumers say physical experiences deepen their connection to a brand. <span style="font-size:12px">The Harris Poll, Cannes Lions 2026</span></p>
 </div></div>
-<div style="margin-top:10px"><a class="btn red" href="#finale">Summon the Dungeon Master (get a quote)</a></div>
 </section>
 
-<section class="qch" id="oracle">
+
+
+
+
+
+
+
+
+
+
+<section class="qch" id="merchant">
 <p class="cap">Chapter IV</p>
-<h2 class="h2">Consult the Oracle</h2>
+<h2 class="h2">The Merchant</h2>
+<p class="lede">"Fair prices, scoped to your quest."</p>
+<div class="qpg-nav"><span>swipe for more →</span><button type="button" class="btn sm stone" aria-label="Previous price card" onClick="{{qv.prevCard}}">◀</button><button type="button" class="btn sm stone" aria-label="Next price card" onClick="{{qv.nextCard}}">▶</button></div>
+<div class="qpg" id="qrail">
+<sc-for list="{{qv.offerGroups}}" as="gr" hint-placeholder-count="3">
+<div class="frame qpgc"><div class="parch" style="padding:12px 16px">
+<p style="margin:0;font-size:24px;font-weight:700">{{gr.label}}</p>
+<p style="margin:2px 0 6px;font-size:14px;color:#6a4a22">{{gr.line}}</p>
+<sc-for list="{{gr.items}}" as="o" hint-placeholder-count="3">
+<div class="{{o.cls}}" style="padding:10px 0;border-top:3px dotted #b89a5c">
+<p style="margin:0;display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap"><span style="font-size:18px;font-weight:700">{{o.name}}</span><span style="font-size:12px;color:#6a4a22">{{o.gold}}</span></p>
+<p style="margin:2px 0 4px;font-size:15px">{{o.desc}}</p>
+<p style="margin:0;font-weight:700;font-size:17px;color:#8a1414">{{o.price}}</p>
+</div>
+</sc-for>
+</div></div>
+</sc-for>
+</div>
+<p style="margin:10px 0 0;font-size:15px">From tiny jobs to full launches. Every quote is scoped to your quest.</p>
+<div style="margin-top:10px"><a class="btn red" href="#finale">Summon the Dungeon Master (book a call)</a></div>
+</section>
+
+<section class="qch" id="dm">
+<p class="cap">Chapter V</p>
+<h2 class="h2">The Dungeon Master</h2>
+<p class="lede">The studio behind it.</p>
+<div class="frame"><div class="parch">
+<div style="display:flex;gap:14px;align-items:flex-start">
+<img src="{{qv.spr.cage}}" alt="Pixel portrait of the Dungeon Master (placeholder)" width="80" height="96" style="image-rendering:pixelated;display:block;flex:none;background:#26221e;border:3px solid #0a0908">
+<div style="font-size:15px;display:grid;grid-template-columns:auto 1fr;gap:2px 10px">
+<span style="font-weight:700">Studio</span><span>Folklore</span>
+<span style="font-weight:700">Level</span><span>10 years in creative agencies</span>
+<span style="font-weight:700">Party</span><span>Core team, specialists, AI agents</span>
+<span style="font-weight:700">Alignment</span><span>Chaotic good</span>
+<span style="font-weight:700">Base</span><span>Singapore</span>
+</div>
+</div>
+<div class="slate" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;text-align:center;padding:12px 8px;margin:14px 0 0"><span><strong style="font-size:30px;display:block">1</strong><span style="font-size:12px">senior creative on every quest</span></span><span><strong style="font-size:30px;display:block">0</strong><span style="font-size:12px">account managers</span></span><span><strong style="font-size:30px;display:block;color:#f07a2a">4</strong><span style="font-size:12px">disciplines under one brief</span></span></div>
+<p style="margin:14px 0 0;font-size:17px">Built on one belief: the safe idea is what kills brands. Folklore exists to make brands worth retelling, and to help build Singapore's culture capital along the way.</p>
+</div></div>
+</section>
+
+<section class="qch" id="lab">
+<p class="cap">Chapter VI</p>
+<h2 class="h2">The Lab</h2>
+<p class="lede">Things Folklore builds to think out loud.</p>
+<h3 class="h2" style="font-size:26px;margin-top:22px">Consult the Oracle</h3>
 <p class="lede">What is AI really doing to marketing? Pick a subject, and the Oracle answers with a real number from this year's research.</p>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px">
 <sc-for list="{{qv.topics}}" as="t" hint-placeholder-count="4"><button type="button" class="btn sm {{t.cls}}" aria-pressed="{{t.on}}" onClick="{{t.pick}}">{{t.name}}</button></sc-for>
@@ -508,11 +640,7 @@ input[type=range]{width:100%;accent-color:#E8371B;height:52px;margin:0}
 <label for="em" style="display:block;font-size:13px;font-weight:600;margin-bottom:4px">Your email</label>
 <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px"><input id="em" type="email" placeholder="you@brand.com" style="min-height:44px;box-sizing:border-box;border:3px solid #0a0908;background:#fff8e4;font:16px 'Pixelify Sans',sans-serif;padding:0 10px;min-width:0"><button type="button" class="btn sm red" style="width:auto">Subscribe</button></div>
 </div></div>
-</section>
-
-<section class="qch" id="forge">
-<p class="cap">Chapter V</p>
-<h2 class="h2">The Forge</h2>
+<h3 class="h2" style="font-size:26px;margin-top:22px">The Forge</h3>
 <p class="lede">How much magic should go into your brand? Drag the slider. A great idea makes magic work harder, and saying it's AI-made keeps trust.</p>
 <div class="frame"><div class="parch">
 <p style="margin:0 0 4px;display:flex;justify-content:space-between;font-size:14px;font-weight:600"><span>Hand-forged</span><span style="font-size:18px;font-weight:700;color:#a81c1c">{{qv.ai}}% AI</span><span>Conjured</span></p>
@@ -526,55 +654,17 @@ input[type=range]{width:100%;accent-color:#E8371B;height:52px;margin:0}
 </div>
 <p style="margin:10px 0 0;font-size:14px">The trust drop is research: 73% of consumers trust an ad less when they suspect AI made it (The Harris Poll). The 30% is Folklore's call. Logos are always by hand.</p>
 </div></div>
-</section>
-
-<section class="qch" id="legends">
-<p class="cap">Chapter VI</p>
-<h2 class="h2">Hall of Legends</h2>
-<p class="lede">Brands worked on. Logos coming soon.</p>
-<div class="frame"><div class="slate" style="padding:8px 16px">
-<sc-for list="{{qv.brands}}" as="b" hint-placeholder-count="10"><p style="margin:0;padding:8px 0;display:flex;gap:12px;align-items:center;border-bottom:2px solid #24201c;font-size:18px;font-weight:600"><span style="color:#e8b84a;font-size:14px;width:22px">{{b.n}}</span>{{b.name}}</p></sc-for>
-</div></div>
-</section>
-
-<section class="qch" id="merchant">
-<p class="cap">Chapter VII</p>
-<h2 class="h2">The Merchant</h2>
-<p class="lede">"Fair prices, scoped to your quest."</p>
-<div class="frame"><div class="slate" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;text-align:center;padding:12px 8px;margin-bottom:8px"><span><strong style="font-size:30px;display:block">1</strong><span style="font-size:12px">senior creative on every quest</span></span><span><strong style="font-size:30px;display:block">0</strong><span style="font-size:12px">account managers</span></span><span><strong style="font-size:30px;display:block;color:#f07a2a">100</strong><span style="font-size:12px">hands on deck</span></span></div><div class="parch" style="padding:6px 16px">
-<sc-for list="{{qv.offers}}" as="o" hint-placeholder-count="10">
-<div style="padding:12px 0;border-bottom:3px dotted #b89a5c">
-<p style="margin:0;display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap"><span style="font-size:19px;font-weight:700">{{o.name}}</span><span style="font-size:12px;color:#6a4a22">{{o.gold}}</span></p>
-<p style="margin:2px 0 4px;font-size:15px">{{o.desc}}</p>
-<p style="margin:0;font-weight:700;font-size:17px;color:#8a1414">{{o.price}}</p>
+<h3 class="h2" style="font-size:26px;margin-top:22px">The Secret Door</h3>
+<p class="lede">You came in through it. The same studio waits on the other side, plain.</p>
+<div style="margin-top:10px"><button type="button" class="btn stone" onClick="{{qv.exit}}">Step back through the door</button></div>
+<div style="margin-top:22px;display:flex;gap:14px;align-items:center">
+<img class="twitch" src="{{qv.spr.chest}}" alt="" width="80" height="68" style="image-rendering:pixelated;display:block;flex:none">
+<div style="flex:1"><p style="margin:0 0 8px;font-size:16px">A chest sits in the corner. It's probably fine.</p><button type="button" class="btn sm stone" onClick="{{qv.die}}">Open the chest</button></div>
 </div>
-</sc-for>
-<p style="margin:10px 0 8px;font-size:15px">From tiny jobs to full launches. Every quote is scoped to your quest.</p>
-</div></div>
-<div style="margin-top:10px"><a class="btn red" href="#finale">Summon the Dungeon Master (book a call)</a></div>
-</section>
-
-<section class="qch" id="dm">
-<p class="cap">Chapter VIII</p>
-<h2 class="h2">The Dungeon Master</h2>
-<p class="lede">The studio behind it.</p>
-<div class="frame"><div class="parch">
-<div style="display:flex;gap:14px;align-items:flex-start">
-<img src="{{qv.spr.cage}}" alt="Pixel portrait of the Dungeon Master (placeholder)" width="80" height="96" style="image-rendering:pixelated;display:block;flex:none;background:#26221e;border:3px solid #0a0908">
-<div style="font-size:15px;display:grid;grid-template-columns:auto 1fr;gap:2px 10px">
-<span style="font-weight:700">Studio</span><span>Folklore</span>
-<span style="font-weight:700">Level</span><span>10 years in creative agencies</span>
-<span style="font-weight:700">Party</span><span>Core team, specialists, AI agents</span>
-<span style="font-weight:700">Alignment</span><span>Chaotic good</span>
-<span style="font-weight:700">Base</span><span>Singapore</span>
-</div>
-</div>
-<p style="margin:14px 0 0;font-size:17px">Built on one belief: the safe idea is what kills brands. Folklore exists to make brands worth retelling, and to help build Singapore's culture capital along the way.</p>
-</div></div>
 </section>
 
 <section class="qch" id="scrolls">
-<p class="cap">Chapter IX</p>
+<p class="cap">Chapter VII</p>
 <h2 class="h2">Scrolls of Wisdom</h2>
 <p class="lede">Questions people ask.</p>
 <div class="frame"><div class="parch" style="padding:8px 16px">
@@ -588,8 +678,7 @@ input[type=range]{width:100%;accent-color:#E8371B;height:52px;margin:0}
 <section class="qch" id="finale">
 <p class="cap">Final chapter</p>
 <h2 class="h2">Roll for Initiative</h2>
-<p class="lede">A 20-minute call. Free. No pitch deck.</p>
-<div class="frame" style="margin-bottom:12px"><div class="slate" style="text-align:center;padding:14px"><p style="margin:0 0 8px;display:flex;gap:5px;justify-content:center;flex-wrap:wrap"><sc-for list="{{qv.slotDots}}" as="sd" hint-placeholder-count="10"><span style="width:16px;height:16px;border:2px solid #c9d1c3;background:{{sd}}"></span></sc-for></p><p style="margin:0;font-size:18px">{{qv.slotsOpen}} quest slots left open</p></div></div>
+<p class="lede">A 20-minute call. No pitch deck.</p>
 <div class="frame"><div class="slate" style="text-align:center">
 <div class="d12-stage" aria-hidden="true">
 <span class="d12-shadow {{qv.tossCls}}"></span>
@@ -610,17 +699,13 @@ input[type=range]{width:100%;accent-color:#E8371B;height:52px;margin:0}
 </div>
 </div></div>
 
-<div style="margin-top:34px;display:flex;gap:14px;align-items:center">
-<img class="twitch" src="{{qv.spr.chest}}" alt="" width="80" height="68" style="image-rendering:pixelated;display:block;flex:none">
-<div style="flex:1"><p style="margin:0 0 8px;font-size:16px">A chest sits in the corner. It's probably fine.</p><button type="button" class="btn sm stone" onClick="{{qv.die}}">Open the chest</button></div>
-</div>
 <img src="assets/folklore-f-icon-white.png" alt="" width="566" height="668" style="display:block;width:22px;height:auto;margin:40px auto 10px"><p style="margin:0;font-size:13px;color:#a39a92;text-align:center">Folklore (working name) is run by [your full legal name], Singapore. [email] · @[handle]</p>
 </section>
 </main>
 
 <div style="position:sticky;bottom:0;z-index:10;background:#0d0c0b;border-top:3px solid #4a4440;padding:8px 12px 10px">
 <p aria-live="polite" class="vt" style="margin:0 auto 6px;max-width:720px;font-size:19px;line-height:1.1;color:#8fd47a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">&gt; {{qv.log}}</p>
-<div style="max-width:720px;margin:0 auto"><a class="btn red" href="#finale" style="min-height:48px">Book a call · 20 min, free</a></div>
+<div style="max-width:720px;margin:0 auto"><a class="btn red" href="#finale" style="min-height:48px">Book a 20-minute call</a></div>
 </div>
 
 <sc-if value="{{qv.dead}}" hint-placeholder-val="{{false}}">
@@ -691,6 +776,44 @@ const OFFERS = [
   { size: 'large', name: 'Events', desc: 'Launches, pop-ups and activations, planned and run.', price: 'S$[8,000]', unit: '' },
   { size: 'large', name: 'Full brand launch', desc: 'Identity, campaign, shoot and launch, as one system.', price: 'S$[15,000]', unit: '' }
 ];
+
+// Pricing rail: arrows move one card at a time.
+function slideCards(dir, id) {
+  const r = document.getElementById(id || 'pgrail');
+  if (!r) return;
+  const card = r.querySelector('.pgc, .qpgc');
+  const step = card ? card.getBoundingClientRect().width + 12 : r.clientWidth * 0.8;
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  r.scrollBy({ left: dir * step, behavior: reduce ? 'auto' : 'smooth' });
+}
+
+// Pricing on the home page, grouped by size (same OFFERS, nothing new).
+const GROUP_META = [
+  ['small', 'Small', 'Quick jobs and first steps.', ['tiny', 'small']],
+  ['medium', 'Medium', 'One project, start to finish.', ['medium']],
+  ['large', 'Large', 'Whole brands and launches.', ['large']]
+];
+const offerGroups = GROUP_META.map(([id, label, line, sizes]) => ({
+  id, label, line,
+  items: OFFERS.filter(o => sizes.includes(o.size)).map(o => ({
+    name: o.name, desc: o.desc, price: o.price, unit: o.unit || '',
+    note: '',
+    cls: o.dark ? 'pr hot' : 'pr'
+  }))
+}));
+
+// Phones: the sticky "book" bar appears only after the hero's own button scrolls away.
+(function () {
+  if (typeof window === 'undefined') return;
+  const tick = () => {
+    const top = document.getElementById('top');
+    const past = top ? top.getBoundingClientRect().bottom < 0 : true;
+    document.documentElement.classList.toggle('past-hero', past);
+  };
+  window.addEventListener('scroll', tick, { passive: true });
+  window.addEventListener('resize', tick);
+  setTimeout(tick, 0);
+})();
 
 // AI and marketing facts, checked against original sources (Nov 2026).
 const FACTS = [
@@ -814,9 +937,13 @@ class Component extends DCLogic {
       { t: 'Events and builds', d: 'Launch nights, pop-ups and sets, from floor plan to fabrication to the last guest out.', x: 'launches · pop-ups · sets · fabrication' }
     ];
     return {
+      labOnHome: false,
+      prevCard: () => slideCards(-1),
+      nextCard: () => slideCards(1),
+      offerGroups,
       slotsOpen: SLOTS_OPEN,
       slotDots: Array.from({ length: SLOTS_TOTAL }, (_, i) => i < SLOTS_TOTAL - SLOTS_OPEN ? '#111' : 'transparent'),
-      stickyCta: 'consult now',
+      stickyCta: 'book a 20-minute call',
       offerList: OFFERS.map(o => Object.assign({ note: '', bg: o.dark ? '#111' : '#F4F4F2', fg: o.dark ? '#F4F4F2' : '#111', mute: o.dark ? '#A3A39D' : '#6B6B66' }, o)),
       services, steps, production, burgerClass: st.menu ? 'x' : '',
       dragon, chest,
@@ -922,6 +1049,8 @@ class Component extends DCLogic {
       onDial: (e) => { const v = Number(e.target.value); buzz(6); setQ({ ai: v, log: 'You forge at ' + v + '% AI.' }); },
       slotsOpen: SLOTS_OPEN, slotDots: Array.from({ length: SLOTS_TOTAL }, (_, i) => i < SLOTS_TOTAL - SLOTS_OPEN ? '#c9d1c3' : 'transparent'),
       offers: OFFERS.map(o => ({ name: o.name, desc: o.desc + (o.note || ''), price: 'from ' + o.price + (o.unit || ''), gold: o.price.replace('S$', '') + ' gold' })),
+      offerGroups: GROUP_META.map(([id, label, line, sizes]) => ({ id, label, line, items: OFFERS.filter(o => sizes.includes(o.size)).map(o => ({ name: o.name, desc: o.desc + (o.note || ''), price: 'from ' + o.price + (o.unit || ''), gold: o.price.replace('S$', '') + ' gold', cls: o.dark ? 'qhot' : '' })) })),
+      prevCard: () => slideCards(-1, 'qrail'), nextCard: () => slideCards(1, 'qrail'),
       brands,
       production: [
         { t: 'Film and photo', x: 'campaigns · product · portraits' }, { t: 'Motion', x: 'animation · explainers · cuts' },
