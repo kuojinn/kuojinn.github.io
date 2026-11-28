@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Which door is yours? · Folklore</title>
+<title>The Crossroads · Folklore</title>
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,11 +27,12 @@ header{display:flex;justify-content:space-between;align-items:center;gap:16px;ma
 .pic img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
 h1{font-weight:300;font-size:clamp(32px,6vw,48px);line-height:1.05;letter-spacing:-.02em;margin:8px 0 12px;text-align:center;text-wrap:balance}
 .lead{color:var(--g3);text-align:center;max-width:52ch;margin:0 auto 28px}
-.doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));grid-auto-rows:1fr;gap:12px;margin-top:8px}
+.doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));grid-auto-rows:1fr;gap:12px;margin-top:8px}
 .door{appearance:none;font:inherit;color:var(--ink);background:#fff;border:1.5px solid var(--ink);border-radius:80px 80px 8px 8px;min-height:150px;padding:24px 20px;cursor:pointer;display:flex;align-items:center;justify-content:center;text-align:center;transition:background .2s ease,color .2s ease}
 .door:hover{background:var(--ink);color:var(--bg)}
 .door:focus-visible{outline:3px solid var(--red);outline-offset:4px}
-.door span{font-size:17px;line-height:1.3;font-weight:400}
+.door{flex-direction:column;gap:8px}.door span{font-size:17px;line-height:1.3;font-weight:400}.door small{font-size:13px;color:var(--g3)}.door:hover small{color:var(--g1)}.door.open small{color:var(--ink)}
+.gets{margin:12px 0 0;padding:0;list-style:none}.gets li{padding:6px 0 6px 20px;position:relative;border-top:1px solid var(--g1)}.gets li::before{content:'';position:absolute;left:2px;top:14px;width:8px;height:8px;border-radius:50%;background:var(--ink)}.gets li:first-child::before{background:var(--red)}
 .door.open{background:var(--red);border-color:var(--red);color:var(--ink)}
 .btn{appearance:none;font:inherit;font-weight:600;border:2px solid var(--ink);background:var(--ink);color:var(--bg);border-radius:999px;min-height:48px;padding:10px 24px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
 .btn.ghost{background:transparent;color:var(--ink)}
@@ -57,73 +58,94 @@ h1{font-weight:300;font-size:clamp(32px,6vw,48px);line-height:1.05;letter-spacin
 <div class="wrap">
   <header><a class="brand" href="../index.html" aria-label="Back to Folklore"><img src="wordmark.svg" alt="Folklore"></a><div class="dots" id="dots" aria-hidden="true"></div></header>
   <main id="app" aria-live="polite"></main>
-  <p class="note">Four doors, about a minute. Your answers stay on this page.</p>
+  <p class="note">Three questions, about a minute. Your answers stay on this page.<br>Illustrations made with AI, art-directed by Folklore.</p>
 </div>
 <script>
 {
 const OUT = {
-  clarity:{img:'img/wizard-strategist.png',title:'You need clarity first.',why:'Before anything gets made, Folklore finds the one thing worth saying, so everything made after it pulls the same way.',start:'Direction session',tag:'Two hours, one page of direction.'},
-  rebrand:{img:'img/stonecarver.png',title:'You need a rebrand.',why:'The business has outgrown its look. Folklore keeps what people already love and recarves the rest.',start:'Brand refresh, or a full identity',tag:'Scoped to how far it needs to go.'},
-  fresh:{img:'img/cow.png',title:'You need a brand built from scratch.',why:'One idea worth retelling first. Then the name, the look and the voice, built around it.',start:'Founding identity',tag:'Open to the first three clients.'},
-  content:{img:'img/goblin-printer.png',title:'You need work that stops the scroll.',why:'The brand is right; people just aren’t seeing it. Folklore makes the shoots, films and posts that get passed around.',start:'Social content or a photoshoot',tag:'Monthly, or one big push.'},
-  launch:{img:'img/cannon.png',title:'You need a launch.',why:'Something new deserves a moment. Folklore plans the idea, the campaign and the night it goes out.',start:'Small ad campaign, up to a full brand launch',tag:'Sized to the date on your calendar.'}
+  clarity:{img:'img/wizard-strategist.png',hint:'clarity first',short:'clarity',title:'You need clarity first.',why:'Before anything gets made, Folklore finds the one thing worth saying, so everything after it pulls the same way.',gets:['A one-page brief: who you are for, and why','The one idea worth retelling','A clear next step, sized to your budget'],start:'Direction session',tag:'Two hours, one page of direction.'},
+  rebrand:{img:'img/stonecarver.png',hint:'a brand refresh',short:'a brand refresh',title:'You need a brand refresh.',why:'The business has outgrown its look. Folklore keeps what people already love and recarves the rest.',gets:['An honest look at what works and what doesn’t','A sharper mark, type and colour','New rules, so it stays consistent'],start:'Brand refresh, or a full identity',tag:'Scoped to how far it needs to go.'},
+  fresh:{img:'img/cow.png',hint:'building the brand, block by block',short:'building the brand',title:'Build the brand, block by block.',why:'One idea worth retelling first. Then the name, the look and the voice, laid down in the right order.',gets:['The idea and the name','A full identity: mark, type, colour, voice','Guidelines and your first pieces'],start:'Founding identity',tag:'Open to the first three clients.'},
+  content:{img:'img/herald.png',hint:'more content',short:'more content',title:'You need more content.',why:'The brand works. Now it needs feeding: a steady stream of shoots, films and posts, all made to the same standard.',gets:['A content plan built around one idea','Shoots and films, cut for every channel','Monthly social, if you want it ongoing'],start:'Social content or a photoshoot',tag:'Monthly, or one big push.'},
+  launch:{img:'img/cannon.png',hint:'a launch',short:'a launch',title:'You’ve got something to launch.',why:'A new product or collection deserves a moment. Folklore plans the idea, the campaign and the day it goes out.',gets:['The launch idea','A campaign cut for every channel','The event, drop or first week, planned and run'],start:'Small ad campaign, up to a full brand launch',tag:'Sized to the date on your calendar.'},
+  production:{img:'img/goblin-printer.png',hint:'a production partner',short:'a production partner',title:'You need a production partner.',why:'The brand and the ideas are in place. You need the crew to make them, produced end to end and on time.',gets:['A crew matched to the brief','The shoot, film, TVC or event, produced end to end','Finals cut for every channel you need'],start:'Photoshoot, or production quoted per job',tag:'From one day to a full campaign.'}
 };
-const ORDER = ['clarity','rebrand','fresh','content','launch'];
-const Q = [
-  {img:'img/warrior.png',q:'Where are you standing?',doors:[
-    ['Just an idea, nothing built yet',{fresh:3}],
-    ['A brand that’s been around a while',{rebrand:1,content:1,clarity:1}],
-    ['A brand with something new coming',{launch:3}]]},
-  {img:'img/rumour-goblins.png',q:'Ask a stranger about you. They…',doors:[
-    ['Get it wrong',{rebrand:2,clarity:1}],
-    ['Get it right, but nobody’s talking',{content:2,launch:1}],
-    ['Can’t describe you at all',{clarity:2,fresh:1}]]},
-  {img:'img/wizard-visualiser.png',q:'What keeps you up at night?',doors:[
-    ['We look older than we are',{rebrand:3}],
-    ['We post, and nobody stops',{content:3}],
-    ['We’re not sure what we stand for',{clarity:3}],
-    ['A date on the calendar',{launch:3}]]},
-  {img:'img/night-paster.png',q:'When does it need to happen?',doors:[
-    ['This month',{content:1,clarity:1}],
-    ['This quarter',{rebrand:1,launch:1}],
-    ['When it’s right',{fresh:1,clarity:1}]]}
-];
+const ORDER = ['clarity','rebrand','fresh','content','launch','production'];
+const FIRST = {img:'img/warrior.png',q:'How’s the brand doing?',doors:[
+  ['Healthy. We just need more from it',{content:1,launch:1,production:1},'healthy','more content, a launch or a production partner'],
+  ['It’s not working the way it should',{rebrand:1,clarity:1},'fix','a refresh, or clarity first'],
+  ['There isn’t one yet',{fresh:2},'fresh','building the brand, block by block']]};
+const PATHS = {
+  healthy:[
+    {img:'img/night-paster.png',q:'What’s next for you?',doors:[
+      ['A new product or collection',{launch:3}],
+      ['More content, more often',{content:3}],
+      ['A big shoot, film or event',{production:3}],
+      ['A new market or audience',{launch:2,content:1}]]},
+    {img:'img/wizard-visualiser.png',q:'Who has the ideas?',doors:[
+      ['We do. We need the crew to make them',{production:3}],
+      ['We need the ideas and the crew',{launch:2,content:1}],
+      ['We need a steady stream, every month',{content:3}]]}],
+  fix:[
+    {img:'img/rumour-goblins.png',q:'What feels off?',doors:[
+      ['We look older than the business',{rebrand:3}],
+      ['People describe us wrong',{rebrand:2,clarity:1}],
+      ['We’re not sure what we stand for',{clarity:3}],
+      ['Good brand, but nobody’s seeing it',{content:3}]]},
+    {img:'img/wizard-visualiser.png',q:'What do you already have?',doors:[
+      ['Pieces made by five different people',{rebrand:2,clarity:1}],
+      ['A logo, but nothing built around it',{fresh:2,rebrand:1}],
+      ['Plenty of stuff, no direction',{clarity:3}],
+      ['A logo and rules that still work',{content:2}]]}],
+  fresh:[
+    {img:'img/listening.png',q:'Where are you?',doors:[
+      ['Just an idea for now',{clarity:2,fresh:1}],
+      ['Opening soon, nothing built',{fresh:3}],
+      ['Opening on a set date',{fresh:2,launch:2}]]},
+    {img:'img/night-paster.png',q:'What matters most first?',doors:[
+      ['Knowing what we stand for',{clarity:3}],
+      ['A name and a look people remember',{fresh:3}],
+      ['Getting noticed on day one',{launch:2,fresh:1}]]}]
+};
+const lead = w => { let k = ORDER[0], v = -1; for (const x of ORDER) if ((w[x] || 0) > v) { v = w[x] || 0; k = x; } return OUT[k].hint; };
 const app = document.getElementById('app'), dots = document.getElementById('dots');
-let step = -1, picks = [];
+let step = -1, picks = [], seq = [FIRST];
+const TOTAL = 3;
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const drawDots = () => { dots.innerHTML = Q.map((_, i) => `<i class="${i < step ? 'on' : i === step ? 'now' : ''}"></i>`).join(''); };
-const score = () => { const s = Object.fromEntries(ORDER.map(k => [k, 0])); picks.forEach((p, i) => { const w = Q[i].doors[p][1]; for (const k in w) s[k] += w[k]; }); return ORDER.slice().sort((a, b) => s[b] - s[a] || ORDER.indexOf(a) - ORDER.indexOf(b)).map(k => [k, s[k]]); };
+const drawDots = () => { dots.innerHTML = Array.from({length: TOTAL}, (_, i) => `<i class="${i < step ? 'on' : i === step ? 'now' : ''}"></i>`).join(''); };
+const score = () => { const s = Object.fromEntries(ORDER.map(k => [k, 0])); picks.forEach((p, i) => { const w = seq[i].doors[p][1]; for (const k in w) s[k] += w[k]; }); return ORDER.slice().sort((a, b) => s[b] - s[a] || ORDER.indexOf(a) - ORDER.indexOf(b)).map(k => [k, s[k]]); };
 function intro(){
-  step = -1; picks = []; drawDots();
+  step = -1; picks = []; seq = [FIRST]; drawDots();
   app.innerHTML = `<div class="stage"><div class="pic"><img src="img/arch.png" alt="A stone arch with a red keystone"></div>
-  <h1>Which door is yours?</h1>
-  <p class="lead">Most brands ask for content when they need clarity, or a rebrand when they need a launch. Four doors, one minute, and you’ll know where to start.</p>
-  <div class="row"><button class="btn" id="go">Open the first door</button></div></div>`;
+  <h1>Every brand hits a crossroads.</h1>
+  <p class="lead">Most brands ask for content when they need clarity, or a rebrand when they need a launch. Three questions, and you’ll know which road is yours. Every door says where it leads.</p>
+  <div class="row"><button class="btn" id="go">Take the first door</button></div></div>`;
   document.getElementById('go').addEventListener('click', () => ask(0));
 }
 function ask(i){
   step = i; drawDots();
-  const q = Q[i];
+  const q = seq[i];
   app.innerHTML = `<div class="stage"><div class="pic"><img src="${q.img}" alt=""></div>
   <h1>${esc(q.q)}</h1>
-  <div class="doors">${q.doors.map((d, j) => `<button class="door" data-j="${j}"><span>${esc(d[0])}</span></button>`).join('')}</div>
+  <div class="doors">${q.doors.map((d, j) => `<button class="door" data-j="${j}"><span>${esc(d[0])}</span><small>points to ${esc(d[3] || lead(d[1]))}</small></button>`).join('')}</div>
   <button class="back" id="back">${i ? 'Go back a door' : 'Start over'}</button></div>`;
   app.querySelectorAll('.door').forEach(b => b.addEventListener('click', () => {
-    b.classList.add('open'); picks[i] = +b.dataset.j;
-    setTimeout(() => i + 1 < Q.length ? ask(i + 1) : result(), 280);
+    const j = +b.dataset.j; b.classList.add('open'); picks[i] = j; picks.length = i + 1;
+    if (i === 0) seq = [FIRST, ...PATHS[FIRST.doors[j][2]]];
+    setTimeout(() => i + 1 < seq.length ? ask(i + 1) : result(), 280);
   }));
-  document.getElementById('back').addEventListener('click', () => i ? (picks.length = i - 1, ask(i - 1)) : intro());
+  document.getElementById('back').addEventListener('click', () => i ? ask(i - 1) : intro());
   app.querySelector('.door').focus({preventScroll:true});
 }
 function result(){
-  step = Q.length; drawDots();
+  step = TOTAL; drawDots();
   const r = score(), top = OUT[r[0][0]], next = r[1][1] > 0 && r[1][1] >= r[0][1] - 1 ? OUT[r[1][0]] : null;
   app.innerHTML = `<div class="stage"><div class="pic"><img src="${top.img}" alt=""></div>
   <h1>${esc(top.title)}</h1>
-  <div class="card"><p>${esc(top.why)}</p>
+  <div class="card"><p>${esc(top.why)}</p><ul class="gets">${top.gets.map(g => `<li>${esc(g)}</li>`).join('')}</ul>
     <div class="start"><span>Start with</span><b>${esc(top.start)}</b><span class="tag">${esc(top.tag)}</span></div></div>
-  ${next ? `<p class="also">Close behind: ${esc(next.title.replace('You need ', '').replace(/\.$/, ''))}. Worth raising on the call.</p>` : ''}
-  <div class="row"><a class="btn" href="../index.html#book">Book a 20-minute call</a><button class="btn ghost" id="again">Try other doors</button></div></div>`;
+  ${next ? `<p class="also">Close behind: ${esc(next.short)}. Worth raising on the call.</p>` : ''}
+  <div class="row"><a class="btn" href="../index.html#book">Book a 20-minute call</a><button class="btn ghost" id="again">Go back to the crossroads</button></div></div>`;
   document.getElementById('again').addEventListener('click', intro);
 }
 intro();
